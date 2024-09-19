@@ -1,10 +1,21 @@
 import './App.css'
+import Header from './Components/header'
+import HeroSection from './Components/heroSection'
+import Footer from './Components/footer'
+import EcgBenefits from './Components/ecgAdv'
+import Contact from './Components/contactForm'
 
 function App() {
 
   return (
     <>
-     <div className='text-3xl font-bold underline'>East Coast Growers</div>
+    <div>
+    <Header />
+    <HeroSection />
+    <EcgBenefits />
+    <Contact />
+    <Footer />
+    </div>
     </>
   )
 }
