@@ -1,0 +1,23 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Or your preferred font */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; /* Ensure the header is above other content */
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-image: url('public/ecg-logo-full.png'); /* Your background image */
+  background-size: cover;
+  background-position: center;
+}
