@@ -5,6 +5,7 @@ import Footer from './Components/footer'
 import EcgBenefits from './Components/ecgAdv'
 import PhotoVideo from './Components/photoVideo'
 import ExpolsiveGrowth from './Components/imageDes'
+import ExGrow from './Components/growth'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <Header />
     <HeroSection />
     <ExpolsiveGrowth />
+    <ExGrow/>
     <EcgBenefits />
     <PhotoVideo />
     <Footer />
