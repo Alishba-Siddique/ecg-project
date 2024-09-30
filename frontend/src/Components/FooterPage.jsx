@@ -6,14 +6,12 @@ const FooterPAge = () => {
   return (
     <div className="relative">
       {/* Footer */}
-      <footer className="relative py-8 px-6 md:mx-0 text-white h-full">
+      <footer className="relative py-8  px-6 md:mx-0 text-white h-full drop-shadow-xl">
         <div id="contact" className="flex flex-row justify-center">
           {/* Contact Form */}
           <div className="absolute h-fit w-fit z-40 bg-white justify-center text-center -mt-44 md:-mt-56 lg:-mt-44 rounded-2xl p-8  md:p-12 lg:p-12 lg:mx-0 md:ml-10 mx-4">
-            <p className="text-black text-md md:text-2xl lg:text-2xl font-medium mb-4 font-nudistaLight">
-              Schedule a call with{' '}
-              <span className="font-bold font-nudista">management team</span>
-              <br /> for more information
+            <p className="text-black text-md md:text-2xl lg:text-4xl  mb-4 font-nudistaLight">
+              Request a call from <span className='font-nudista'>our team{' '}</span>
             </p>
 
             <form className="flex flex-col justify-center items-center gap-4 mt-6 text-xs md:text-md lg:text-lg">
@@ -73,10 +71,10 @@ const FooterPAge = () => {
               <a href="#history" className="hover:underline">
                 Our History
               </a>
-              <a href="#about" className="hover:underline">
+              <a href="#contact" className="hover:underline">
                 Contact Us
               </a>
-              <a href="#contact" className="hover:underline">
+              <a href="#about" className="hover:underline">
                 About Us
               </a>
             </div>

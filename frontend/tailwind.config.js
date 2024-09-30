@@ -9,7 +9,7 @@ export default {
         sora: ['"Sora"'],
       },
       colors: {
-        primary: '#01765f',
+        primary: '#077761',
         secondary: '#f66205',
         accent: '#759157',
         primaryLight: '#bfdba1',

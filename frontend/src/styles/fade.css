@@ -1,0 +1,15 @@
+/* App.css */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px); /* Slight downward movement */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease; /* Adjust duration for smoother effect */
+  }

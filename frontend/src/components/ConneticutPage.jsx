@@ -5,6 +5,7 @@ import conneticutImg2 from '../assets/images/conneticutImg2.webp';
 // import conneticutImg2 from '../assets/images/conneticutImg3.webp';
 import conneticutImg3 from '../assets/images/conneticutImg3.webp';
 import windMillIcon from '../assets/images/windmill.svg';
+import overlayTextIconOrange from '../assets/images/overlayTextIconOrange.png';
 
 const ConneticutPage = () => {
   return (
@@ -12,15 +13,14 @@ const ConneticutPage = () => {
       {/* Title Section */}
       <div className="text-center mb-8">
         <div className="flex justify-center items-center">
-          <div className="border-t-4 border-primary w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[20rem] sm:mt-1 md:mt-1 lg:mt-1 "></div>
+          <div className="border-t-4 border-secondary w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[20rem] sm:mt-1 md:mt-1 lg:mt-1 "></div>
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl mx-4 sm:mx-6 md:mx-8 lg:mx-10 text-black font-nudistaLight">
-            It all begins{' '}
+            An Industry poised for{' '}
             <span className="font-extrabold font-nudista mb-44">
-              East Hardford,
+              explosive growth
             </span>{' '}
-            Connecticut
           </h2>
-          <div className="border-t-4 border-primary w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[20rem] mt-1"></div>
+          <div className="border-t-4 border-secondary w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[20rem] mt-1"></div>
         </div>
       </div>
 
@@ -36,18 +36,18 @@ const ConneticutPage = () => {
         </div>
         <div className="mt-5  md:mt-20 lg:mt-28 md:mx-16 lg:ml-36 mx-3 ">
           <h4 className="text-md md:text-lg lg:text-xl xl:text-3xl font-nudista ">
-            Welcome to our farm
+            Welcome to our facility
           </h4>
-          <p className="text-xs  md:text-xs lg:text-lg w-full md:w-full lg:w-4/6  font-sora mt-3 leading-3 text-gray-500 text-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quas
-            temporibus molestiae dignissimos, eveniet nesciunt corrupti
+          <p className="text-xs  md:text-xs lg:text-base w-full md:w-full lg:w-4/6  font-sora mt-3 leading-3 text-gray-500 text-left">
+            Our planned 42,000 Square foot facility is located in the bustling
+            locally of East Hartford, CT.
           </p>
           <img
             src={threeDBud}
             alt="conneticutImg2"
             className="w-[70%] md:w-full lg:w-[75%]  xl:w-[75%] 
-            ml-[2.5rem] md:-ml-[1rem] lg:ml-[2.1rem] xl:ml-[2.1rem]
-            mt-8 md:mt-[1.3rem] lg:mt-[6.02rem] xl:mt-[6.02rem]
+            ml-[3rem] md:-ml-[1rem] lg:ml-[2.1rem] xl:ml-[3rem]
+            mt-8 md:mt-[1.3rem] lg:mt-[9rem] xl:mt-[9rem]
             -mb-[2.5rem] md:-mb-[2.5rem] lg:-mb-[2rem]"
           />
         </div>
@@ -62,31 +62,47 @@ const ConneticutPage = () => {
             className="  w-full
              h-full md:h-[90%] lg:h-[90%] xl:h-[90%]"
           />
-          <div className="grid grid-rows-3 justify-items-end -mt-[13rem] md:-mt-[13rem] lg:-mt-[22rem] gap-0  mr-3 md:mr-3  lg:mr-7 ">
+          <div className="grid grid-rows-3 justify-items-end -mt-[17rem] md:-mt-[19.5rem] lg:-mt-[22rem] gap-4 md:gap-4 lg:gap-4  mr-3 md:mr-3  lg:mr-7 ">
             <img
-              src={windMillIcon}
+              // src={windMillIcon}
+              src={overlayTextIconOrange}
               alt="windMillIcon"
-              className="mt-[2rem] md:mt-[1rem] lg:mt-[0rem] xl:mt-[0rem] w-[2rem]  md:w-[3rem] lg:w-[5rem] xl:w-[5rem]"
+              className="mt-[2rem] md:mt-[4rem] lg:-mt-[10rem] xl:-mt-[10rem] w-[2rem]  md:w-[2rem] lg:w-[4rem] xl:w-[4rem]"
             />
 
-            <p className="text-xs md:text-sm lg:text-md font-sora mt-3 text-gray-500">
-              Traditional
+            <p
+              className="text-xs md:text-lg w-1/2 md:w-1/2
+            mt-[0rem] md:mt-[0rem] lg:mt-0 xl:mt-0
+            -mr-[1rem] md:-mr-[0.5rem] lg:-mr-9 xl:-mr-9
+             lg:w-[50%] lg:text-[1.62rem]  font-nudista "
+            >
+              Precision in Cultivation
             </p>
-            <p className="text-md md:text-lg lg:text-3xl font-nudista -mt-[2rem] md:-mt-[2rem] lg:-mt-[2rem] xl:-mt-[2rem]">
-              Lorem ipsum do <br /> Lorem ipsum do
+            <p
+              className="text-[0.6rem] md:text-[0.6rem] lg:text-base font-sora 
+            -mt-[3.3rem]  md:-mt-[3.5rem] lg:-mt-[2rem] 
+            -mr-[1rem] md:-mr-[0.5rem] lg:-mr-0 xl:-mr-0
+            w-[50%] lg:w-[45%] md:w-[50%]"
+            >
+              Our team of trained experts deliver exceptional value to both our
+              customers and the market by keeping yields and proﬁts high.
             </p>
-            <div className="flex items-center -mt-[3rem]  md:-mt-[3rem] lg:-mt-[0rem] ">
-              <button className="btn btn-xs md:btn-xs lg:btn-md md:text-sm bg-secondary text-white hover:bg-accent font-sora">
-                Read more about us
-              </button>
+            <div className="flex items-center -mt-[3rem]  md:-mt-[7rem] lg:-mt-[0rem]  ">
               <button
+                className="btn text-[0.6rem] md:text-xs lg:text-base bg-black text-white
+               hover:bg-secondary font-sora  mr-16 md:mr-14 lg:mr-[5rem] xl:mr-[5rem]
+               px-2 md:px-2 lg:px-16 "
+              >
+                Learn More
+              </button>
+              {/* <button
                 className="btn btn-square btn-xs md:btn-xs lg:btn-md
               text-xs md:text-xs 
                -ml-[0.4rem] md:-ml-[0.3rem] lg:-ml-[0.8rem] rounded-l-none
                 bg-secondary text-white hover:bg-accent "
               >
                 <i className="fa-solid fa-chevron-right"></i>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

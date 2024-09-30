@@ -11,24 +11,44 @@ import NavbarPage from './components/NavbarPage';
 import FooterPAge from './components/FooterPAge';
 import PhotoVideoPage from './components/PhotoVideoPage';
 import EGrowthPage from './components/EGrowthPage';
+import { useState, useEffect } from 'react';
+import Loader from './components/Loader';
+import './styles/fade.css';
+import InfoPage from './components/InfoPage';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time before showing website content
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 10000); // Adjust timing as needed
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
-      <div>
-        <NavbarPage />
-        {/* <HeaderPage /> */}
-        <HeroPage />
-        <AnimationPage />
-        <ConneticutPage />
-        <DownloadPdfPage />
-        <EGrowthPage />
-        <AdvPage />
-        <PhotoVideoPage />
-        <TeamPage />
-        <ScrollTrigger />
-        <FooterPAge />
-      </div>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className='-mb-8 fade-in'>
+          <NavbarPage />
+          {/* <HeaderPage /> */}
+          <HeroPage />
+          <AnimationPage />
+          <ConneticutPage />
+          <DownloadPdfPage />
+          <EGrowthPage />
+          <AdvPage />
+          <PhotoVideoPage />
+          <TeamPage />
+          <ScrollTrigger />
+          <InfoPage />
+          <FooterPAge />
+          </div>
+      )}
+      ;
     </>
   );
 }

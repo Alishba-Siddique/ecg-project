@@ -3,45 +3,38 @@ import team1 from '../assets/images/Daniel Czyzewski.webp';
 import team2 from '../assets/images/Oz-Pariser.webp';
 import team3 from '../assets/images/Andrew Borner.webp';
 import team4 from '../assets/images/Trent & Chad Lynch.webp';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const TeamPage = () => {
   return (
     <>
-      <div className="py-10" id='about'>
-        <div className="container mx-auto px-12 md:px-12 lg:px-24 xl:px-24">
-          <div className="grid gap-12 items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="py-8" id="about">
+        <div className="container mx-auto px-12 md:px-12 lg:px-24 xl:px-14">
+          <div className="grid gap-8 items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {/* Team Member 1 */}
             <div className="space-y-4 text-left">
-              <img
-                className="w-full h-56 sm:h-64 lg:h-80 object-cover mx-auto rounded-xl"
+              <LazyLoadImage
+                className="w-full h-56 sm:h-64 lg:h-80 object-cover  rounded-xl"
                 src={team1}
                 alt="Daniel Czyzewski"
                 loading="lazy"
               />
+              
               <div>
-                <h4 className="text-xl sm:text-2xl lg:text-3xl font-bold font-nudista">
+                <h4 className="text-xl sm:text-2xl lg:text-4xl text-primary font-bold font-nudista">
                   Daniel Czyzewski
                 </h4>
-                <span className="block text-xl sm:text-2xl font-nudistaLight">
-                  Co-Founder
+                <span className="block text-2xl lg:text-lg tracking-wider text-secondary font-sora">
+                  CO-FOUNDER
                 </span>
-                <p className="text-left text-gray-700 text-sm sm:text-base lg:text-lg font-sora mt-6">
+                <p className="text-left text-gray-700 text-sm sm:text-base lg:text-base font-sora mt-6">
                   {/* Content */}
-                  Daniel Czyzewski became a licensed electrician in CT in 2008
-                  after attending trade school. In 2013, he became a real estate
-                  broker in multiple states. Dan owns Exclusive Development, a
-                  construction company specializing in residential and
-                  commercial construction, real estate development, sales, and
-                  management. He quickly advanced to project management. During
-                  a market downturn, Dan secured his first real estate
-                  investments in rentals and renovations, gaining valuable
-                  restoration experience. In 2019, he redeveloped New Britain’s
-                  first successful luxury apartment building and food hall, his
-                  signature project. Recently, Dan acquired a 225-boat slip
-                  marina in South Glastonbury, CT, transforming it into a
-                  popular destination. He also secured a provisional license in
-                  Connecticut to cultivate and sell cannabis. Dan's success is
-                  attributed to his hard work, focus, and approach to projects.
+                  Dan brings extensive experience in construction and real
+                  estate development, successfully transforming properties and
+                  securing a provisional license to cultivate and sell cannabis
+                  in Connecticut. His approach and hands-on experience position
+                  him perfectly to navigate the complexities of the cannabis
+                  market.
                 </p>
               </div>
             </div>
@@ -55,30 +48,20 @@ const TeamPage = () => {
                 loading="lazy"
               />
               <div>
-                <h4 className="text-xl sm:text-2xl lg:text-3xl font-bold font-nudista">
+                <h4 className="text-xl sm:text-2xl lg:text-4xl text-primary font-bold font-nudista">
                   Oz Pariser
                 </h4>
-                <span className="block text-xl sm:text-2xl font-nudistaLight">
-                  Co-Founder
+                <span className="block text-2xl lg:text-lg tracking-wider text-secondary font-sora">
+                  CO-FOUNDER
                 </span>
-                <p className="text-left text-gray-700 text-sm sm:text-base lg:text-lg font-sora mt-6">
+                <p className="text-left text-gray-700 text-sm sm:text-base lg:text-base font-sora mt-6">
                   {/* Content */}
-                  Oz Pariser earned his Bachelor’s in Health Science in 2007 and
-                  his Doctorate of Physical Therapy in 2010 from the University
-                  of Hartford. He worked as a Physical Therapist for over 10
-                  years before transitioning to real estate investment in 2020.
-                  Starting in 2015, he has bought, sold, and brokered over 100
-                  properties. In 2019, Oz began acquiring large multifamily
-                  apartment buildings in Hartford, repositioning a multi-million
-                  dollar portfolio and adding millions in value. In 2023, he
-                  began acquiring out-of-state mobile home parks, using the same
-                  strategy to increase their value. He self-manages his
-                  portfolio using cutting-edge technology and has built a team
-                  of 5 employees at Pariser Enterprises. Oz is a lifelong
-                  martial artist, former professional MMA fighter, and a
-                  Brazilian Jiu-jitsu black belt and instructor. He lives in
-                  Manchester, CT with his wife and two young boys. In his free
-                  time, Oz enjoys hiking and traveling.
+                  Oz combines over a decade of experience as a physical
+                  therapist with a successful real estate investment career,
+                  where he has significantly increased property values. His
+                  early investments in the cannabis industry and vision to
+                  establish a facility in Connecticut highlight his keen
+                  understanding of the sector's potential.
                 </p>
               </div>
             </div>
@@ -92,29 +75,46 @@ const TeamPage = () => {
                 loading="lazy"
               />
               <div>
-                <h4 className="text-xl sm:text-2xl lg:text-3xl font-bold font-nudista">
+                <h4 className="text-xl sm:text-2xl lg:text-4xl text-primary font-bold font-nudista">
                   Andrew Borner
                 </h4>
-                <span className="block text-xl sm:text-2xl font-nudistaLight">
-                  Co-Founder
+                <span className="block text-2xl lg:text-lg tracking-wider text-secondary font-sora">
+                  CO-FOUNDER
                 </span>
-                <p className="text-left text-gray-700 text-sm sm:text-base font-sora lg:text-lg font-normal mt-6">
+                <p className="text-left text-gray-700 text-sm sm:text-base font-sora lg:text-base font-normal mt-6">
                   {/* Content */}
-                  Andrew has a Bachelor of Science in Management from the
-                  University of Connecticut; a Master of Science in
-                  Organizational Leadership from Quinnipiac University; and an
-                  LUTCF professional life insurance designation from The
-                  American College. While in school, Andrew was an intern with a
-                  Connecticut-based real estate development company. For nearly
-                  three years following graduation, Andrew was employed by a
-                  prominent Connecticut-based construction company. From July of
-                  2002 until the inception of his own successful insurance
-                  agency, Olde Liberty Insurance, LLC in May 2013, Andrew was
-                  employed as a highly regarded personal lines insurance
-                  producer in the State of Connecticut for Liberty Mutual
-                  Insurance and built a $2,900,000 book of business. Between May
-                  2013 and December of 2022, when the agency was successfully
-                  sold, Andrew had built a $2,700,000 book of business.
+                  Andrew has a diverse and strong background in organizational
+                  leadership and insurance, where he built substantial books of
+                  business and developed valuable entrepreneurial skills. His
+                  business acumen, coupled with a clear vision to seize
+                  opportunities in the cannabis market, uniquely qualifies him
+                  to contribute to its continued growth.
+                </p>
+              </div>
+            </div>
+            {/* Team Member 3 */}
+            <div className="space-y-4 text-left">
+              <img
+                className="w-full h-56 sm:h-64 lg:h-80 object-cover mx-auto rounded-xl "
+                src={team4}
+                alt="Trent & Chad Lynch"
+                loading="lazy"
+              />
+              <div>
+                <h4 className="text-xl sm:text-2xl lg:text-4xl text-primary font-bold font-nudista">
+                  Trent & Chad Lynch
+                </h4>
+                <span className="block text-2xl lg:text-lg tracking-wider text-secondary font-sora">
+                  CONSULTANTS
+                </span>
+                <p className="text-left text-gray-700 text-sm sm:text-base font-sora lg:text-base font-normal mt-6">
+                  {/* Content */}
+                  Co-founders of Shoreline Hydroponics, leverage their extensive
+                  expertise in cannabis cultivation and operational efficiency
+                  to drive sustainable success in the industry. Trent's
+                  management of large-scale cultivation facilities and Chad's
+                  deep experience in logistics and process optimization position
+                  them as leaders in the cannabis sector.
                 </p>
               </div>
             </div>
@@ -123,7 +123,7 @@ const TeamPage = () => {
       </div>
 
       {/* Section for Trent & Chad Lynch */}
-      <div className="w-full bg-[#dddddd]">
+      {/* <div className="w-full bg-[#dddddd]">
         <section className="max-w-9xl mx-8 md:mx-8 lg:mx-24 px-4 pt-10 pb-44 md:pb-56 lg:pb-64">
           <div className="grid grid-cols-1 gap-6">
             <div className="w-full flex flex-col md:flex-row">
@@ -138,11 +138,11 @@ const TeamPage = () => {
                 <p className="text-2xl sm:text-3xl lg:text-4xl text-black font-nudista">
                   Trent & Chad Lynch
                 </p>
-                <p className="text-lg sm:text-xl lg:text-2xl text-black font-nudistaLight mt-2">
+                <p className="text-lg sm:text-xl lg:text-2xl text-black font-nudista mt-2">
                   Consultants
                 </p>
-                <p className="text-sm sm:text-base lg:text-lg text-gray-700 font-sora mt-6">
-                  {/* Content */}
+                <p className="text-sm sm:text-base lg:text-base text-gray-700 font-sora mt-6">
+                  
                   Co-Founders of Shoreline Hydroponics, LLC, Trent and Chad are
                   leaders in the cannabis and hydroponics sectors. Trent excels
                   in Massachusetts' cannabis industry, managing two
@@ -165,7 +165,7 @@ const TeamPage = () => {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
     </>
   );
 };
