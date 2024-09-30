@@ -90,7 +90,7 @@ const ConneticutPage = () => {
             <div className="flex items-center -mt-[3rem]  md:-mt-[7rem] lg:-mt-[0rem]  ">
               <button
                 className="btn text-[0.6rem] md:text-xs lg:text-base bg-black text-white
-               hover:bg-secondary font-sora  mr-16 md:mr-14 lg:mr-[5rem] xl:mr-[5rem]
+               hover:bg-secondary font-sora  mr-16 md:mr-14 lg:mr-[7.5rem] xl:mr-[7.5rem]
                px-2 md:px-2 lg:px-16 "
               >
                 Learn More

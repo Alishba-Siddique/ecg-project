@@ -21,7 +21,7 @@ const DownloadPdfPage = () => {
       </div>
 
       {/* Right Side Content */}
-      <div className="space-y-6 md:ml-[5.5rem]  lg:ml-20">
+      <div className="space-y-6 md:ml-[5.5rem]  lg:ml-10">
         {/* Text and Image Row */}
         <div className=" hidden grid-cols-1  rounded-lg md:grid-cols-2 gap-0 -mb-8 md:-mb-8 lg:mb-24 h:full md:h-1/2 lg:h-1/2 xl:h-1/2
          md:hidden lg:block xl:block">

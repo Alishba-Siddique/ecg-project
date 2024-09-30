@@ -199,7 +199,7 @@ const AnimationPage = () => {
   };
 
   return (
-    <section className="relative z-0 w-full h-full md:h-[110vh] lg:h-[160vh] xl:h-[170vh]" style={containerStyles}>
+    <section className="relative z-0 w-full h-full md:h-[120vh] lg:h-[160vh] xl:h-[160vh]" style={containerStyles}>
       <div className="absolute inset-0 bg-primary opacity-80"></div>
       <div className="mx-10 sm:mx-10 md:mx-24 lg:mx-24 xl:mx-24   py-24 sm:py-24 md:py-24 lg:py-52 ">
         {[
