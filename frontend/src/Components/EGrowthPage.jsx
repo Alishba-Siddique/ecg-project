@@ -79,7 +79,7 @@
 //       <div className="text-center mb-12 mt-20 px-4">
 //         <div className="flex justify-center items-center gap-2">
 //           <div className="border-t-4 border-white2 w-[4rem]  md:w-[4rem] lg:w-[20rem]"></div>
-//           <h2 className="text-xl  md:text-3xl lg:text-4xl text-white2 font-nudistaLight">
+//           <h2 className="text-xl  md:text-3xl lg:text-4xl text-white2 font-nudista font-light ">
 //             A market poised for{' '}
 //             <span className="font-extrabold font-nudista mb-44">
 //               explosive growth
@@ -248,7 +248,7 @@
 //       <div className="text-center mb-12 mt-20 px-4">
 //         <div className="flex justify-center items-center gap-2">
 //           <div className="border-t-4 border-white2 w-[4rem]  md:w-[4rem] lg:w-[20rem]"></div>
-//           <h2 className="text-xl  md:text-3xl lg:text-4xl text-white2 font-nudistaLight">
+//           <h2 className="text-xl  md:text-3xl lg:text-4xl text-white2 font-nudista font-light ">
 //             A unique collaborative{' '}
 //             <span className="font-extrabold font-nudista mb-44">
 //               investment{' '}
@@ -334,7 +334,6 @@
 
 // export default EGrowthPage;
 
-
 import { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import conneticutImg1 from '../assets/images/exGrowthBg.webp';
@@ -407,11 +406,9 @@ const EGrowthPage = () => {
       <div className="text-center mb-12 mt-20 px-4">
         <div className="flex justify-center items-center gap-2">
           <div className="border-t-4 border-white2 w-[4rem] md:w-[4rem] lg:w-[20rem]"></div>
-          <h2 className="text-xl md:text-3xl lg:text-4xl text-white2 font-nudistaLight">
+          <h2 className="text-xl md:text-3xl lg:text-4xl text-white2 font-nudista font-light ">
             A unique collaborative{' '}
-            <span className="font-extrabold font-nudista mb-44">
-              investment{' '}
-            </span>
+            <span className=" font-nudista font-bold mb-44">investment </span>
             opportunity
           </h2>
           <div className="border-t-4 border-white2 w-[4rem] md:w-[4rem] lg:w-[20rem]"></div>
@@ -436,7 +433,7 @@ const EGrowthPage = () => {
               className="w-full h-full object-cover rounded-lg"
             />
             <div className="absolute inset-0 bg-primary bg-opacity-30 flex flex-col justify-center items-center text-center text-white p-4 duration-300">
-              <h3 className="text-2xl md:text-xl lg:text-4xl font-bold font-nudista">
+              <h3 className="text-2xl md:text-xl lg:text-4xl font-nudista font-bold">
                 {image.text}
               </h3>
             </div>
@@ -460,7 +457,7 @@ const EGrowthPage = () => {
           />
           {/* Text overlay on image */}
           <div className="absolute inset-0 bg-primary bg-opacity-30 flex justify-center items-center text-center text-white p-4 duration-300">
-            <h3 className="text-2xl font-bold font-nudista">
+            <h3 className="text-2xl font-nudista font-bold">
               {images[selectedImage].text}
             </h3>
           </div>
@@ -479,7 +476,7 @@ const EGrowthPage = () => {
           {images[selectedImage].icon}
         </div>
         <div className="w-[70%] md:w-[60%] lg:w-[70%] p-3 md:p-10 lg:p-10 bg-gray-600 text-white rounded-lg">
-          <h3 className="text-md md:text-xl lg:text-xl font-bold mb-2 font-nudista">
+          <h3 className="text-md md:text-xl lg:text-xl  mb-2 font-nudista font-bold">
             {images[selectedImage].heading}
           </h3>
           <p className="text-xs md:text-sm lg:text-base font-sora leading-normal">

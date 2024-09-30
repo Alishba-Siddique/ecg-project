@@ -53,13 +53,13 @@ const Loader = () => {
           <img
             src={ecgWhiteLogo}
             alt="Cannabis Leaf"
-            className="w-44 h-44 object-contain"
+            className="w-44 h-44 object-contain drop-shadow-lg"
           />
         </div>
       </div>
 
       {/* Text Animation and Loading Percentage */}
-      <h1 className="mt-5 text-white text-3xl font-bold font-nudista tracking-widest animate-pulse">
+      <h1 className="mt-5 text-white text-3xl font-nudista font-bold tracking-widest animate-pulse">
         Growing... {progress}%
       </h1>
     </div>

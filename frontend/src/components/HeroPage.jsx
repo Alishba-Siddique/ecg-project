@@ -32,13 +32,13 @@ const HeroPage = () => {
                    text-white2 mx-10 sm:mx-10 md:mx-24 lg:mx-24 xl:mx-24 "
         >
           <p
-            className="font-nudistaLight font-bold text-left drop-shadow-md
+            className="font-nudista font-light text-left drop-shadow-md
                        text-2xl sm:text-2xl md:text-4xl lg:text-7xl xl:text-7xl"
           >
             Your Ticket Into
           </p>
           <p
-            className="font-bold font-nudista text-left
+            className="font-nudista font-bold text-left
                        text-3xl sm:text-3xl md:text-5xl lg:text-7xl xl:text-7xl
                        mt-2
                        drop-shadow-md"
@@ -56,7 +56,7 @@ const HeroPage = () => {
             create significant value for our consumers and the market
           </p>
           {/* <button
-            className="font-nudistaLight text-white2 bg-secondary hover:bg-accent 
+            className="font-nudista font-light  text-white2 bg-secondary hover:bg-accent 
                    btn btn-xs sm:btn-sm md:btn-md lg:btn-md border-none ml-0 md:ml-3 lg:ml-3
                    mt-5 md:mt-8 lg:mt-8"
           >
@@ -113,7 +113,7 @@ const HeroPage = () => {
           <p
             className="text-xs sm:text-xs md:text-xs lg:text-lg
                        mt-3 md:mt-0 lg:mt-0
-                       font-nudistaLight
+                       font-nudista font-light 
                        "
           >
             The United States cannabis industry <br />

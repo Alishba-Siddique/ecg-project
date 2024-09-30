@@ -40,7 +40,7 @@ const DownloadPdfPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-0 items-center ml-[1.5rem]  md:-ml-16 lg:ml-0
         mt-[0rem]  md:mt-0 lg:-mt-[36rem] h-[15%] md:h-[15%] lg:h-[15%] xl:h-[15%]">
           <p className="text-lg sm:text-xl lg:text-3xl mt-0 md:-mt-32 lg:-mt-0 xl:-mt-0 
-          font-nudista leading-tight">
+          font-nudista font-bold leading-tight">
             State of the Art Tech
           </p>
           <div className="border-t-2 border-secondary  mt-3 h-[10%] md:h-[30%] lg:h-full xl:h-full

@@ -8,13 +8,13 @@ import DownloadPdfPage from './components/DownloadPdfPage';
 import ScrollTrigger from './utilities/ScrollToTopButton';
 import AdvPage from './components/AdvPage';
 import NavbarPage from './components/NavbarPage';
-import FooterPAge from './components/FooterPAge';
 import PhotoVideoPage from './components/PhotoVideoPage';
 import EGrowthPage from './components/EGrowthPage';
 import { useState, useEffect } from 'react';
 import Loader from './components/Loader';
 import './styles/fade.css';
 import InfoPage from './components/InfoPage';
+import FooterWebPage from './components/FooterWebPage';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -45,7 +45,7 @@ function App() {
           <TeamPage />
           <ScrollTrigger />
           <InfoPage />
-          <FooterPAge />
+          <FooterWebPage />
           </div>
       )}
       ;

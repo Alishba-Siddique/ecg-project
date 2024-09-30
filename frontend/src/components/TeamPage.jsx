@@ -21,7 +21,7 @@ const TeamPage = () => {
               />
               
               <div>
-                <h4 className="text-xl sm:text-2xl lg:text-4xl text-primary font-bold font-nudista">
+                <h4 className="text-xl sm:text-2xl lg:text-4xl text-primary  font-nudista font-bold">
                   Daniel Czyzewski
                 </h4>
                 <span className="block text-2xl lg:text-lg tracking-wider text-secondary font-sora">
@@ -48,7 +48,7 @@ const TeamPage = () => {
                 loading="lazy"
               />
               <div>
-                <h4 className="text-xl sm:text-2xl lg:text-4xl text-primary font-bold font-nudista">
+                <h4 className="text-xl sm:text-2xl lg:text-4xl text-primary font-nudista font-bold">
                   Oz Pariser
                 </h4>
                 <span className="block text-2xl lg:text-lg tracking-wider text-secondary font-sora">
@@ -75,7 +75,7 @@ const TeamPage = () => {
                 loading="lazy"
               />
               <div>
-                <h4 className="text-xl sm:text-2xl lg:text-4xl text-primary font-bold font-nudista">
+                <h4 className="text-xl sm:text-2xl lg:text-4xl text-primary font-nudista font-bold">
                   Andrew Borner
                 </h4>
                 <span className="block text-2xl lg:text-lg tracking-wider text-secondary font-sora">
@@ -101,7 +101,7 @@ const TeamPage = () => {
                 loading="lazy"
               />
               <div>
-                <h4 className="text-xl sm:text-2xl lg:text-4xl text-primary font-bold font-nudista">
+                <h4 className="text-xl sm:text-2xl lg:text-4xl text-primary font-nudista font-bold">
                   Trent & Chad Lynch
                 </h4>
                 <span className="block text-2xl lg:text-lg tracking-wider text-secondary font-sora">

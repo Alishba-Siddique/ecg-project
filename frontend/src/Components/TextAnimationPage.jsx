@@ -199,19 +199,22 @@ const AnimationPage = () => {
   };
 
   return (
-    <section className="relative z-0 w-full h-full md:h-[120vh] lg:h-[160vh] xl:h-[160vh]" style={containerStyles}>
+    <section
+      className="relative z-0 w-full h-full md:h-[120vh] lg:h-[160vh] xl:h-[160vh]"
+      style={containerStyles}
+    >
       <div className="absolute inset-0 bg-primary opacity-80"></div>
-      <div className="mx-10 sm:mx-10 md:mx-24 lg:mx-24 xl:mx-24   py-24 sm:py-24 md:py-24 lg:py-52 ">
+      <div className="mx-10 sm:mx-10 md:mx-24 lg:mx-24 xl:mx-24   py-24 sm:py-24 md:py-24 lg:py-52 font-nudista font-light">
         {[
           "Connecticut's first",
-          <span key="1" className="font-nudista">
+          <span key="1" className="font-nudista font-bold">
             100% turn-key
           </span>,
-          <span key="2" className="font-nudista">
+          <span key="2" className="font-nudista font-bold">
             passive cultivation
           </span>,
           <>
-            <span key="3" className="font-nudista">
+            <span key="3" className="font-nudista font-bold">
               facility
             </span>{' '}
             built and
@@ -220,7 +223,7 @@ const AnimationPage = () => {
         ].map((text, idx) => (
           <h1
             key={idx}
-            className={`heading-title line text-5xl tracking-tight font-nudistaLight sm:text-6xl md:text-7xl lg:text-[9rem] xl:text-[9rem] drop-shadow-md`}
+            className={`heading-title line text-5xl tracking-tight font-nudista font-light sm:text-6xl md:text-7xl lg:text-[9rem] xl:text-[9rem] drop-shadow-md`}
             style={{ lineHeight: '1.2' }} // Inline style for full coverage
           >
             {text}

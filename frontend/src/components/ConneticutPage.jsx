@@ -14,7 +14,7 @@ const ConneticutPage = () => {
       <div className="text-center mb-8">
         <div className="flex justify-center items-center">
           <div className="border-t-4 border-secondary w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[20rem] sm:mt-1 md:mt-1 lg:mt-1 "></div>
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl mx-4 sm:mx-6 md:mx-8 lg:mx-10 text-black font-nudistaLight">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl mx-4 sm:mx-6 md:mx-8 lg:mx-10 text-black font-nudista">
             An Industry poised for{' '}
             <span className="font-extrabold font-nudista mb-44">
               explosive growth
@@ -35,7 +35,7 @@ const ConneticutPage = () => {
           <div className="absolute top-0 left-0 w-full h-full bg-[#759157] opacity-50"></div>
         </div>
         <div className="mt-5  md:mt-20 lg:mt-28 md:mx-16 lg:ml-36 mx-3 ">
-          <h4 className="text-md md:text-lg lg:text-xl xl:text-3xl font-nudista ">
+          <h4 className="text-md md:text-lg lg:text-xl xl:text-3xl font-nudista font-bold">
             Welcome to our facility
           </h4>
           <p className="text-xs  md:text-xs lg:text-base w-full md:w-full lg:w-4/6  font-sora mt-3 leading-3 text-gray-500 text-left">
@@ -74,7 +74,7 @@ const ConneticutPage = () => {
               className="text-xs md:text-lg w-1/2 md:w-1/2
             mt-[0rem] md:mt-[0rem] lg:mt-0 xl:mt-0
             -mr-[1rem] md:-mr-[0.5rem] lg:-mr-9 xl:-mr-9
-             lg:w-[50%] lg:text-[1.62rem]  font-nudista "
+             lg:w-[50%] lg:text-[1.62rem]  font-nudista font-bold"
             >
               Precision in Cultivation
             </p>

@@ -4,10 +4,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        nudista: ['"Nudista"'],
-        nudistaLight: ['"NudistaLight"'],
-        sora: ['"Sora"'],
+        nudista: ['"Nudista"', 'sans-serif'], // Fallback to sans-serif
+        sora: ['"Sora"', 'sans-serif'], // Fallback to sans-serif
       },
+      fontWeight: {
+      light: 300,
+      bold: 700,
+    },
       colors: {
         primary: '#077761',
         secondary: '#f66205',

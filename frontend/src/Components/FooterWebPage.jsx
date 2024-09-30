@@ -2,7 +2,7 @@ import React from 'react';
 import ecgWhiteLogo from '../assets/images/ecg-white-logo.png';
 import footerBg from '../assets/images/footerBg.webp';
 
-const FooterPAge = () => {
+const FooterWebPage = () => {
   return (
     <div className="relative">
       {/* Footer */}
@@ -10,8 +10,9 @@ const FooterPAge = () => {
         <div id="contact" className="flex flex-row justify-center">
           {/* Contact Form */}
           <div className="absolute h-fit w-fit z-40 bg-white justify-center text-center -mt-44 md:-mt-56 lg:-mt-44 rounded-2xl p-8  md:p-12 lg:p-12 lg:mx-0 md:ml-10 mx-4">
-            <p className="text-black text-md md:text-2xl lg:text-4xl  mb-4 font-nudistaLight">
-              Request a call from <span className='font-nudista'>our team{' '}</span>
+            <p className="text-black text-md md:text-2xl lg:text-4xl  mb-4 font-nudista font-light ">
+              Request a call from{' '}
+              <span className="font-nudista font-bold">our team </span>
             </p>
 
             <form className="flex flex-col justify-center items-center gap-4 mt-6 text-xs md:text-md lg:text-lg">
@@ -99,4 +100,4 @@ const FooterPAge = () => {
   );
 };
 
-export default FooterPAge;
+export default FooterWebPage;

@@ -37,9 +37,9 @@
 //           <h2
 //             className="text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl
 //                          mx-10 sm:mx-10 md:mx-10 lg:mx-5 xl:mx-10
-//                           text-black font-nudistaLight"
+//                           text-black font-nudista font-bold"
 //           >
-//             The <span className="font-nudista mb-44">East Coast Growers</span>{' '}
+//             The <span className="font-nudista font-bold mb-44">East Coast Growers</span>{' '}
 //             Advantage
 //           </h2>
 //           <div className="border-t-4 border-primary w-[15rem] mt-1"></div>
@@ -121,9 +121,12 @@ const AdvPage = () => {
           <h2
             className="text-2xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl
             mx-10 sm:mx-10 md:mx-10 lg:mx-5 xl:mx-10
-            text-black font-nudistaLight"
+            text-black font-nudista font-light"
           >
-            The <span className="font-nudista mb-44">East Coast Growers</span>{' '}
+            The{' '}
+            <span className="font-nudista font-bold mb-44">
+              East Coast Growers
+            </span>{' '}
             Advantage
           </h2>
           <div className="border-t-4 border-primary w-[15rem] mt-1"></div>
@@ -139,7 +142,7 @@ const AdvPage = () => {
               hover:scale-105  hover:shadow-lg hover:text-white2 hover:bg-primary
               transition-transform duration-500 ease-in-out"
           >
-            <h3 className="text-xl font-bold mb-2 font-nudista">
+            <h3 className="text-xl  mb-2 font-nudista font-bold">
               {advantage.title}
             </h3>
             <p className="font-sora text-xs md:text-md lg:text-base">
@@ -153,9 +156,9 @@ const AdvPage = () => {
             key={index + 4}
             className="p-6 bg-white2 shadow-md border border-gray-200 rounded-lg
               hover:scale-105  hover:shadow-lg hover:text-white2 hover:bg-primary hover:duration-500
-              transition-transform duration-500 ease-in-out" 
+              transition-transform duration-500 ease-in-out"
           >
-            <h3 className="text-xl font-bold  mb-2 font-nudista">
+            <h3 className="text-xl   mb-2 font-nudista font-bold">
               {advantage.title}
             </h3>
             <p className=" font-sora text-xs md:text-md lg:text-base">
