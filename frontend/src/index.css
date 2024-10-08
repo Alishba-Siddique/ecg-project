@@ -11,7 +11,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: local('Sora'), url(../src/assets/fonts/Sora-Regular.woff2) format('woff2');
+    src: local('Sora'), url(./styles/fonts/Sora-Regular.woff2) format('woff2');
     unicode-range: U+000-5FF;
   }
   @font-face {
@@ -20,7 +20,7 @@
     font-weight: 300; /* Light */
     font-display: swap;
     src: local('Nudista Light'),
-         url(../src/assets/fonts/Nudista-Light.woff2) format('woff2');
+         url(./styles/fonts/Nudista-Light.woff2) format('woff2');
   }
   @font-face {
     font-family: 'Nudista';
@@ -28,7 +28,7 @@
     font-weight: 700; /* Bold */
     font-display: swap;
     src: local('Nudista Bold'),
-         url(../src/assets/fonts/Nudista-Bold.woff2) format('woff2');
+         url(./styles/fonts/Nudista-Bold.woff2) format('woff2');
   }
   
       

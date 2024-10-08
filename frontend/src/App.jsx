@@ -1,7 +1,6 @@
 import './App.css';
-import HeaderPage from './Components/HeaderPage';
+// import HeaderPage from './Components/HeaderPage';
 import AnimationPage from './components/TextAnimationPage';
-import ConneticutPage from './components/ConneticutPage';
 import HeroPage from './components/HeroPage';
 import TeamPage from './components/TeamPage';
 import DownloadPdfPage from './components/DownloadPdfPage';
@@ -9,12 +8,13 @@ import ScrollTrigger from './utilities/ScrollToTopButton';
 import AdvPage from './components/AdvPage';
 import NavbarPage from './components/NavbarPage';
 import PhotoVideoPage from './components/PhotoVideoPage';
-import EGrowthPage from './components/EGrowthPage';
 import { useState, useEffect } from 'react';
 import Loader from './components/Loader';
 import './styles/fade.css';
-import InfoPage from './components/InfoPage';
 import FooterWebPage from './components/FooterWebPage';
+import EbookPage from './components/EbookPage';
+import InvestmentPage from './components/InvestmentPage';
+import GrowthPage from './components/GrowthPage';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -23,7 +23,7 @@ function App() {
     // Simulate loading time before showing website content
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 10000); // Adjust timing as needed
+    }, 1000); // Adjust timing as needed
     return () => clearTimeout(timer);
   }, []);
 
@@ -32,21 +32,21 @@ function App() {
       {loading ? (
         <Loader />
       ) : (
-        <div className='-mb-8 fade-in'>
+        <div className="-mb-8 fade-in">
           <NavbarPage />
           {/* <HeaderPage /> */}
           <HeroPage />
           <AnimationPage />
-          <ConneticutPage />
+          <GrowthPage />
           <DownloadPdfPage />
-          <EGrowthPage />
+          <InvestmentPage />
           <AdvPage />
           <PhotoVideoPage />
           <TeamPage />
-          <ScrollTrigger />
-          <InfoPage />
+          {/* <ScrollTrigger /> */}
+          <EbookPage />
           <FooterWebPage />
-          </div>
+        </div>
       )}
       ;
     </>

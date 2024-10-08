@@ -8,9 +8,14 @@ export default {
         sora: ['"Sora"', 'sans-serif'], // Fallback to sans-serif
       },
       fontWeight: {
-      light: 300,
-      bold: 700,
-    },
+        light: 300,
+        bold: 700,
+      },
+      screens: {
+        
+        largestLaptop: "2560px",
+        mediumLaptop: "1440px",
+      },
       colors: {
         primary: '#077761',
         secondary: '#f66205',

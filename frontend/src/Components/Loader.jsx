@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ecgWhiteLogo from '../assets/images/ecg-white-logo.png';
+import ecgWhiteLogo from '../assets/images/ecg-white-logo.webp';
 
 const Loader = () => {
   const [progress, setProgress] = useState(0);
@@ -15,7 +15,7 @@ const Loader = () => {
           return 100;
         }
       });
-    }, 99); // Increment progress every 50ms (adjust as needed)
+    }, 38); // Increment progress every 50ms (adjust as needed)
 
     return () => clearInterval(interval);
   }, []);
@@ -49,17 +49,27 @@ const Loader = () => {
         </svg>
 
         {/* Bouncing Image */}
-        <div className="w-44 h-44 animate-bounce -mb-10">
+        <div
+          className="w-44 sm:w-44  md:w-44 lg:w-44 mediumLaptop:w-44 xl:w-44 2xl:w-80 largestLaptop:w-80
+             h-44 sm:h-44 md:h-44 lg:h-44 mediumLaptop:h-44 xl:h-44 2xl:h-80 largestLaptop:h-80
+        animate-bounce -mb-10"
+        >
           <img
             src={ecgWhiteLogo}
-            alt="Cannabis Leaf"
-            className="w-44 h-44 object-contain drop-shadow-lg"
+            alt="ecgWhiteLogo"
+            className="w-44 sm:w-44  md:w-44 lg:w-44 mediumLaptop:w-44 xl:w-44 2xl:w-80 largestLaptop:w-80
+             h-44 sm:h-44 md:h-44 lg:h-44 mediumLaptop:h-44 xl:h-44 2xl:h-80 largestLaptop:h-80
+             object-contain drop-shadow-lg"
           />
         </div>
       </div>
 
       {/* Text Animation and Loading Percentage */}
-      <h1 className="mt-5 text-white text-3xl font-nudista font-bold tracking-widest animate-pulse">
+      <h1
+        className="mt-5 text-white
+       text-2xl sm:text-2xl md:text-2xl lg:text-4xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-4xl
+       font-nudista font-bold tracking-widest animate-pulse"
+      >
         Growing... {progress}%
       </h1>
     </div>

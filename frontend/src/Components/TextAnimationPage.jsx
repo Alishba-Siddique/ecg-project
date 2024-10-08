@@ -200,11 +200,12 @@ const AnimationPage = () => {
 
   return (
     <section
-      className="relative z-0 w-full h-full md:h-[120vh] lg:h-[160vh] xl:h-[160vh]"
+      className="relative z-0  h-full sm:h-full md:h-full lg:h-[73rem] mediumLaptop:h-[83rem] xl:h-[65rem] 2xl:h-[97rem] largestLaptop:h-[115rem]"
       style={containerStyles}
     >
       <div className="absolute inset-0 bg-primary opacity-80"></div>
-      <div className="mx-10 sm:mx-10 md:mx-24 lg:mx-24 xl:mx-24   py-24 sm:py-24 md:py-24 lg:py-52 font-nudista font-light">
+      <div className="mx-10 sm:mx-10 md:mx-24 lg:mx-24 mediumLaptop:mx-24 xl:mx-24 2xl:mx-24 largestLaptop:mx-44
+        py-24 sm:py-24 md:py-24 lg:py-52 mediumLaptop:py-52 xl:py-44 2xl:py-72 largestLaptop:py-72 font-nudista font-light">
         {[
           "Connecticut's first",
           <span key="1" className="font-nudista font-bold">
@@ -223,7 +224,8 @@ const AnimationPage = () => {
         ].map((text, idx) => (
           <h1
             key={idx}
-            className={`heading-title line text-5xl tracking-tight font-nudista font-light sm:text-6xl md:text-7xl lg:text-[9rem] xl:text-[9rem] drop-shadow-md`}
+            className={`heading-title line  tracking-tight font-nudista font-light 
+            text-5xl sm:text-6xl md:text-7xl lg:text-[6.6rem] mediumLaptop:text-[9rem] xl:text-[6.6rem]  2xl:text-[10rem] largestLaptop:text-[12rem] drop-shadow-md`}
             style={{ lineHeight: '1.2' }} // Inline style for full coverage
           >
             {text}

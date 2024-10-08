@@ -33,7 +33,7 @@ const HeaderPage = () => {
 
   return (
     <header
-      className={`fixed w-full bg-transparent text-white2  transition-transform duration-300  z-30 ${
+      className={`fixed w-full bg-transparent text-white  transition-transform duration-300  z-30 ${
         scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'
       }`}
     >
@@ -78,7 +78,7 @@ const HeaderPage = () => {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <nav className="md:hidden bg-white2 bg-opacity-90 p-4 flex flex-col items-center font-sora space-y-4">
+        <nav className="md:hidden bg-white bg-opacity-90 p-4 flex flex-col items-center font-sora space-y-4">
           <a
             href="#our-history"
             className="text-primary hover:text-secondary text-center"
@@ -143,7 +143,7 @@ export default HeaderPage;
 
 //   return (
 //     <header
-//       className={`fixed w-full bg-transparent text-white2 transition-transform duration-300 z-50 ${
+//       className={`fixed w-full bg-transparent text-white transition-transform duration-300 z-50 ${
 //         scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'
 //       }`}
 //     >
@@ -188,7 +188,7 @@ export default HeaderPage;
 
 //       {/* Mobile Dropdown Menu */}
 //       {isOpen && (
-//         <nav className="md:hidden bg-white2 bg-opacity-90 p-4 flex flex-col items-center font-nudista font-light  space-y-4">
+//         <nav className="md:hidden bg-white bg-opacity-90 p-4 flex flex-col items-center font-nudista font-light  space-y-4">
 //           <a
 //             href="#our-history"
 //             className="text-primary hover:text-secondary text-center"

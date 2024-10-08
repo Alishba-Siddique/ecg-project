@@ -1,15 +1,36 @@
 //Created by Alishba
-import React from 'react';
-import logoImage from '../assets/images/ecg-logo.png';
-import quoteImage from '../assets/images/quote-mark.jpg';
-
+import React, { useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import overlayTextIcon from '../assets/images/overlayTextIcon.png';
+import heroVideo from '../assets/videos/bgVideo.mp4';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const HeroPage = () => {
+  useEffect(() => {
+    // Title Section Animation
+    gsap.fromTo(
+      '#white-section',
+      { x: 100, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: '#white-section',
+          start: 'top 90%',
+          end: 'bottom 60%',
+          toggleActions: 'play none none reverse',
+        },
+      }
+    );
+  }, []);
+
   return (
     <>
       {/* Hero Section */}
-      <div className="hero h-[110vh] relative overflow-x-hidden ">
+      <div className="hero h-[118vh] sm:h-[118vh] md:h-[118vh] lg:h-[118vh] mediumLaptop:h-[118vh] xl:h-[118vh]2xl:h-[118vh] largestLaptop:h-[118vh] relative overflow-x-hidden ">
         <video
           autoPlay
           loop
@@ -17,10 +38,7 @@ const HeroPage = () => {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source
-            src="https://media.istockphoto.com/id/1335389647/video/senior-farmer-watering-the-plant-cannabis-plants-grow-in-a-greenhouse-at-a-facility-under-the.mp4?s=mp4-640x640-is&amp;k=20&amp;c=zP43A4TPXUgxZaVGxIOr4mXfNPHua4ojIhX6to0NFcQ="
-            type="video/webm"
-          />
+          <source src={heroVideo} type="video/mp4" />
         </video>
 
         {/* Black Overlay */}
@@ -29,103 +47,80 @@ const HeroPage = () => {
         {/* Centered Text Content */}
         <div
           className="absolute inset-0 flex flex-col items-start justify-center
-                   text-white2 mx-10 sm:mx-10 md:mx-24 lg:mx-24 xl:mx-24 "
+                   text-white 
+                     mx-10 sm:mx-10 md:mx-14 lg:mx-24 mediumLaptop:mx-24 xl:mx-24 2xl:mx-24 largestLaptop:mx-44"
         >
           <p
-            className="font-nudista font-light text-left drop-shadow-md
-                       text-2xl sm:text-2xl md:text-4xl lg:text-7xl xl:text-7xl"
+            className="font-nudista font-light text-left drop-shadow-mdl
+                          text-2xl sm:text-2xl md:text-4xl lg:text-5xl mediumLaptop:6xl xl:text-6xl 2xl:text-7xl largestLaptop:text-8xl"
           >
             Your Ticket Into
           </p>
           <p
             className="font-nudista font-bold text-left
-                       text-3xl sm:text-3xl md:text-5xl lg:text-7xl xl:text-7xl
-                       mt-2
+                       text-3xl sm:text-3xl md:text-5xl lg:text-6xl mediumLaptop:7xl xl:text-7xl 2xl:text-7xl largestLaptop:text-9xl
+                       mt-2 sm:mt-2 md:mt-4 lg:mt-4 mediumLaptop:mt-4 xl:mt-4 2xl:mt-8 largestLaptop:mt-8 
                        drop-shadow-md"
           >
             The Cannabis Industry
           </p>
           <p
             className="font-sora text-left 
-                      text-xs md:text-sm lg:text-sm xl:text-base  
-                      mt-3
-                      ml-0 md:ml-3 lg:ml-3
-                      w-11/12 sm:w-11/12 md:w-11/12 lg:w-3/4 xl:w-[43%] drop-shadow-md"
+                      text-xs md:text-sm lg:text-sm mediumLaptop:text-lg xl:text-sm 2xl:text-lg largestLaptop:text-3xl
+                      mt-2 sm:mt-2 md:mt-4 lg:mt-4 mediumLaptop:mt-4 xl:mt-4 2xl:mt-8 largestLaptop:mt-8 
+                      ml-0 sm:ml-0 md:ml-3 lg:ml-3 medimLaptop:ml-3 xl:ml-3 2xl:ml-3 largestLaptop:ml-5
+                      w-11/12 sm:w-11/12 md:w-[75%] lg:w-[55%]  mediumLaptop:w-[55%] xl:w-full 2xl:w-full largestLaptop:w-full drop-shadow-md"
           >
-            By integrating advanced tech with proven cultivation methodology we
-            create significant value for our consumers and the market
+            Unlocking unprecedented opportunities for success in a market poised
+            for explosive growth
           </p>
-          {/* <button
-            className="font-nudista font-light  text-white2 bg-secondary hover:bg-accent 
-                   btn btn-xs sm:btn-sm md:btn-md lg:btn-md border-none ml-0 md:ml-3 lg:ml-3
-                   mt-5 md:mt-8 lg:mt-8"
-          >
-            Read More
-          </button> */}
           <button
-            className="btn text-xs md:text-sm lg:text-base bg-secondary border-none text-white hover:bg-black font-sora px-5 md:px-5 lg:px-16 ml-0 md:ml-3 lg:ml-3
-                   mt-5"
+            className=" text-xs sm:text-xs md:text-sm lg:text-sm mediumLaptop:text-base xl:text-base 2xl:text-lg largestLaptop:text-3xl 
+             bg-secondary border-none text-white hover:bg-black font-sora 
+                   px-3 md:px-3 lg:px-6 xl:px-4 2xl:px-6 largestLaptop:px-20
+                   py-3 md:py-3 lg:py-3 xl:py-3 2xl:py-4 largestLaptop:py-4
+                   rounded-lg
+                   ml-0 sm:ml-0 md:ml-3 lg:ml-3 medimLaptop:ml-3 xl:ml-3 2xl:ml-3 largestLaptop:ml-5
+                   mt-2 sm:mt-2 md:mt-4 lg:mt-4 mediumLaptop:mt-4 xl:mt-4 2xl:mt-8 largestLaptop:mt-8 "
           >
-            Read more{' '}
+            Learn More{' '}
           </button>
         </div>
       </div>
 
       {/* Overlap Container */}
       <div
+        id="white-section"
         className="card card-side
-                     -mb-[3rem] sm:-mb-[3rem] md:-mb-[3rem] lg:-mb-[5rem]
-                     -mt-[4rem] sm:-mt-[4rem] md:-mt-[4rem] lg:-mt-[7.5rem]
-                      ml-[4rem] sm:ml-[10rem] md:ml-[25rem] lg:ml-[53rem]
+                     -mb-[3rem] sm:-mb-[3rem] md:-mb-[3rem] lg:-mb-[5rem] mediumLaptop:-mb-[5.3rem] xl:-mb-[5.5rem] 2xl:-mb-[5rem] largestLaptop:-mb-[5rem]
+                      ml-[3rem] sm:ml-[20rem] md:ml-[25rem] lg:ml-[32rem] mediumLaptop:ml-[50rem] xl:ml-[45rem] 2xl:ml-[55rem] largestLaptop:ml-[115rem]
+                      -mt-[4rem] sm:-mt-[4rem] md:-mt-[4rem]  lg:-mt-[7.5rem] mediumLaptop:-mt-[7.5rem] xl:-mt-[9rem] 2xl:-mt-[7.5rem] largestLaptop:-mt-[9rem]
                       z-50 rounded-lg"
       >
-        <figure className="bg-white2">
+        <figure className="bg-white">
           <div
-            className="w-5  md:w-8 lg:w-12
-                       ml-2 md:ml-3 lg:ml-8
-                       mt-16 md:mt-6 lg:mt-24 "
+            className="w-10 sm:w-10 md:w-10 lg:w-14 mediumLaptop:w-20 xl:w-16 2xl:w-16 largestLaptop:w-16
+                       ml-2 sm:ml-2 md:ml-3 lg:ml-8 mediumLaptop:ml-8 xl:ml-8 2xl:ml-8 largestLaptop:ml-8 
+                       mt-16 sm:mt-16 md:mt-12 lg:mt-20 mediumLaptop:mt-24 xl:mt-20 2xl:mt-24 largestLaptop:mt-24"
           >
             <img className="rounded-lg" src={overlayTextIcon} />
           </div>
         </figure>
         <div
-          className="p-2 md:p-2 lg:p-8
-                    bg-white2 rounded-e-lg"
+          className="p-2 sm:p-2 md:p-4 lg:p-6 mediumLaptop:p-8 xl:p-8 2xl:p-8 largestLaptop:p-8
+                    bg-white rounded-e-lg w-3/4 "
         >
-          {/* <svg
-            className="w-6 sm:w-6 md:w-6 lg:w-10
-                      -mb-[1rem] sm:-mb-[0.8rem] md:-mb-[2rem] lg:-mb-[2rem]
-                      -mt-[0.6rem] sm:-mt-[0.2rem] md:-mt-[0.3rem] lg:-mt-[0.6rem]
-                      -ml-[0.5rem] sm:-ml-[0.5rem] md:-ml-[0.5rem] lg:-ml-[1rem]
-                      rounded-lg z-10 opacity-20"
-            clipRule="evenodd"
-            fillRule="evenodd"
-            strokeLinejoin="round"
-            strokeMiterlimit="2"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m2.699 20c-.411 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.016.092-4.326-2.582-4.326-4.258 0-2.006 1.738-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.834 10.693-8.468 10.693zm10.833 0c-.41 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.015.092-4.326-2.582-4.326-4.258 0-2.006 1.739-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.833 10.693-8.468 10.693z"
-              fill="#111111"
-            />
-          </svg> */}
           <p
-            className="text-xs sm:text-xs md:text-xs lg:text-lg
-                       mt-3 md:mt-0 lg:mt-0
-                       font-nudista font-light 
-                       "
+            className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-base mediumLaptop:text-base xl:text-base 2xl:text-lg largestLaptop:text-lg
+                       
+                       mt-3 sm:mt-3 md:mt-0 lg:-mt-0 mediumLaptop:mt-0 xl:mt-0 2xl:mt-0 largestLaptop:mt-0
+                       font-sora text-left drop-shadow-mdl"
           >
-            The United States cannabis industry <br />
-            is poised for explosive growth and projected <br />
-            to reach $57 billion by 2028.
+            At our state-of-the-art craft cannabis cultivation facility, we
+            combine meticulous cultivation practices with expert curation to
+            produce the highest quality cannabis products available on the
+            market
           </p>
-          {/* <p
-            className="text-xs sm:text-xs md:text-xs lg:text-lg
-                       opacity-50"
-          >
-            <i className="fas fa-user"></i> Andrew Borner
-          </p> */}
         </div>
       </div>
     </>
