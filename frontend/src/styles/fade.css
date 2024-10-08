@@ -1,0 +1,54 @@
+/* App.css */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px); /* Slight downward movement */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease; /* Adjust duration for smoother effect */
+  }
+
+    /* Slide from top */
+  .slide-in-top {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+
+  .slide-in-top.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* Slide from left */
+  .slide-in-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+
+  .slide-in-left.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* Slide from right */
+  .slide-in-right {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+
+  .slide-in-right.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+
+

@@ -1,0 +1,670 @@
+// import React from 'react';
+// import conneticutImg1 from '../assets/images/conneticutImg1.webp';
+// import threeDBud from '../assets/images/3dBud.webp';
+// import conneticutImg2 from '../assets/images/conneticutImg2.webp';
+// // import conneticutImg2 from '../assets/images/conneticutImg3.webp';
+// import conneticutImg3 from '../assets/images/conneticutImg3.webp';
+// import windMillIcon from '../assets/images/windmill.svg';
+// import overlayTextIconOrange from '../assets/images/overlayTextIconOrange.png';
+
+// const ConneticutPage = () => {
+//   return (
+//     <div className="w-full h-full mt-28 mb-[12rem]">
+//       {/* Title Section */}
+//       <div className="text-center mb-8">
+//         <div className="flex justify-center items-center">
+//           <div className="border-t-4 border-secondary w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[20rem] sm:mt-1 md:mt-1 lg:mt-1 "></div>
+//           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl mx-4 sm:mx-6 md:mx-8 lg:mx-10 text-black font-nudista">
+//             An Industry poised for{' '}
+//             <span className="font-extrabold font-nudista mb-44">
+//               explosive growth
+//             </span>{' '}
+//           </h2>
+//           <div className="border-t-4 border-secondary w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[20rem] mt-1"></div>
+//         </div>
+//       </div>
+
+//       {/* Main Content Section */}
+//       <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-0 mx-8 sm:ml-7 md:ml-16 lg:-ml-[1rem] md:gap-10 lg:gap-10">
+//         <div className="relative w-[95%] md:w-[110%] lg:w-[103%] sm:h-full md:h-full lg:h-[23rem] scale-y-100 md:scale-y-110 lg:scale-y-150 mt-6 md:mt-10 lg:mt-36  md:ml-[7rem] lg:ml-[16rem]">
+//           <img
+//             src={conneticutImg1}
+//             alt="conneticutImg1"
+//             className="w-full h-full"
+//           />
+//           <div className="absolute top-0 left-0 w-full h-full bg-[#759157] opacity-50"></div>
+//         </div>
+//         <div className="mt-5  md:mt-20 lg:mt-28 md:mx-16 lg:ml-36 mx-3 ">
+//           <h4 className="text-base md:text-lg lg:text-xl xl:text-3xl font-nudista font-bold">
+//             Welcome to our facility
+//           </h4>
+//           <p className="text-xs  md:text-xs lg:text-base w-full md:w-full lg:w-4/6  font-sora mt-3 leading-3 text-gray-500 text-left">
+//             Our planned 42,000 Square foot facility is located in the bustling
+//             locally of East Hartford, CT.
+//           </p>
+//           <img
+//             src={threeDBud}
+//             alt="conneticutImg2"
+//             className="w-[70%] md:w-full lg:w-[75%]  xl:w-[75%]
+//             ml-[3rem] md:-ml-[1rem] lg:ml-[2.1rem] xl:ml-[3rem]
+//             mt-8 md:mt-[1.3rem] lg:mt-[9rem] xl:mt-[9rem]
+//             -mb-[2.5rem] md:-mb-[2.5rem] lg:-mb-[2rem]"
+//           />
+//         </div>
+//       </div>
+
+//       {/* Image and Content Row */}
+//       <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center mt-10 md:-mt-[1rem] lg:-mt-[3rem] ml-[0rem] md:ml-[9rem] lg:ml-[14rem] drop-shadow-lg">
+//         <div className="relative z-50 w-[80%] md:w-[95%] lg:w-[95%] xl:w-[95%] order-2 md:order-1 lg:order-1 xl:order-1">
+//           <img
+//             src={conneticutImg2}
+//             alt="conneticutImg2"
+//             className="  w-full
+//              h-full md:h-[90%] lg:h-[90%] xl:h-[90%]"
+//           />
+//           <div className="grid grid-rows-3 justify-items-end -mt-[17rem] md:-mt-[19.5rem] lg:-mt-[22rem] gap-4 md:gap-4 lg:gap-4  mr-3 md:mr-3  lg:mr-7 ">
+//             <img
+//               // src={windMillIcon}
+//               src={overlayTextIconOrange}
+//               alt="windMillIcon"
+//               className="mt-[2rem] md:mt-[4rem] lg:-mt-[10rem] xl:-mt-[10rem] w-[2rem]  md:w-[2rem] lg:w-[4rem] xl:w-[4rem]"
+//             />
+
+//             <p
+//               className="text-xs md:text-lg w-1/2 md:w-1/2
+//             mt-[0rem] md:mt-[0rem] lg:mt-0 xl:mt-0
+//             -mr-[1rem] md:-mr-[0.5rem] lg:-mr-9 xl:-mr-9
+//              lg:w-[50%] lg:text-[1.62rem]  font-nudista font-bold"
+//             >
+//               Precision in Cultivation
+//             </p>
+//             <p
+//               className="text-[0.6rem] md:text-[0.6rem] lg:text-base font-sora
+//             -mt-[3.3rem]  md:-mt-[3.5rem] lg:-mt-[2rem]
+//             -mr-[1rem] md:-mr-[0.5rem] lg:-mr-0 xl:-mr-0
+//             w-[50%] lg:w-[45%] md:w-[50%]"
+//             >
+//               Our team of trained experts deliver exceptional value to both our
+//               customers and the market by keeping yields and proﬁts high.
+//             </p>
+//             <div className="flex items-center -mt-[3rem]  md:-mt-[7rem] lg:-mt-[0rem]  ">
+//               <button
+//                 className="btn text-[0.6rem] md:text-xs lg:text-base bg-black text-white
+//                hover:bg-secondary font-sora  mr-16 md:mr-14 lg:mr-[7.5rem] xl:mr-[7.5rem]
+//                px-2 md:px-2 lg:px-16 "
+//               >
+//                 Learn More
+//               </button>
+//             </div>
+//           </div>
+//         </div>
+
+//         <div className="relative w-[80%] md:w-[95%] lg:w-[90%] xl:w-[90%] mr-0 md:mr-28 lg:mr-40 order-1 md:order-2 lg:order-2 xl:order-2">
+//           <img
+//             src={conneticutImg3}
+//             alt="conneticutImg3"
+//             className="w-full h-full md:h-[90%] lg:h-[90%] xl:h-[90%] "
+//           />
+//           <div className="absolute top-0 left-0 w-full h-full md:h-[90%] lg:h-[90%] xl:h-[90%] bg-[#759157] opacity-50"></div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ConneticutPage;
+
+// import React, { useEffect, useState } from 'react';
+// import conneticutImg1 from '../assets/images/conneticutImg1.webp';
+// import threeDBud from '../assets/images/3dBud.webp';
+// import conneticutImg2 from '../assets/images/conneticutImg2.webp';
+// import conneticutImg3 from '../assets/images/conneticutImg3.webp';
+// import overlayTextIconOrange from '../assets/images/overlayTextIconOrange.png';
+// import '../styles/fade.css';
+
+// const ConneticutPage = () => {
+//   const [isTitleVisible, setIsTitleVisible] = useState(false);
+//   const [isMainVisible, setIsMainVisible] = useState(false);
+//   const [isImageRowVisible, setIsImageRowVisible] = useState(false);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const titleSection = document.querySelector('#title-section');
+//       const mainContentSection = document.querySelector(
+//         '#main-content-section'
+//       );
+//       const imageContentRow = document.querySelector('#image-content-row');
+
+//       if (titleSection.getBoundingClientRect().top < window.innerHeight) {
+//         setIsTitleVisible(true);
+//       }
+
+//       if (mainContentSection.getBoundingClientRect().top < window.innerHeight) {
+//         setIsMainVisible(true);
+//       }
+
+//       if (imageContentRow.getBoundingClientRect().top < window.innerHeight) {
+//         setIsImageRowVisible(true);
+//       }
+//     };
+
+//     window.addEventListener('scroll', handleScroll);
+//     return () => {
+//       window.removeEventListener('scroll', handleScroll);
+//     };
+//   }, []);
+
+//   return (
+//     <div className="w-full h-full mt-28 mb-[12rem]">
+//       {/* Title Section */}
+//       <div
+//         id="title-section"
+//         className={`text-center mb-8 slide-in-top ${
+//           isTitleVisible ? 'active' : ''
+//         }`}
+//       >
+//         <div className="flex justify-center items-center">
+//           <div className="border-t-4 border-secondary w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[20rem] sm:mt-1 md:mt-1 lg:mt-1 "></div>
+//           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl mx-4 sm:mx-6 md:mx-8 lg:mx-10 text-black font-nudista">
+//             An Industry poised for{' '}
+//             <span className="font-extrabold font-nudista mb-44">
+//               explosive growth
+//             </span>{' '}
+//           </h2>
+//           <div className="border-t-4 border-secondary w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[20rem] mt-1"></div>
+//         </div>
+//       </div>
+
+//       {/* Main Content Section */}
+//       <div
+//         id="main-content-section"
+//         className={`grid grid-cols-1 md:grid-cols-2 justify-items-center gap-0 mx-8 sm:ml-7 md:ml-16 lg:-ml-[1rem] md:gap-10 lg:gap-10 slide-in-left ${
+//           isMainVisible ? 'active' : ''
+//         }`}
+//       >
+//         <div className="relative w-[95%] md:w-[110%] lg:w-[103%] sm:h-full md:h-full lg:h-[23rem] scale-y-100 md:scale-y-110 lg:scale-y-150 mt-6 md:mt-10 lg:mt-36  md:ml-[7rem] lg:ml-[16rem]">
+//           <img
+//             src={conneticutImg1}
+//             alt="conneticutImg1"
+//             className="w-full h-full"
+//           />
+//           <div className="absolute top-0 left-0 w-full h-full bg-[#759157] opacity-50"></div>
+//         </div>
+//         <div className="mt-5  md:mt-20 lg:mt-28 md:mx-16 lg:ml-36 mx-3 ">
+//           <h4 className="text-base md:text-lg lg:text-xl xl:text-3xl font-nudista font-bold">
+//             Welcome to our facility
+//           </h4>
+//           <p className="text-xs  md:text-xs lg:text-base w-full md:w-full lg:w-4/6  font-sora mt-3 leading-3 text-gray-500 text-left">
+//             Our planned 42,000 Square foot facility is located in the bustling
+//             locally of East Hartford, CT.
+//           </p>
+//         </div>
+//       </div>
+//       <img
+//         src={threeDBud}
+//         alt="conneticutImg2"
+//         className={`  w-[60%] md:w-[28%] lg:w-[28%]  xl:w-[28%]
+//             ml-[5rem] md:ml-[28rem] lg:ml-[71rem] xl:ml-[71rem]
+//             mt-8 md:-mt-[2rem] lg:mt-[9rem] xl:-mt-[10rem]
+//             -mb-[2.5rem] md:mb-[1rem] lg:mb-[3rem]
+
+//             slide-in-right ${isImageRowVisible ? 'active' : '' }`}
+//       />
+
+//       {/* Image and Content Row */}
+//       <div
+//         id="image-content-row"
+//         className={`grid grid-cols-1 md:grid-cols-2 justify-items-center mt-10 md:-mt-[1rem] lg:-mt-[3rem] ml-[0rem] md:ml-[9rem] lg:ml-[14rem] drop-shadow-lg slide-in-right ${
+//           isImageRowVisible ? 'active' : ''
+//         }`}
+//       >
+//         <div className="relative z-50 w-[80%] md:w-[95%] lg:w-[95%] xl:w-[95%] order-2 md:order-1 lg:order-1 xl:order-1">
+//           <img
+//             src={conneticutImg2}
+//             alt="conneticutImg2"
+//             className="w-full h-full md:h-[90%] lg:h-[90%] xl:h-[90%]"
+//           />
+//           <div className="grid grid-rows-3 justify-items-end -mt-[17rem] md:-mt-[19.5rem] lg:-mt-[22rem] gap-4 md:gap-4 lg:gap-4  mr-3 md:mr-3  lg:mr-7 ">
+//             <img
+//               src={overlayTextIconOrange}
+//               alt="windMillIcon"
+//               className="mt-[2rem] md:mt-[4rem] lg:-mt-[10rem] xl:-mt-[10rem] w-[2rem] md:w-[2rem] lg:w-[4rem] xl:w-[4rem]"
+//             />
+//             <p
+//               className="text-xs md:text-lg w-1/2 md:w-1/2
+//             mt-[0rem] md:mt-[0rem] lg:mt-0 xl:mt-0
+//             -mr-[1rem] md:-mr-[0.5rem] lg:-mr-9 xl:-mr-9
+//              lg:w-[50%] lg:text-[1.62rem]  font-nudista font-bold"
+//             >
+//               Precision in Cultivation
+//             </p>
+//             <p
+//               className="text-[0.6rem] md:text-[0.6rem] lg:text-base font-sora
+//             -mt-[3.3rem]  md:-mt-[3.5rem] lg:-mt-[2rem]
+//             -mr-[1rem] md:-mr-[0.5rem] lg:-mr-0 xl:-mr-0
+//             w-[50%] lg:w-[45%] md:w-[50%]"
+//             >
+//               Our team of trained experts deliver exceptional value to both our
+//               customers and the market by keeping yields and proﬁts high.
+//             </p>
+//           </div>
+//         </div>
+
+//         <div className="relative w-[80%] md:w-[95%] lg:w-[90%] xl:w-[90%] mr-0 md:mr-28 lg:mr-40 order-1 md:order-2 lg:order-2 xl:order-2">
+//           <img
+//             src={conneticutImg3}
+//             alt="conneticutImg3"
+//             className="w-full h-full md:h-[90%] lg:h-[90%] xl:h-[90%]"
+//           />
+//           <div className="absolute top-0 left-0 w-full h-full md:h-[90%] lg:h-[90%] xl:h-[90%] bg-[#759157] opacity-50"></div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ConneticutPage;
+
+// import React, { useEffect, useRef } from 'react';
+// import gsap from 'gsap';
+// import conneticutImg1 from '../assets/images/conneticutImg1.webp';
+// import threeDBud from '../assets/images/3dBud.webp';
+// import conneticutImg2 from '../assets/images/conneticutImg2.webp';
+// import conneticutImg3 from '../assets/images/conneticutImg3.webp';
+// import overlayTextIconOrange from '../assets/images/overlayTextIconOrange.png';
+// import '../styles/fade.css';
+
+// const ConneticutPage = () => {
+//   const titleRef = useRef(null);
+//   const mainRef = useRef(null);
+//   const imageRowRef = useRef(null);
+//   const budImgRef = useRef(null);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const titleSection = titleRef.current;
+//       const mainContentSection = mainRef.current;
+//       const imageContentRow = imageRowRef.current;
+//       const budImage = budImgRef.current;
+
+//       const animateElement = (element, animation) => {
+//         if (element.getBoundingClientRect().top < window.innerHeight) {
+//           animation.restart();
+//         }
+//       };
+
+//       const titleAnimation = gsap.fromTo(
+//         titleSection,
+//         { opacity: 0, y: -100 },
+//         { opacity: 1, y: 0, duration: 1, paused: true }
+//       );
+
+//       const mainAnimation = gsap.fromTo(
+//         mainContentSection,
+//         { opacity: 0, x: -100 },
+//         { opacity: 1, x: 0, duration: 1, paused: true }
+//       );
+
+//       const imageRowAnimation = gsap.fromTo(
+//         imageContentRow,
+//         { opacity: 0, x: 100 },
+//         { opacity: 1, x: 0, duration: 1, paused: true }
+//       );
+
+//       const budImageAnimation = gsap.fromTo(
+//         budImage,
+//         { opacity: 0, x: 100 },
+//         { opacity: 1, x: 0, duration: 1, paused: true }
+//       );
+
+//       animateElement(titleSection, titleAnimation);
+//       animateElement(mainContentSection, mainAnimation);
+//       animateElement(imageContentRow, imageRowAnimation);
+//       animateElement(budImage, budImageAnimation);
+//     };
+
+//     window.addEventListener('scroll', handleScroll);
+//     return () => {
+//       window.removeEventListener('scroll', handleScroll);
+//     };
+//   }, []);
+
+//   return (
+//     <div className="w-full h-full mt-28 mb-[12rem]">
+//       {/* Title Section */}
+//       <div ref={titleRef} id="title-section" className="text-center mb-8">
+//         <div className="flex justify-center items-center">
+//           <div className="border-t-4 border-secondary w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[20rem] sm:mt-1 md:mt-1 lg:mt-1 "></div>
+//           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl mx-4 sm:mx-6 md:mx-8 lg:mx-10 text-black font-nudista">
+//             An Industry poised for{' '}
+//             <span className="font-extrabold font-nudista mb-44">
+//               explosive growth
+//             </span>{' '}
+//           </h2>
+//           <div className="border-t-4 border-secondary w-[8rem] sm:w-[10rem] md:w-[12rem] lg:w-[20rem] mt-1"></div>
+//         </div>
+//       </div>
+
+//       {/* Main Content Section */}
+//       <div ref={mainRef} id="main-content-section" className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-0 mx-8 sm:ml-7 md:ml-16 lg:-ml-[1rem] md:gap-10 lg:gap-10">
+//         <div className="relative w-[95%] md:w-[110%] lg:w-[103%] sm:h-full md:h-full lg:h-[23rem] scale-y-100 md:scale-y-110 lg:scale-y-150 mt-6 md:mt-10 lg:mt-36  md:ml-[7rem] lg:ml-[16rem]">
+//           <img
+//             src={conneticutImg1}
+//             alt="conneticutImg1"
+//             className="w-full h-full"
+//           />
+//           <div className="absolute top-0 left-0 w-full h-full bg-[#759157] opacity-50"></div>
+//         </div>
+//         <div className="mt-5  md:mt-20 lg:mt-28 md:mx-16 lg:ml-36 mx-3 ">
+//           <h4 className="text-base md:text-lg lg:text-xl xl:text-3xl font-nudista font-bold">
+//             Welcome to our facility
+//           </h4>
+//           <p className="text-xs  md:text-xs lg:text-base w-full md:w-full lg:w-4/6  font-sora mt-3 leading-3 text-gray-500 text-left">
+//             Our planned 42,000 Square foot facility is located in the bustling
+//             locally of East Hartford, CT.
+//           </p>
+//         </div>
+//       </div>
+//       <img
+//         ref={budImgRef}
+//         src={threeDBud}
+//         alt="conneticutImg2"
+//         className="w-[60%] md:w-[28%] lg:w-[28%]  xl:w-[28%] ml-[5rem] md:ml-[28rem] lg:ml-[71rem] xl:ml-[71rem] mt-8 md:-mt-[2rem] lg:mt-[9rem] xl:-mt-[10rem] -mb-[2.5rem] md:mb-[1rem] lg:mb-[3rem]"
+//       />
+
+//       {/* Image and Content Row */}
+//       <div ref={imageRowRef} id="image-content-row" className="grid grid-cols-1 md:grid-cols-2 justify-items-center mt-10 md:-mt-[1rem] lg:-mt-[3rem] ml-[0rem] md:ml-[9rem] lg:ml-[14rem] drop-shadow-lg">
+//         <div className="relative z-50 w-[80%] md:w-[95%] lg:w-[95%] xl:w-[95%] order-2 md:order-1 lg:order-1 xl:order-1">
+//           <img
+//             src={conneticutImg2}
+//             alt="conneticutImg2"
+//             className="w-full h-full md:h-[90%] lg:h-[90%] xl:h-[90%]"
+//           />
+//           <div className="grid grid-rows-3 justify-items-end -mt-[17rem] md:-mt-[19.5rem] lg:-mt-[22rem] gap-4 md:gap-4 lg:gap-4  mr-3 md:mr-3  lg:mr-7 ">
+//             <img
+//               src={overlayTextIconOrange}
+//               alt="windMillIcon"
+//               className="mt-[2rem] md:mt-[4rem] lg:-mt-[10rem] xl:-mt-[10rem] w-[2rem] md:w-[2rem] lg:w-[4rem] xl:w-[4rem]"
+//             />
+//             <p className="text-xs md:text-lg w-1/2 md:w-1/2 mt-[0rem] md:mt-[0rem] lg:mt-0 xl:mt-0 -mr-[1rem] md:-mr-[0.5rem] lg:-mr-9 xl:-mr-9 lg:w-[50%] lg:text-[1.62rem]  font-nudista font-bold">
+//               Precision in Cultivation
+//             </p>
+//             <p className="text-[0.6rem] md:text-[0.6rem] lg:text-base font-sora -mt-[3.3rem]  md:-mt-[3.5rem] lg:-mt-[2rem] -mr-[1rem] md:-mr-[0.5rem] lg:-mr-0 xl:-mr-0 w-[50%] lg:w-[45%] md:w-[50%]">
+//               Our team of trained experts deliver exceptional value to both our customers and the market by keeping yields and proﬁts high.
+//             </p>
+//           </div>
+//         </div>
+
+//         <div className="relative w-[80%] md:w-[95%] lg:w-[90%] xl:w-[90%] mr-0 md:mr-28 lg:mr-40 order-1 md:order-2 lg:order-2 xl:order-2">
+//           <img
+//             src={conneticutImg3}
+//             alt="conneticutImg3"
+//             className="w-full h-full md:h-[90%] lg:h-[90%] xl:h-[90%]"
+//           />
+//           <div className="absolute top-0 left-0 w-full h-full md:h-[90%] lg:h-[90%] xl:h-[90%] bg-[#759157] opacity-50"></div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ConneticutPage;
+
+import React, { useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import conneticutImg1 from '../assets/images/conneticutImg1.webp';
+// import threeDBud from '../assets/images/3dBud.webp';
+import conneticutImg2 from '../assets/images/conneticutImg2.webp';
+import conneticutImg3 from '../assets/images/conneticutImg3.webp';
+import overlayTextIconOrange from '../assets/images/overlayTextIconOrange.png';
+
+import cannabisFlower3 from '../assets/images/cannabisFlower3.jpg';
+
+gsap.registerPlugin(ScrollTrigger);
+
+const GrowthPage = () => {
+  useEffect(() => {
+    // Title Section Animation
+    gsap.fromTo(
+      '#title-section',
+      { y: -100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: '#title-section',
+          start: 'top 90%',
+          end: 'bottom 60%',
+          toggleActions: 'play none none reverse',
+        },
+      }
+    );
+
+    // Main Content Section Animation
+    gsap.fromTo(
+      '#main-content-section',
+      { x: -100, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: '#main-content-section',
+          start: 'top 80%',
+          end: 'bottom 60%',
+          toggleActions: 'play none none reverse',
+        },
+      }
+    );
+
+    // 3D Bud Image Animation
+    gsap.fromTo(
+      '#bud-image',
+      { x: 100, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: '#bud-image',
+          start: 'top 80%',
+          end: 'bottom 60%',
+          toggleActions: 'play none none reverse',
+        },
+      }
+    );
+
+    // Image Row Animation
+    gsap.fromTo(
+      '#image-content-row',
+      { x: 100, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: '#image-content-row',
+          start: 'top 80%',
+          end: 'bottom 60%',
+          toggleActions: 'play none none reverse',
+        },
+      }
+    );
+  }, []);
+
+  return (
+    <div className="w-full h-full mt-28 mb-[12rem]">
+      {/* Title Section */}
+      <div id="title-section" className="text-center mb-8">
+        <div className="flex justify-center items-center">
+          <div
+            className="border-t-4 border-secondary mt-1 
+                       w-[8rem] sm:w-[8rem] md:w-[8rem] lg:w-[20rem] mediumLaptop:w-[20rem] xl:w-[10rem] 2xl:w-[20rem] largestLaptop:w-[22rem]"
+          ></div>
+          <h2
+            className="text-xl sm:text-2xl md:text-2xl lg:text-3xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-6xl
+                       mx-4 sm:mx-6 md:mx-8 lg:mx-10 mediumLaptop:mx-10 xl:mx-10 2xl:mx-10 largestLaptop:mx-8
+                      text-black font-nudista font-light"
+          >
+            Advanced,{' '}
+            <span className="font-bold font-nudista mb-44">
+              pharmaceutical-grade hydroponic
+            </span>{' '}
+            cultivation systems
+          </h2>
+          <div
+            className="border-t-4  border-secondary mt-1 
+                       w-[8rem] sm:w-[8rem] md:w-[8rem] lg:w-[20rem] mediumLaptop:w-[20rem] xl:w-[10rem] 2xl:w-[20rem] largestLaptop:w-[22rem]"
+          ></div>
+        </div>
+      </div>
+
+      {/* Main Content Section */}
+      <div
+        id="main-content-section"
+        className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mediumLaptop:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 largestLaptop:grid-cols-2  
+         justify-items-center gap-0 mx-8 sm:ml-7 md:ml-16 lg:-ml-[1rem] md:gap-10 lg:gap-10"
+      >
+        <div
+          className="relative w-[95%] sm:w-[95%] md:w-[110%] lg:w-[103%] mediumLaptop:w-[103%] xl:w-[103%] 2xl:w-[103%] largestLaptop:w-[100%]
+                    h-full sm:h-full md:h-full lg:h-[19rem] mediumLaptop:h-[23rem] xl:h-[23rem] 2xl:h-[23rem] largestLaptop:h-[35rem]
+                    scale-y-100 md:scale-y-110 lg:scale-y-150
+                    mt-6 sm:mt-6 md:mt-10 lg:mt-36 mediumLaptop:mt-36 xl:mt-36 2xl:mt-36 largestLaptop:mt-48
+                    ml-[0rem] sm:ml-[0rem] md:ml-[7rem] lg:ml-[16rem] mediumLaptop:ml-[16rem] xl:ml-[16rem] 2xl:ml-[16rem] largestLaptop:ml-[25.5rem]"
+        >
+          <img
+            src={conneticutImg1}
+            alt="conneticutImg1"
+            className="w-full h-full"
+          />
+          <div className="absolute top-0 left-0 w-full h-full bg-[#759157] opacity-50"></div>
+        </div>
+        <div
+          className="grid grid-rows-2 mx-3 sm:mx-3 md:mx-16 lg:ml-36 mediumLaptop:ml-36 xl:ml-36 2xl:ml-36 largestLaptop:ml-72
+                     mt-16 sm:mt-16 md:mt-20 lg:mt-28 mediumLaptop:mt-28 xl:mt-28 2xl:mt-28 largestLaptop:mt-64"
+        >
+          <div className='h-1/2'>
+            <h4
+              className="text-base sm:text-base md:text-base lg:text-2xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-5xl
+                       font-nudista font-bold"
+            >
+              Welcome to our facility
+            </h4>
+            <p
+              className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-sm mediumLaptop:text-lg xl:text-sm 2xl:text-xl largestLaptop:text-2xl 
+                       w-4/6 sm:w-4/6 md:w-full lg:w-4/6 mediumLaptop:w-4/6 xl:w-4/6 2xl:w-4/6 largestLaptop:w-4/6
+                       mt-3 sm:mt-3 md:mt-3 lg:mt-5 mediumLaptop:mt-5 xl:mt-5 2xl:mt-5 largestLaptop:mt-5
+                       font-sora leading-3 text-gray-500 text-left"
+            >
+              Our planned 70,000 square foot facility is located in East
+              Hartford, CT.
+            </p>
+          </div>
+          <div className='-mb-[23.5rem] relative'>
+            <img
+              src={cannabisFlower3}
+              alt="cannabisFlower3 "
+              className=' w-full h-[50%]' 
+            />
+            <div className="absolute top-0 left-0 w-full h-[50%] bg-[#759157] opacity-50"></div>
+          </div>
+        </div>
+      </div>
+
+      {/* 3D Bud Image */}
+      {/* <span className="flex justify-center items-center">
+        <img
+          id="bud-image"
+          src={threeDBud}
+          alt="conneticutImg2"
+          className="w-[60%] md:w-[28%] lg:w-[28%] xl:w-[28%]
+             ml-[0.8rem] md:ml-[28rem] lg:ml-[58rem] xl:ml-[58rem]
+             mt-8 md:-mt-[2rem] lg:mt-[9rem] xl:-mt-[10rem] 
+             -mb-[2.5rem] md:mb-[1rem] lg:mb-[3rem]"
+        />
+      </span> */}
+
+      {/* Image and Content Row */}
+      <div
+        id="image-content-row"
+        className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mediumLaptop:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 largestLaptop:grid-cols-2
+                   mt-10 sm:mt-10 md:mt-[1rem] lg:mt-[3rem] mediumLaptop:mt-[3rem] xl:mt-[13rem] 2xl:mt-[3rem] largestLaptop:mt-[5rem]
+                   ml-[0rem] sm:ml-[0rem] md:ml-[9rem] lg:ml-[14rem] mediumLaptop:ml-[14rem] xl:ml-[5.5rem] 2xl:ml-[14rem] largestLaptop:ml-[26.7rem]
+                    justify-items-center"
+      >
+        <div
+          className="relative z-30 
+                        w-[80%] sm:w-[80%] md:w-[95%] lg:w-[95%] mediumLaptop:w-[95%] xl:w-[95%] 2xl:w-[95%] largestLaptop:w-[90%]
+                        order-2 sm:order-2 md:order-1 lg:order-1 mediumLaptop:order-1 xl:order-1 2xl:order-1 largestLaptop:order-1"
+        >
+          <img
+            src={conneticutImg2}
+            alt="conneticutImg2"
+            className="w-full h-full sm:h-full md:h-[90%] lg:h-[90%] mediumLaptop:h-[90%] xl:h-[90%] 2xl:h-[90%] largestLaptop:h-[90%]"
+          />
+          <div
+            className="grid grid-rows-3 justify-items-end 
+          -mt-[17rem] sm:-mt-[17rem] md:-mt-[22rem] lg:-mt-[14rem] mediumLaptop:-mt-[22rem] xl:-mt-[16rem] 2xl:-mt-[22rem] largestLaptop:-mt-[22rem] 
+           gap-4 sm:gap-4 md:gap-4 lg:gap-3 mediumLaptop:gap-4 xl:gap-4 2xl:gap-4 largestLaptop:gap-8 
+           mr-3 md:mr-3 lg:mr-7 mediumLaptop:mr-7 xl:mr-7 2xl:mr-7 largestLaptop:mr-7"
+          >
+            <img
+              src={overlayTextIconOrange}
+              alt="windMillIcon"
+              className="mt-[2rem] md:mt-[4rem] lg:-mt-[10rem] mediumLaptop:-mt-[10rem] xl:-mt-[10rem] 2xl:-mt-[10rem] largestLaptop:-mt-[30rem]
+                         w-[2rem] md:w-[2rem] lg:w-[3rem] mediumLaptop:w-[4rem] xl:w-[2rem] 2xl:w-[4rem] largestLaptop:w-[6rem]"
+            />
+            <p
+              className="text-right text-base sm:text-base md:text-sm lg:text-2xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-5xl 
+                          w-full
+                          mt-[1rem] sm:mt-[1rem] md:mt-[4rem] lg:-mt-[8rem] mediumLaptop:-mt-14 xl:-mt-[4.5rem] 2xl:-mt-[4rem] largestLaptop:-mt-[13rem]
+                          mr-[0rem] sm:mr-[0rem] md:mr-[0rem] lg:mr-0 mediumLaptop:mr-0 xl:mr-0 2xl:mr-[0rem] largestLaptop:mr-[0rem]
+                          font-nudista font-bold"
+            >
+              Precision in Cultivation
+            </p>
+            <p
+              className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-sm mediumLaptop:text-lg xl:text-sm 2xl:text-lg largestLaptop:text-2xl
+             font-sora text-right
+              -mt-[2rem] sm:-mt-[2rem] md:-mt-[1rem] lg:-mt-[4rem] mediumLaptop:-mt-[5rem] xl:-mt-[4rem] 2xl:-mt-[5rem] largestLaptop:-mt-[9rem]
+              mr-[0rem] sm:mr-[0rem] md:mr-[0rem] lg:-mr-0 mediumLaptop:-mr-0 xl:-mr-0 2xl:-mr-0 largestLaptop:-mr-0
+               w-[50%] sm:w-1/2 md:w-[48%] lg:w-[45%] mediumLaptop:w-1/2 xl:w-[45%] 2xl:w-1/2 largestLaptop:w-1/2"
+            >
+              Our team of trained experts deliver exceptional value to both our
+              customers and the market by keeping yields and proﬁts high.
+            </p>
+            <button
+              className=" text-xs sm:text-xs md:text-xs lg:text-sm mediumLaptop:text-base xl:text-lg 2xl:text-lg largestLaptop:text-3xl 
+             bg-black border-none text-white hover:bg-secondary font-sora 
+                   px-3 sm:px-3 md:px-4 lg:px-6 xl:px-6 2xl:px-6 largestLaptop:px-20
+                   py-3 sm:py-3 md:py-2 lg:py-4 xl:py-4 2xl:py-4 largestLaptop:py-4
+                   rounded-lg
+                   ml-0 sm:ml-0 md:ml-3 lg:ml-3 medimLaptop:ml-3 xl:ml-8 2xl:ml-8 largestLaptop:ml-5
+                   -mt-10 sm:-mt-14 md:-mt-10 lg:mt-0 mediumLaptop:mt-4 xl:mt-2 2xl:mt-2 largestLaptop:mt-2 "
+            >
+              Learn more{' '}
+            </button>
+          </div>
+        </div>
+
+        <div
+          className="relative
+                    w-[80%] sm:w-[80%] md:w-[95%] lg:w-[90%] mediumLaptop:w-[90%] xl:w-[85%] 2xl:w-[85%] largestLaptop:w-[85%]
+                    mr-0 sm:mr-0 md:mr-28 lg:mr-40 mediumLaptop:mr-40 xl:mr-40 2xl:mr-40 largestLaptop:mr-64
+                    order-1 sm:order-1 md:order-2 lg:order-2 mediumLaptop:order-2 xl:order-2 2xl:order-2 largestLaptop:order-2"
+        >
+          <img
+            src={conneticutImg3}
+            alt="conneticutImg3"
+            className="w-full h-full md:h-[90%] lg:h-[90%] xl:h-[90%] 2xl:h-[90%] largestLaptop:h-[90%]"
+          />
+          {/* <div className="absolute top-0 left-0 w-full h-full md:h-[90%] lg:h-[90%] xl:h-[90%] bg-[#759157] opacity-50"></div> */}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default GrowthPage;
