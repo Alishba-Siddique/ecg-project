@@ -268,11 +268,10 @@
 // export default PhotoVideoComponent;
 
 import { useRef } from 'react';
-import Slider from 'react-slick'; // Importing react-slick
-import cannabisFlower1 from '../assets/images/cannabisFlower.webp';
-import cannabisFlower2 from '../assets/images/cannabisFlower2.webp';
 import sampleVideo1 from '../assets/videos/sampleVideo1.mp4'; // Example video files
 import sampleVideo2 from '../assets/videos/sampleVideo2.mp4';
+import indoorVid1 from '../assets/videos/indoorVid1.mp4';
+import indoorVid2 from '../assets/videos/indoorVid2.mp4'
 import 'slick-carousel/slick/slick.css'; // Importing slick-carousel styles
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -335,6 +334,8 @@ const PhotoVideoComponent = () => {
 
   const videoRef1 = useRef(null);
   const videoRef2 = useRef(null);
+  const videoRef3 = useRef(null);
+  const videoRef4 = useRef(null);
 
   const handleMouseEnter = (videoRef) => {
     if (videoRef.current) {
@@ -369,15 +370,6 @@ const PhotoVideoComponent = () => {
         ></video>
       </div>
 
-      {/* Photo Box 1 */}
-      <div className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-gray-200 rounded-md overflow-hidden hover:scale-105 transition duration-300">
-        <img
-          src={cannabisFlower1}
-          alt="Cannabis Flower 1"
-          className="w-full h-full object-cover"
-        />
-      </div>
-
       {/* Video Box 2 */}
       <div
         className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-gray-200 rounded-md overflow-hidden hover:scale-105 transition duration-300 relative"
@@ -386,6 +378,21 @@ const PhotoVideoComponent = () => {
       >
         <video
           ref={videoRef2}
+          src={indoorVid1}
+          className="w-full h-full object-cover"
+          muted
+          loop
+        ></video>
+      </div>
+
+      {/* Video Box 3 */}
+      <div
+        className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-gray-200 rounded-md overflow-hidden hover:scale-105 transition duration-300 relative"
+        onMouseEnter={() => handleMouseEnter(videoRef3)}
+        onMouseLeave={() => handleMouseLeave(videoRef3)}
+      >
+        <video
+          ref={videoRef3}
           src={sampleVideo2}
           className="w-full h-full object-cover"
           muted
@@ -393,13 +400,19 @@ const PhotoVideoComponent = () => {
         ></video>
       </div>
 
-      {/* Photo Box 2 */}
-      <div className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-gray-200 rounded-md hover:scale-105 transition duration-300 overflow-hidden">
-        <img
-          src={cannabisFlower2}
-          alt="Cannabis Flower 2"
+      {/* Video Box 4 */}
+      <div
+        className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-gray-200 rounded-md overflow-hidden hover:scale-105 transition duration-300 relative"
+        onMouseEnter={() => handleMouseEnter(videoRef4)}
+        onMouseLeave={() => handleMouseLeave(videoRef4)}
+      >
+        <video
+          ref={videoRef4}
+          src={indoorVid2}
           className="w-full h-full object-cover"
-        />
+          muted
+          loop
+        ></video>
       </div>
     </div>
   );

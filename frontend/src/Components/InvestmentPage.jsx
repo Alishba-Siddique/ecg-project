@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import conneticutImg1 from '../assets/images/exGrowthBg.webp';
 import cannabisFlower1 from '../assets/images/cannabisFlower.webp';
 import cannabisFlower2 from '../assets/images/cannabisFlower2.webp';
+import cannabisFlower3 from '../assets/images/cannabisFlower3.jpg';
+import cannabisFlower4 from '../assets/images/cannabisFlower4.webp';
 import exGrowthIcon1 from '../assets/images/exGrowthIcon1.svg';
 import exGrowthIcon2 from '../assets/images/exGrowthIcon2.svg';
 import exGrowthIcon3 from '../assets/images/exGrowthIcon3.svg';
@@ -84,7 +86,7 @@ const InvestmentPage = () => {
 
   const images = [
     {
-      src: `${cannabisFlower1}`,
+      src: `${cannabisFlower3}`,
       heading: 'THE STATE OF CONNETICUT',
       text: 'Connecticut',
       description1:
@@ -92,7 +94,7 @@ const InvestmentPage = () => {
       icon: <img src={exGrowthIcon1} width="30%" className="text-white" />,
     },
     {
-      src: `${cannabisFlower2}`,
+      src: `${cannabisFlower4}`,
       heading: 'EAST COAST GROWERS',
       text: 'ECG',
       description1:
@@ -100,7 +102,7 @@ const InvestmentPage = () => {
       icon: <img src={exGrowthIcon2} width="30%" className="text-white" />,
     },
     {
-      src: `${cannabisFlower1}`,
+      src: `${cannabisFlower2}`,
       heading: 'INVESTORS',
       text: 'Investors',
       description1:
@@ -108,7 +110,7 @@ const InvestmentPage = () => {
       icon: <img src={exGrowthIcon3} width="30%" className="text-white" />,
     },
     {
-      src: `${cannabisFlower2}`,
+      src: `${cannabisFlower1}`,
       heading: 'RETURNS',
       description1:
         'Given Connecticut\'s regulatory landscape and favorable market conditions, this investment is projected to yield returns exceeding 30%. For comparison, since 1924, the S&P 500 has averaged an annual return of approximately 7%, adjusted for inflation.',

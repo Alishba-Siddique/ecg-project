@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import conneticutImg1 from '../assets/images/conneticutImg1.webp';
+import conneticutImg1 from '../assets/images/canopyFarming.webp';
 import conneticutImg4 from '../assets/images/conneticutImg4.webp';
-import sunnyDayIcon from '../assets/images/sunny-day.svg';
+// import sunnyDayIcon from '../assets/images/sunny-day.svg';
 import pdfFile from '../assets/ecg-pitch-deck.pdf';
 
 gsap.registerPlugin(ScrollTrigger);
