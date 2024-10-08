@@ -20,7 +20,7 @@ const AdvantageSection = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 flex flex-col justify-center h-screen">
+    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 flex flex-col justify-center h-full">
       {/* Title Section */}
       <div className="text-center mb-8">
         <div className="flex justify-center items-center">
