@@ -417,9 +417,9 @@ import conneticutImg1 from '../assets/images/conneticutImg1.webp';
 // import threeDBud from '../assets/images/3dBud.webp';
 import conneticutImg2 from '../assets/images/conneticutImg2.webp';
 import conneticutImg3 from '../assets/images/conneticutImg3.webp';
-import overlayTextIconOrange from '../assets/images/overlayTextIconOrange.png';
+import overlayTextIconOrange from '../assets/images/overlayTextIconOrange.webp';
 
-import cannabisFlower3 from '../assets/images/cannabisFlower3.jpg';
+import cannabisFlower1 from '../assets/images/cannabisFlower1.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -564,8 +564,8 @@ const GrowthPage = () => {
           </div>
           <div className="-mb-[7rem]  sm:-mb-[7rem] md:-mb-[5rem] lg:-mb-[23.5rem] mediumLaptop:-mb-[23.5rem] xl:-mb-[23.5rem] 2xl:-mb-[23.5rem] largestLaptop:-mb-[23.5rem] relative">
             <img
-              src={cannabisFlower3}
-              alt="cannabisFlower3 "
+              src={cannabisFlower1}
+              alt="cannabisFlower1 "
               className=" w-full sm:w-full md:w-full lg:w-full mediumLaptop:w-full xl:w-full 2xl:w-[60%] largestLaptop:w-[60%]
               h-full sm:h-full md:h-[85%] lg:h-[50%] mediumLaptop:h-[50%] xl:h-[50%] 2xl:h-[50%] largestLaptop:h-[60%]
               "
@@ -618,7 +618,7 @@ const GrowthPage = () => {
           >
             <img
               src={overlayTextIconOrange}
-              alt="windMillIcon"
+              alt="overlayTextIconOrange"
               className="mt-[2rem] md:mt-[4rem] lg:-mt-[10rem] mediumLaptop:-mt-[10rem] xl:-mt-[10rem] 2xl:-mt-[10rem] largestLaptop:-mt-[30rem]
                          w-[2rem] md:w-[2rem] lg:w-[3rem] mediumLaptop:w-[4rem] xl:w-[2rem] 2xl:w-[4rem] largestLaptop:w-[6rem]"
             />

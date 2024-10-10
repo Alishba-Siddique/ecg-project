@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 // import { GoChevronDown } from 'react-icons/go';
-import ebook from '../assets/images/ebook.png';
+import ebook from '../assets/images/ebook.webp';
 import pdfFile from '../assets/ecg-pitch-deck.pdf';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';

@@ -274,10 +274,10 @@ import indoorVid1 from '../assets/videos/indoorVid1.mp4';
 import indoorVid2 from '../assets/videos/indoorVid2.mp4';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import vidPoster1 from '../assets/images/poster-3.png';
-import vidPoster2 from '../assets/images/poster-4.png';
-import vidPoster3 from '../assets/images/poster-6.png';
-import vidPoster4 from '../assets/images/poster-5.png';
+import vidPoster1 from '../assets/images/poster-3.webp';
+import vidPoster2 from '../assets/images/poster-4.webp';
+import vidPoster3 from '../assets/images/poster-6.webp';
+import vidPoster4 from '../assets/images/poster-5.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 

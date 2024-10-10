@@ -19,7 +19,7 @@ const TeamWebPage = () => {
       duration: 1,
       scrollTrigger: {
         trigger: '#title-team-section',
-        start: 'top 80%',
+        start: 'top 90%',
         end: 'bottom 60%',
         toggleActions: 'play none none reverse',
       },
@@ -34,7 +34,7 @@ const TeamWebPage = () => {
       duration: 1,
       scrollTrigger: {
         trigger: '#about',
-        start: 'top 80%',
+        start: 'top 90%',
         end: 'bottom 60%',
         toggleActions: 'play none none reverse',
       },
@@ -119,9 +119,11 @@ const TeamWebPage = () => {
           <h1 className="text-xl sm:text-2xl md:text-2xl lg:text-3xl  xl:text-3xl  mediumLaptop:text-3xl  2xl:text-3xl  largestLaptop:text-5xl font-bold font-nudista text-primary">
             Andrew <br /> Borner
           </h1>
-          <h3 className="
+          <h3
+            className="
           text-base sm:text-lg md:text-lg lg:text-lg  xl:text-lg  mediumLaptop:text-lg  2xl:text-lg  largestLaptop:text-2xl
-           font-sora text-secondary">
+           font-sora text-secondary"
+          >
             CO-FOUNDER
           </h3>
           <p className="text-xs sm:text-sm md:text-sm lg:text-sm  xl:text-sm  mediumLaptop:text-sm  2xl:text-sm  largestLaptop:text-lg mt-2 font-sora ">
@@ -151,8 +153,10 @@ const TeamWebPage = () => {
           <h3 className="text-base sm:text-lg md:text-lg lg:text-lg  xl:text-lg  mediumLaptop:text-lg  2xl:text-lg  largestLaptop:text-2xl font-sora text-secondary">
             CONSULTANTS
           </h3>
-          <p className="
-          text-xs sm:text-sm md:text-sm lg:text-sm  xl:text-sm  mediumLaptop:text-sm  2xl:text-sm  largestLaptop:text-lg mt-2 font-sora">
+          <p
+            className="
+          text-xs sm:text-sm md:text-sm lg:text-sm  xl:text-sm  mediumLaptop:text-sm  2xl:text-sm  largestLaptop:text-lg mt-2 font-sora"
+          >
             Co-founders of Shoreline Hydroponics, leverage their expertise in
             cannabis cultivation and operational efficiency to drive sustainable
             success in the industry. Trent's management of large-scale

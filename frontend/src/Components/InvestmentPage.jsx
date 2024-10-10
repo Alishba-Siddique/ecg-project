@@ -4,13 +4,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import conneticutImg1 from '../assets/images/exGrowthBg.webp';
 import cannabisFlower1 from '../assets/images/cannabisFlower.webp';
-import cannabisFlower2 from '../assets/images/cannabisFlower2.webp';
-import cannabisFlower3 from '../assets/images/cannabisFlower3.jpg';
-import cannabisFlower4 from '../assets/images/cannabisFlower4.webp';
-import exGrowthIcon1 from '../assets/images/exGrowthIcon1.svg';
-import exGrowthIcon2 from '../assets/images/exGrowthIcon2.svg';
-import exGrowthIcon3 from '../assets/images/exGrowthIcon3.svg';
-import exGrowthIcon4 from '../assets/images/exGrowthIcon4.svg';
+import cannabisFlower2 from '../assets/images/cannabisFlower4.webp';
+import cannabisFlower3 from '../assets/images/cannabisFlower3.webp';
+import cannabisFlower4 from '../assets/images/cannabisFlower2.webp';
+import exGrowthIcon1 from '../assets/images/exGrowthIcon1.webp';
+import exGrowthIcon2 from '../assets/images/exGrowthIcon2.webp';
+import exGrowthIcon3 from '../assets/images/exGrowthIcon3.webp';
+import exGrowthIcon4 from '../assets/images/exGrowthIcon4.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 

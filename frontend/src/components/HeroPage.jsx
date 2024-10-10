@@ -2,9 +2,9 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import overlayTextIcon from '../assets/images/overlayTextIcon.png';
+import overlayTextIcon from '../assets/images/overlayTextIconBlack.webp';
 import heroBg from '../assets/videos/heroBg.mp4';
-import posterHero from '../assets/images/poster-2.png';
+import posterHero from '../assets/images/poster-2.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -72,7 +72,7 @@ const HeroPage = () => {
                       text-xs md:text-sm lg:text-sm mediumLaptop:text-lg xl:text-sm 2xl:text-lg largestLaptop:text-3xl
                       mt-2 sm:mt-2 md:mt-4 lg:mt-4 mediumLaptop:mt-4 xl:mt-4 2xl:mt-8 largestLaptop:mt-8 
                       ml-0 sm:ml-0 md:ml-3 lg:ml-3 medimLaptop:ml-3 xl:ml-3 2xl:ml-3 largestLaptop:ml-5
-                      w-11/12 sm:w-11/12 md:w-[75%] lg:w-[55%]  mediumLaptop:w-[55%] xl:w-full 2xl:w-full largestLaptop:w-full drop-shadow-md"
+                      w-11/12 sm:w-11/12 md:w-[75%] lg:w-[55%]  mediumLaptop:w-[55%] xl:w-full 2xl:w-[50%] largestLaptop:w-[50%] drop-shadow-md"
           >
             Unlocking unprecedented opportunities for success in a market poised
             for explosive growth

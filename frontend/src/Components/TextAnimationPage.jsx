@@ -244,7 +244,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './../styles/animationText.css';
 import bgVideo from '../assets/videos/bgVideo.mp4'; // Add your video file
-import poster1 from '../assets/images/poster-1.png'
+import poster1 from '../assets/images/poster-1.webp'
 
 
 gsap.registerPlugin(ScrollTrigger);

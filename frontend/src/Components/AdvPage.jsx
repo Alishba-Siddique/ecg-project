@@ -287,10 +287,10 @@
 import { React, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import icon1 from '../assets/images/adv-icon-1.svg';
-import icon2 from '../assets/images/adv-icon-2.svg';
-import icon3 from '../assets/images/adv-icon-3.svg';
-import icon4 from '../assets/images/adv-icon-4.svg';
+import icon1 from '../assets/images/adv-icon-1.webp';
+import icon2 from '../assets/images/adv-icon-2.webp';
+import icon3 from '../assets/images/adv-icon-3.webp';
+import icon4 from '../assets/images/adv-icon-4.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -391,7 +391,7 @@ const AdvPage = () => {
   ];
 
   return (
-    <div className="max-w-8xl mx-2 sm:mx-2 md:mx-6 lg:mx-20 mediumLaptop:mx-20 xl:mx-10 2xl:mx-32 largestLaptop:mx-32 mb-16 py-8 px-4 sm:px-6 md:px-6 lg:px-12 xl:px-12 2xl:px-12 largestLaptop:px-12 flex flex-col justify-center h-full fade-in">
+    <div className="overflow-x-hidden max-w-8xl mx-2 sm:mx-2 md:mx-6 lg:mx-20 mediumLaptop:mx-20 xl:mx-10 2xl:mx-32 largestLaptop:mx-32 mb-16 py-8 px-4 sm:px-6 md:px-6 lg:px-12 xl:px-12 2xl:px-12 largestLaptop:px-12 flex flex-col justify-center h-full fade-in">
       {/* Title Section */}
       <div id="title-adv-section" className="text-center mb-24">
         <div className="flex justify-center items-center">

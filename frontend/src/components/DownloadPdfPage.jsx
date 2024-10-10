@@ -52,8 +52,9 @@ const DownloadPdfPage = () => {
       <div
         id="left-image"
         className="relative w-[83%]  sm:w-[83%] md:w-[83%] lg:w-[90%] mediumLaptop:w-[103%] xl:w-[100%] 2xl:w-[103%] largestLaptop:w-[94%] 
-       h-64 sm:h-80 md:h-[24rem] lg:h-[32rem] mediumLaptop:h-[36rem] xl:h-[40rem] 2xl:h-[45rem] largestLaptop:h-[50rem]
-       mx-[1.5rem] sm:mx-[1.5rem] md:ml-[3rem] lg:ml-28 mediumLaptop:ml-40 xl:ml-32 2xl:ml-40 largestLaptop:ml-72"
+       h-64 sm:h-64 md:h-[24rem] lg:h-[34rem] mediumLaptop:h-[43rem] xl:h-[44rem] 2xl:h-[45rem] largestLaptop:h-[55rem]
+       mx-[1.5rem] sm:mx-[1.5rem] md:ml-[3rem] lg:ml-28 mediumLaptop:ml-40 xl:ml-32 2xl:ml-40 largestLaptop:ml-72
+       mb-12 "
       >
         <img
           src={conneticutImg1}
@@ -73,10 +74,10 @@ const DownloadPdfPage = () => {
           <div
             className="relative rounded-lg
              hidden md:block lg:block mediumLaptop:block xl:block 2xl:block largestLaptop:block 
-            ml-6 sm:ml-[1.5rem]  md:ml-14 lg:ml-[13rem] mediumLaptop:ml-[13rem] xl:ml-[13rem] 2xl:ml-[13rem] largestLaptop:ml-[13rem]
-            w-[88%] sm:w-[88%] md:w-[50%] lg:w-[50%]  mediumLaptop:w-[50%]  xl:w-[50%]  2xl:w-[50%]  largestLaptop:w-[100%] 
-            h-52 sm:h-52 md:h-52 lg:h-72  mediumLaptop:h-96 xl:h-96  2xl:h-96 largestLaptop:h-96
-            mt-32 sm:mt-32 md:mt-32 lg:-mt-[9rem]  xl:-mt-[9rem]
+            ml-6 sm:ml-[1.5rem]  md:ml-14 lg:ml-[13rem] mediumLaptop:ml-[13rem] xl:ml-[13rem] 2xl:ml-[13rem] largestLaptop:ml-[30rem]
+            w-[88%] sm:w-[88%] md:w-[50%] lg:w-[50%]  mediumLaptop:w-[50%]  xl:w-[50%]  2xl:w-[50%]  largestLaptop:w-[30%] 
+            h-52 sm:h-52 md:h-52 lg:h-72  mediumLaptop:h-96 xl:h-96  2xl:h-96 largestLaptop:h-[26rem]
+            mt-32 sm:mt-32 md:mt-32 lg:-mt-[9rem]  xl:-mt-[9rem] 2xl:-mt-[9rem] largestLaptop:-mt-[9rem]
          "
           >
             <img
@@ -91,19 +92,19 @@ const DownloadPdfPage = () => {
         {/* Title and Icon Row */}
         <div
           className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-1 gap-0 items-center 
-          ml-[1.5rem] sm:ml-[1.5rem]  md:-ml-3  lg:ml-0 xl:ml-0 mediumLaptop:ml-0 2xl:ml-0 largestLaptop:-ml-56
+          ml-[2.5rem] sm:ml-[2.5rem]  md:-ml-3  lg:ml-10 xl:ml-20 mediumLaptop:ml-28 2xl:ml-28 largestLaptop:ml-32
         mt-[0rem]  md:mt-0 lg:-mt-[36rem] h-[15%] md:h-[15%] lg:h-[15%] mediumLaptop:h-[15%]  xl:h-[15%] 2xl:h-[15%]  largestLaptop:h-[15%] "
         >
           <p
             className="text-base sm:text-base md:text-xl lg:text-2xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-5xl
-             mt-32 md:-mt-32 lg:-mt-0 xl:-mt-0 mediumLaptop:-mt-0 2xl:-mt-0 largestLaptop:-mt-0  
-          font-nudista font-bold leading-tight w-full" 
+             -mt-12 md:-mt-44 lg:-mt-0 xl:-mt-0 mediumLaptop:-mt-0 2xl:-mt-0 largestLaptop:-mt-0  
+          font-nudista font-bold leading-tight w-3/4 sm:w-3/4 md:w-[120%] lg:w-3/4 xl:w-3/4  mediumLaptop:w-3/4  2xl:w-3/4  largestLaptop:w-1/2 " 
           >
-             State of the Art Technology
+             State-of-the-art cultivation facility managed by proven and experienced operators
           </p>
           <div
-            className="border-t-2 border-secondary  mt-4 h-[10%] md:h-[30%] lg:h-full xl:h-full
-          w-20 lg:w-28 block md:hidden lg:hidden xl:hidden"
+            className="border-t-2 border-secondary mt-2 sm:mt-8 lg:mt-8 h-[10%] md:h-[30%] lg:h-full xl:h-full
+          w-20 lg:w-28 block sm:block md:hidden lg:hidden xl:hidden"
           ></div>
           {/* <img
             src={sunnyDayIcon}
@@ -115,9 +116,9 @@ const DownloadPdfPage = () => {
           /> */}
           <div
             className="relative hidden md:block lg:hidden mediumLaptop:hidden xl:hidden 2xl:hidden  largestLaptop:hidden
-            ml-6 sm:ml-6 md:ml-6 lg:ml-6 mediumLaptop:ml-6 xl:ml-6 2xl:ml-36 largestLaptop:ml-80
+            ml-6 sm:ml-6 md:ml-44 lg:ml-6 mediumLaptop:ml-6 xl:ml-6 2xl:ml-36 largestLaptop:ml-80
             w-[88%] sm:w-[88%] md:w-[90%] lg:w-[70%]  mediumLaptop:w-[86%]  xl:w-[100%]  2xl:w-[70%]  largestLaptop:w-[100%] 
-            h-52 sm:h-52 md:h-52 lg:h-52 mediumLaptop:h-96 xl:h-96 2xl:h-80 largestLaptop:h-96  rounded-lg"
+            h-52 sm:h-52 md:h-80 lg:h-52 mediumLaptop:h-96 xl:h-96 2xl:h-80 largestLaptop:h-96  rounded-lg"
           >
             <img
               src={conneticutImg4}
@@ -130,11 +131,13 @@ const DownloadPdfPage = () => {
 
         {/* Line, Paragraph, and Buttons */}
         <div
-          className="space-y-4 ml-[1.5rem] sm:ml-[1.5rem]  md:-ml-3  lg:ml-0 xl:ml-0 mediumLaptop:ml-0 2xl:ml-0 largestLaptop:-ml-56
-         mb-4 md:-mb-[80rem] lg:-mb-0 xl:-mb-0 mediumLaptop:-mb-0 2xl:-mb-0 largestLaptop:-mb-0"
+          className="space-y-4 ml-[2.5rem] sm:ml-[2.5rem]  md:-ml-3  lg:ml-10 xl:ml-20 mediumLaptop:ml-28 2xl:ml-28 largestLaptop:ml-32
+         -mb-0 md:-mb-[80rem] lg:-mb-0 xl:-mb-0 mediumLaptop:-mb-0 2xl:-mb-0 largestLaptop:-mb-0"
         >
-          <div className="border-t-2 border-secondary w-20 sm:w-20 md:w-20 lg:w-28 mediumLaptop:w-28  xl:w-28  2xl:w-28 largestLaptop:w-28  -mt-4 mb-6 hidden md:block lg:block xl:block"></div>
-          <p className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-base mediumLaptop:text-lg xl:text-lg 2xl:text-xl largestLaptop:text-2xl text-gray-500 ">
+          <div className="mt-16 sm:mt-16 md:mt-14 lg:mt-6 mediumLaptop:mt-6  xl:mt-6  2xl:mt-8 largestLaptop:mt-24
+           border-t-2 border-secondary w-20 sm:w-20 md:w-20 lg:w-28 mediumLaptop:w-28  xl:w-28  2xl:w-28 largestLaptop:w-28 
+             mb-6 hidden md:block lg:block xl:block"></div>
+          <p className="  text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-base mediumLaptop:text-lg xl:text-lg 2xl:text-xl largestLaptop:text-2xl text-gray-500 ">
             • Cultivation Tech
             <br />
             • Analytics Tech
