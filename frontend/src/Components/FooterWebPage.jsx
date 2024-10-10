@@ -1,5 +1,5 @@
 // import React, { useEffect } from 'react';
-// import ecgWhiteLogo from '../assets/images/ecg-white-logo.png';
+// import ecgWhiteLogo from '../assets/images/text-base';
 // import footerBg from '../assets/images/footerBg.webp';
 // import { gsap } from 'gsap';
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -165,7 +165,7 @@
 // export default FooterWebPage;
 
 import React, { useEffect } from 'react';
-import ecgWhiteLogo from '../assets/images/ecg-white-logo.png';
+import ecgWhiteLogo from '../assets/images/ecg-white-logo.webp';
 import footerBg from '../assets/images/footerBg.webp';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';

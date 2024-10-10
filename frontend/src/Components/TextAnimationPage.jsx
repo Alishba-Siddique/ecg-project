@@ -134,15 +134,122 @@
 
 // export default ScrollTextEffect;
 
+// import React, { useEffect } from 'react';
+// import gsap from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import './../styles/animationText.css';
+// import bgImage from '../assets/images/ecg-bg.webp';
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// const AnimationPage = () => {
+//   useEffect(() => {
+//     const lines = document.querySelectorAll('.line');
+
+//     // Function to apply GSAP animation to each line with text highlighting adjustments
+//     const applyScrollAnimation = (line, nextLine, progressStart) => {
+//       gsap.to(line, {
+//         backgroundSize: '100%',
+//         ease: 'none',
+//         scrollTrigger: {
+//           trigger: line,
+//           start: 'top 80%',
+//           end: 'center 30%',
+//           scrub: true,
+
+//           onUpdate: (self) => {
+//             if (nextLine) {
+//               const progress = Math.max(0, (self.progress - progressStart) * 2);
+//               gsap.to(nextLine, {
+//                 backgroundSize: `${progress * 100}%`,
+//                 ease: 'none',
+//               });
+//             }
+//           },
+//         },
+//       });
+//     };
+
+//     // Apply animations to all lines, adjusting progressStart for specific lines
+//     lines.forEach((line, index) => {
+//       const nextLine = lines[index + 1];
+//       // line.style.lineHeight = '1.28'; // Adjust line-height as needed
+
+//       // Setting custom progressStart for specific lines
+//       if (line.textContent.includes('passive cultivation')) {
+//         applyScrollAnimation(line, nextLine, 0.4);
+//       } else if (line.textContent.includes('facility built and')) {
+//         applyScrollAnimation(line, nextLine, 0.3);
+      
+//       } else {
+//         applyScrollAnimation(line, nextLine, 0.5); // Default progress start
+//       }
+//     });
+
+//     // Cleanup ScrollTriggers on component unmount
+//     return () => {
+//       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+//     };
+//   }, []);
+
+//   const containerStyles = {
+//     backgroundImage: `url(${bgImage})`,
+//     backgroundSize: 'contain',
+//     backgroundPosition: 'center',
+//   };
+
+//   return (
+//     <section
+//       className="relative z-0  h-full sm:h-full md:h-full lg:h-[73rem] mediumLaptop:h-[83rem] xl:h-[65rem] 2xl:h-[97rem] largestLaptop:h-[115rem]"
+//       style={containerStyles}
+//     >
+//       <div className="absolute inset-0 bg-primary opacity-80"></div>
+//       <div className="mx-10 sm:mx-10 md:mx-24 lg:mx-24 mediumLaptop:mx-24 xl:mx-24 2xl:mx-24 largestLaptop:mx-44
+//         py-24 sm:py-24 md:py-24 lg:py-52 mediumLaptop:py-52 xl:py-44 2xl:py-72 largestLaptop:py-72 font-nudista font-light">
+//         {[
+//           "Connecticut's first",
+//           <span key="1" className="font-nudista font-bold">
+//             100% turn-key
+//           </span>,
+//           <span key="2" className="font-nudista font-bold">
+//             passive cultivation
+//           </span>,
+//           <>
+//             <span key="3" className="font-nudista font-bold">
+//               facility
+//             </span>{' '}
+//             built and
+//           </>,
+//           'managed for you',
+//         ].map((text, idx) => (
+//           <h1
+//             key={idx}
+//             className={`heading-title line  tracking-tight font-nudista font-light 
+//             text-5xl sm:text-6xl md:text-7xl lg:text-[6.6rem] mediumLaptop:text-[9rem] xl:text-[6.6rem]  2xl:text-[10rem] largestLaptop:text-[12rem] drop-shadow-md`}
+//             style={{ lineHeight: '1.2' }} // Inline style for full coverage
+//           >
+//             {text}
+//           </h1>
+//         ))}
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default AnimationPage;
+
+
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './../styles/animationText.css';
-import bgImage from '../assets/images/ecg-bg.webp';
+import bgVideo from '../assets/videos/bgVideo.mp4'; // Add your video file
+import poster1 from '../assets/images/poster-1.png'
+
 
 gsap.registerPlugin(ScrollTrigger);
 
-const AnimationPage = () => {
+const TextAnimationPage = () => {
   useEffect(() => {
     const lines = document.querySelectorAll('.line');
 
@@ -172,15 +279,12 @@ const AnimationPage = () => {
     // Apply animations to all lines, adjusting progressStart for specific lines
     lines.forEach((line, index) => {
       const nextLine = lines[index + 1];
-      // line.style.lineHeight = '1.28'; // Adjust line-height as needed
 
       // Setting custom progressStart for specific lines
       if (line.textContent.includes('passive cultivation')) {
         applyScrollAnimation(line, nextLine, 0.4);
       } else if (line.textContent.includes('facility built and')) {
         applyScrollAnimation(line, nextLine, 0.3);
-      } else if (line.textContent.includes('facility built and')) {
-        applyScrollAnimation(line, nextLine, 0.2);
       } else {
         applyScrollAnimation(line, nextLine, 0.5); // Default progress start
       }
@@ -192,18 +296,23 @@ const AnimationPage = () => {
     };
   }, []);
 
-  const containerStyles = {
-    backgroundImage: `url(${bgImage})`,
-    backgroundSize: 'contain',
-    backgroundPosition: 'center',
-  };
-
   return (
     <section
-      className="relative z-0  h-full sm:h-full md:h-full lg:h-[73rem] mediumLaptop:h-[83rem] xl:h-[65rem] 2xl:h-[97rem] largestLaptop:h-[115rem]"
-      style={containerStyles}
+      className="relative z-0 h-full sm:h-full md:h-full lg:h-[73rem] mediumLaptop:h-[83rem] xl:h-[65rem] 2xl:h-[97rem] largestLaptop:h-[115rem]"
     >
-      <div className="absolute inset-0 bg-primary opacity-80"></div>
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload='auto'
+        poster={poster1}
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src={bgVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="absolute inset-0 bg-primary opacity-60"></div>
       <div className="mx-10 sm:mx-10 md:mx-24 lg:mx-24 mediumLaptop:mx-24 xl:mx-24 2xl:mx-24 largestLaptop:mx-44
         py-24 sm:py-24 md:py-24 lg:py-52 mediumLaptop:py-52 xl:py-44 2xl:py-72 largestLaptop:py-72 font-nudista font-light">
         {[
@@ -224,7 +333,7 @@ const AnimationPage = () => {
         ].map((text, idx) => (
           <h1
             key={idx}
-            className={`heading-title line  tracking-tight font-nudista font-light 
+            className={`heading-title line tracking-tight font-nudista font-light 
             text-5xl sm:text-6xl md:text-7xl lg:text-[6.6rem] mediumLaptop:text-[9rem] xl:text-[6.6rem]  2xl:text-[10rem] largestLaptop:text-[12rem] drop-shadow-md`}
             style={{ lineHeight: '1.2' }} // Inline style for full coverage
           >
@@ -236,4 +345,5 @@ const AnimationPage = () => {
   );
 };
 
-export default AnimationPage;
+export default TextAnimationPage;
+

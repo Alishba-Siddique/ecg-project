@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import logo from '../assets/images/ecg-white-logo.png';
+import logo from '../assets/images/ecg-white-logo.webp';
 
 const NavbarPage = () => {
   // State to manage the navbar's visibility
@@ -30,7 +30,7 @@ const NavbarPage = () => {
 
   // Array containing navigation items with href links
   const navItems = [
-    { id: 1, text: 'Our History', href: '#history' },
+    { id: 1, text: 'Home', href: '#home' },
     { id: 2, text: 'About Us', href: '#about' },
     { id: 3, text: 'Contact Us', href: '#contact' },
   ];

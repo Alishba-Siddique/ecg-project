@@ -52,7 +52,7 @@ const EbookPage = () => {
             place-content-end
             ml-16 sm:ml-16 md:ml-16 lg:ml-32 mediumLaptop:ml-[12rem] xl:ml-[7rem] 2xl:ml-[12rem] largestLaptop:ml-[22rem]
             mt-20 sm:mt-20 md:mt-44 lg:mt-56  mediumLaptop:mt-56 xl:mt-56 2xl:mt-56 largestLaptop:mt-80
-           w-3/4 sm:w-3/4 md:w-3/4 lg:w-3/4 mediumLaptop:w-[65%] xl:w-[65%] 2xl:w-[55%] largestLaptop:w-3/4"
+           w-4/6 sm:w-4/6 md:w-3/4 lg:w-3/4 mediumLaptop:w-[65%] xl:w-[65%] 2xl:w-[55%] largestLaptop:w-3/4"
         >
           Download <span className="font-nudista font-bold ">Our Ebook</span> to
           Enhance Your Knowledge About The Industry
@@ -65,7 +65,7 @@ const EbookPage = () => {
                    px-3 md:px-2 lg:px-6 xl:px-6 2xl:px-6 largestLaptop:px-20
                    py-3 md:py-2 lg:py-4 xl:py-4 2xl:py-4 largestLaptop:py-4
                    rounded-lg
-                    ml-36 sm:ml-36 md:ml-16 lg:ml-32 mediumLaptop:ml-[12rem] xl:ml-[7rem]  2xl:ml-[12rem] largestLaptop:ml-[22rem]
+                    ml-24 sm:ml-24 md:ml-16 lg:ml-32 mediumLaptop:ml-[12rem] xl:ml-[7rem]  2xl:ml-[12rem] largestLaptop:ml-[22rem]
                    mt-5 sm:mt-5 md:mt-4 lg:mt-8 mediumLaptop:mt-8 xl:mt-8 2xl:mt-8 largestLaptop:mt-12 "
             >
               Download Now
@@ -78,7 +78,7 @@ const EbookPage = () => {
                    px-3 md:px-2 lg:px-6 xl:px-6 2xl:px-6 largestLaptop:px-20
                    py-3 md:py-2 lg:py-4 xl:py-4 2xl:py-4 largestLaptop:py-4
                    rounded-lg
-                    ml-[2rem] sm:ml-[2rem] md:ml-[2rem]lg:ml-[2rem] mediumLaptop:ml-[2rem] xl:ml-[2rem]  2xl:ml-[2rem] largestLaptop:ml-[2rem]
+                    ml-[1rem] sm:ml-[1rem] md:ml-[2rem]lg:ml-[2rem] mediumLaptop:ml-[2rem] xl:ml-[2rem]  2xl:ml-[2rem] largestLaptop:ml-[2rem]
                    mt-5 sm:mt-5 md:mt-4 lg:mt-8 mediumLaptop:mt-8 xl:mt-8 2xl:mt-8 largestLaptop:mt-12 "
             >
               Learn More

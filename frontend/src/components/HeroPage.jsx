@@ -3,7 +3,8 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import overlayTextIcon from '../assets/images/overlayTextIcon.png';
-import heroVideo from '../assets/videos/bgVideo.mp4';
+import heroBg from '../assets/videos/heroBg.mp4';
+import posterHero from '../assets/images/poster-2.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,9 +37,11 @@ const HeroPage = () => {
           loop
           muted
           playsInline
+          preload='auto'
+          poster={posterHero}
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src={heroVideo} type="video/mp4" />
+          <source src={heroBg} type="video/mp4" />
         </video>
 
         {/* Black Overlay */}
@@ -107,11 +110,11 @@ const HeroPage = () => {
           </div>
         </figure>
         <div
-          className="p-2 sm:p-2 md:p-4 lg:p-6 mediumLaptop:p-8 xl:p-8 2xl:p-8 largestLaptop:p-8
+          className="p-2 sm:p-2 md:p-4 lg:p-4 mediumLaptop:p-6 xl:p-4 2xl:p-6 largestLaptop:p-8
                     bg-white rounded-e-lg w-3/4 "
         >
           <p
-            className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-base mediumLaptop:text-base xl:text-base 2xl:text-lg largestLaptop:text-lg
+            className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-base mediumLaptop:text-lg xl:text-base 2xl:text-xl largestLaptop:text-xl
                        
                        mt-3 sm:mt-3 md:mt-0 lg:-mt-0 mediumLaptop:mt-0 xl:mt-0 2xl:mt-0 largestLaptop:mt-0
                        font-sora text-left drop-shadow-mdl"

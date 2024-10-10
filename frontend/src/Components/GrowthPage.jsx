@@ -545,7 +545,7 @@ const GrowthPage = () => {
           className="grid grid-rows-2 mx-3 sm:mx-3 md:mx-16 lg:ml-36 mediumLaptop:ml-36 xl:ml-36 2xl:ml-36 largestLaptop:ml-72
                      mt-16 sm:mt-16 md:mt-20 lg:mt-28 mediumLaptop:mt-28 xl:mt-28 2xl:mt-28 largestLaptop:mt-64"
         >
-          <div className='h-1/2'>
+          <div className="h-1/2">
             <h4
               className="text-base sm:text-base md:text-base lg:text-2xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-5xl
                        font-nudista font-bold"
@@ -562,13 +562,19 @@ const GrowthPage = () => {
               Hartford, CT.
             </p>
           </div>
-          <div className='-mb-[23.5rem] relative'>
+          <div className="-mb-[7rem]  sm:-mb-[7rem] md:-mb-[5rem] lg:-mb-[23.5rem] mediumLaptop:-mb-[23.5rem] xl:-mb-[23.5rem] 2xl:-mb-[23.5rem] largestLaptop:-mb-[23.5rem] relative">
             <img
               src={cannabisFlower3}
               alt="cannabisFlower3 "
-              className=' w-full h-[50%]' 
+              className=" w-full sm:w-full md:w-full lg:w-full mediumLaptop:w-full xl:w-full 2xl:w-[60%] largestLaptop:w-[60%]
+              h-full sm:h-full md:h-[85%] lg:h-[50%] mediumLaptop:h-[50%] xl:h-[50%] 2xl:h-[50%] largestLaptop:h-[60%]
+              "
             />
-            <div className="absolute top-0 left-0 w-full h-[50%] bg-[#759157] opacity-50"></div>
+            <div
+              className="absolute top-0 left-0  bg-[#759157] opacity-50
+            w-full sm:w-full md:w-full lg:w-full mediumLaptop:w-full xl:w-full 2xl:w-[60%] largestLaptop:w-[60%]
+              h-full sm:h-full md:h-[85%] lg:h-[50%] mediumLaptop:h-[50%] xl:h-[50%] 2xl:h-[50%] largestLaptop:h-[60%]"
+            ></div>
           </div>
         </div>
       </div>
@@ -590,8 +596,8 @@ const GrowthPage = () => {
       <div
         id="image-content-row"
         className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mediumLaptop:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 largestLaptop:grid-cols-2
-                   mt-10 sm:mt-10 md:mt-[1rem] lg:mt-[3rem] mediumLaptop:mt-[3rem] xl:mt-[13rem] 2xl:mt-[3rem] largestLaptop:mt-[5rem]
-                   ml-[0rem] sm:ml-[0rem] md:ml-[9rem] lg:ml-[14rem] mediumLaptop:ml-[14rem] xl:ml-[5.5rem] 2xl:ml-[14rem] largestLaptop:ml-[26.7rem]
+                   mt-[9rem] sm:mt-10 md:mt-[13rem] lg:mt-[13rem] mediumLaptop:mt-[13rem] xl:mt-[13rem] 2xl:mt-[20rem] largestLaptop:mt-[20rem]
+                   ml-[0rem] sm:ml-[0rem] md:ml-[6rem] lg:ml-[5.5rem] mediumLaptop:ml-[5.5rem] xl:ml-[5.5rem] 2xl:ml-[5.5rem] largestLaptop:ml-[8rem]
                     justify-items-center"
       >
         <div
@@ -619,7 +625,7 @@ const GrowthPage = () => {
             <p
               className="text-right text-base sm:text-base md:text-sm lg:text-2xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-5xl 
                           w-full
-                          mt-[1rem] sm:mt-[1rem] md:mt-[4rem] lg:-mt-[8rem] mediumLaptop:-mt-14 xl:-mt-[4.5rem] 2xl:-mt-[4rem] largestLaptop:-mt-[13rem]
+                          mt-[1rem] sm:mt-[1rem] md:mt-[4rem] lg:-mt-[8rem] mediumLaptop:-mt-[6rem] xl:-mt-[6rem] 2xl:-mt-[6rem] largestLaptop:-mt-[13rem]
                           mr-[0rem] sm:mr-[0rem] md:mr-[0rem] lg:mr-0 mediumLaptop:mr-0 xl:mr-0 2xl:mr-[0rem] largestLaptop:mr-[0rem]
                           font-nudista font-bold"
             >

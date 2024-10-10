@@ -1,13 +1,11 @@
 import './App.css';
 // import HeaderPage from './Components/HeaderPage';
-import AnimationPage from './components/TextAnimationPage';
 import HeroPage from './components/HeroPage';
-import TeamPage from './components/TeamPage';
+// import TeamPage from './components/TeamPage';
 import DownloadPdfPage from './components/DownloadPdfPage';
 import ScrollTrigger from './utilities/ScrollToTopButton';
 import AdvPage from './components/AdvPage';
 import NavbarPage from './components/NavbarPage';
-import PhotoVideoPage from './components/PhotoVideoPage';
 import { useState, useEffect } from 'react';
 import Loader from './components/Loader';
 import './styles/fade.css';
@@ -15,6 +13,9 @@ import FooterWebPage from './components/FooterWebPage';
 import EbookPage from './components/EbookPage';
 import InvestmentPage from './components/InvestmentPage';
 import GrowthPage from './components/GrowthPage';
+import FourVideoPage from './Components/FourVideoPage';
+import TextAnimationPage from './components/TextAnimationPage';
+import TeamWebPage from './Components/TeamWebPage';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -36,13 +37,14 @@ function App() {
           <NavbarPage />
           {/* <HeaderPage /> */}
           <HeroPage />
-          <AnimationPage />
+          <TextAnimationPage />
           <GrowthPage />
           <DownloadPdfPage />
           <InvestmentPage />
           <AdvPage />
-          <PhotoVideoPage />
-          <TeamPage />
+          <FourVideoPage />
+          {/* <TeamPage /> */}
+          <TeamWebPage />
           {/* <ScrollTrigger /> */}
           <EbookPage />
           <FooterWebPage />

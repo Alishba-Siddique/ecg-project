@@ -74,9 +74,9 @@ const DownloadPdfPage = () => {
             className="relative rounded-lg
              hidden md:block lg:block mediumLaptop:block xl:block 2xl:block largestLaptop:block 
             ml-6 sm:ml-[1.5rem]  md:ml-14 lg:ml-[13rem] mediumLaptop:ml-[13rem] xl:ml-[13rem] 2xl:ml-[13rem] largestLaptop:ml-[13rem]
-            w-[88%] sm:w-[88%] md:w-[50%] lg:w-[50%]  mediumLaptop:w-[50%]  xl:w-[50%]  2xl:w-[50%]  largestLaptop:w-[50%] 
+            w-[88%] sm:w-[88%] md:w-[50%] lg:w-[50%]  mediumLaptop:w-[50%]  xl:w-[50%]  2xl:w-[50%]  largestLaptop:w-[100%] 
             h-52 sm:h-52 md:h-52 lg:h-72  mediumLaptop:h-96 xl:h-96  2xl:h-96 largestLaptop:h-96
-            mt-[2rem] sm:mt-[2rem] md:mt-[3rem] lg:-mt-[9rem]  xl:-mt-[9rem]
+            mt-32 sm:mt-32 md:mt-32 lg:-mt-[9rem]  xl:-mt-[9rem]
          "
           >
             <img
@@ -91,12 +91,12 @@ const DownloadPdfPage = () => {
         {/* Title and Icon Row */}
         <div
           className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-1 gap-0 items-center 
-          ml-[1.5rem] sm:ml-[1.5rem]  md:-ml-16  lg:ml-0 xl:ml-0 mediumLaptop:ml-0 2xl:ml-0 largestLaptop:ml-0
+          ml-[1.5rem] sm:ml-[1.5rem]  md:-ml-3  lg:ml-0 xl:ml-0 mediumLaptop:ml-0 2xl:ml-0 largestLaptop:-ml-56
         mt-[0rem]  md:mt-0 lg:-mt-[36rem] h-[15%] md:h-[15%] lg:h-[15%] mediumLaptop:h-[15%]  xl:h-[15%] 2xl:h-[15%]  largestLaptop:h-[15%] "
         >
           <p
             className="text-base sm:text-base md:text-xl lg:text-2xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-5xl
-             mt-0 md:-mt-32 lg:-mt-0 xl:-mt-0 mediumLaptop:-mt-0 2xl:-mt-0 largestLaptop:-mt-0  
+             mt-32 md:-mt-32 lg:-mt-0 xl:-mt-0 mediumLaptop:-mt-0 2xl:-mt-0 largestLaptop:-mt-0  
           font-nudista font-bold leading-tight w-full" 
           >
              State of the Art Technology
@@ -130,8 +130,8 @@ const DownloadPdfPage = () => {
 
         {/* Line, Paragraph, and Buttons */}
         <div
-          className="space-y-4 ml-[1.5rem] sm:ml-[1.5rem]  md:-ml-16  lg:ml-0 xl:ml-0 mediumLaptop:ml-0 2xl:ml-0 largestLaptop:ml-0
-         mb-4 md:-mb-[80rem]    "
+          className="space-y-4 ml-[1.5rem] sm:ml-[1.5rem]  md:-ml-3  lg:ml-0 xl:ml-0 mediumLaptop:ml-0 2xl:ml-0 largestLaptop:-ml-56
+         mb-4 md:-mb-[80rem] lg:-mb-0 xl:-mb-0 mediumLaptop:-mb-0 2xl:-mb-0 largestLaptop:-mb-0"
         >
           <div className="border-t-2 border-secondary w-20 sm:w-20 md:w-20 lg:w-28 mediumLaptop:w-28  xl:w-28  2xl:w-28 largestLaptop:w-28  -mt-4 mb-6 hidden md:block lg:block xl:block"></div>
           <p className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-base mediumLaptop:text-lg xl:text-lg 2xl:text-xl largestLaptop:text-2xl text-gray-500 ">
