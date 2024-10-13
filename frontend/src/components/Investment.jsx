@@ -14,7 +14,7 @@ import exGrowthIcon4 from '../assets/images/exGrowthIcon4.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const InvestmentPage = () => {
+const Investment = () => {
   const [selectedImage, setSelectedImage] = useState(0);
 
   useEffect(() => {
@@ -106,14 +106,14 @@ const InvestmentPage = () => {
       heading: 'INVESTORS',
       text: 'Investors',
       description1:
-        'A groundbreaking fractional ownership model offers investors the chance to own individual rooms or tables within our facility, providing access to a highly lucrative and unique opportunity, while remaining 100% passive.',
+        'Our fractional ownership model offers investors the chance to own a share of our facility, providing access to a highly lucrative and unique opportunity, while remaining 100% passive.',
       icon: <img src={exGrowthIcon3} width="30%" className="text-white" />,
     },
     {
       src: `${cannabisFlower1}`,
       heading: 'RETURNS',
       description1:
-        'Given Connecticut\'s regulatory landscape and favorable market conditions, this investment is projected to yield returns exceeding 30%. For comparison, since 1924, the S&P 500 has averaged an annual return of approximately 7%, adjusted for inflation.',
+        'Given Connecticut\'s regulatory landscape and favorable market conditions, this investment is projected to yield returns exceeding 40%. For comparison, since 1924, the S&P 500 has averaged an annual return of approximately 7%, adjusted for inflation.',
       text: 'Returns',
       icon: <img src={exGrowthIcon4} width="30%" className="text-white" />,
     },
@@ -134,8 +134,8 @@ const InvestmentPage = () => {
   return (
     <div
       className="relative flex flex-col w-full h-full justify-center items-center 
-        mt-32 sm:mt-32 md:mt-32 lg:mt-32 mediumLaptop:mt-32xl:mt-32 2xl:mt-32 largestLaptop:mt-32
-        mb-32 sm:mb-32 md:mb-32 lg:mb-32 mediumLaptop:mb-32 xl:mb-52 2xl:mb-52 largestLaptop:mb-52 gap-5 bg-blend-overlay bg-opacity-90"
+        mt-32 sm:mt-32 md:mt-32 lg:mt-32 mediumLaptop:mt-32 xl:mt-20 2xl:mt-32 largestLaptop:mt-32
+        mb-32 sm:mb-32 md:mb-32 lg:mb-32 mediumLaptop:mb-32 xl:mb-28 2xl:mb-52 largestLaptop:mb-52 gap-5 bg-blend-overlay bg-opacity-90 overflow-x-hidden"
       style={{
         backgroundImage: `url(${conneticutImg1})`,
         backgroundSize: 'cover',
@@ -143,7 +143,7 @@ const InvestmentPage = () => {
       }}
     >
       {/* Title Section */}
-      <div id="title" className="text-center mb-12 mt-20 px-4">
+      <div id="title" className="text-center mb-12 mt-20 px-4 ">
         <div className="flex justify-center items-center gap-2">
           <div className="border-t-4 border-white w-[4rem] md:w-[4rem] lg:w-[10rem] mediumLaptop:w-[10rem] xl:w-[10rem] 2xl:w-[10rem] largestLaptop:w-[10rem]"></div>
           <h2 className="mx-auto text-base sm:text-base md:text-2xl lg:text-3xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-6xl text-white font-nudista font-light ">
@@ -158,17 +158,17 @@ const InvestmentPage = () => {
       {/* Images Grid (Visible on Medium and Larger Screens) */}
       <div
         id="image-section-content"
-        className="hidden grid-cols-2 md:flex md:flex-row lg:flex lg:flex-wrap lg:flex-row w-64 md:w-[40rem]  lg:w-[63rem] mediumLaptop:w-[63rem] xl:w-[63rem] 2xl:w-[83rem] largestLaptop:w-[120rem] gap-4 md:gap-4 lg:gap-8 mx-auto justify-center"
+        className="hidden grid-cols-2 md:flex   md:flex-row lg:flex lg:flex-wrap lg:flex-row w-64 md:w-[40rem]  lg:w-[63rem] mediumLaptop:w-[63rem] xl:w-[63rem] 2xl:w-[83rem] largestLaptop:w-[120rem] gap-4 md:gap-4 lg:gap-8 mx-auto justify-center"
       >
         {images.map((image, index) => (
           <div
             key={index}
-            className={`relative cursor-pointer transition-all duration-500 ${
+            className={`relative transition-all duration-500 ${
               selectedImage === index
                 ? 'flex-[4]  h-[15rem]  sm:h-[15rem] md:h-[20rem] lg:h-[25rem] mediumLaptop:h-[25rem] xl:h-[25rem] 2xl:h-[35rem] largestLaptop:h-[35rem] '
                 : 'flex-[3] h-[10rem] sm:h-[10rem] md:h-[15rem] lg:h-[20rem] mediumLaptop:h-[20rem] xl:h-[20rem] 2xl:h-[30rem] largestLaptop:h-[30rem] max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] mediumLaptop:max-w-[700px] xl:max-w-[800px] 2xl:max-w-[900px] largestLaptop:max-w-[1000px]'
             }`}
-            onClick={() => setSelectedImage(index)}
+            onMouseEnter={() => setSelectedImage(index)}
           >
             <img
               src={image.src}
@@ -185,7 +185,7 @@ const InvestmentPage = () => {
       </div>
 
       {/* Carousel (Visible on Small Screens) */}
-      <div id="image-section-small" className="block md:hidden w-full relative">
+      <div id="image-section-small" className="block md:hidden w-full relative ">
         <button
           className="absolute left-4 top-40 z-10 text-white p-2 bg-secondary rounded-full"
           onClick={handlePrev}
@@ -217,7 +217,7 @@ const InvestmentPage = () => {
       {/* Icon and Description Row (Same for all screens) */}
       <div
         id="description-section"
-        className="flex flex-row md:flex-row w-full max-w-[83rem] sm:max-w-[83rem] md:max-w-[83rem] lg:max-w-[63rem] mediumLaptop:max-w-[63rem] xl:max-w-[63rem] 2xl:max-w-[83rem] largestLaptop:max-w-[120rem] gap-2 md:gap-5 lg:gap-5 my-8 mb-16 justify-center items-center  px-4 mx-0  md:ml-0 lg:mx-0"
+        className=" flex flex-row md:flex-row w-full max-w-[83rem] sm:max-w-[83rem] md:max-w-[83rem] lg:max-w-[63rem] mediumLaptop:max-w-[63rem] xl:max-w-[63rem] 2xl:max-w-[83rem] largestLaptop:max-w-[120rem] gap-2 md:gap-5 lg:gap-5 my-8 mb-16 justify-center items-center  px-4 mx-0  md:ml-0 lg:mx-0"
       >
         <div className="w-[60%] md:w-[30%] lg:w-[30%] flex justify-center items-center bg-secondary rounded-l-full py-10 md:p-10 lg:p-10 md:rounded-r-none md:rounded-s-full">
           {images[selectedImage].icon}
@@ -235,4 +235,4 @@ const InvestmentPage = () => {
   );
 };
 
-export default InvestmentPage;
+export default Investment;

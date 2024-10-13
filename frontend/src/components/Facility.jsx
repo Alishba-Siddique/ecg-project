@@ -7,7 +7,7 @@
 // import windMillIcon from '../assets/images/windmill.svg';
 // import overlayTextIconOrange from '../assets/images/overlayTextIconOrange.png';
 
-// const ConneticutPage = () => {
+// const Facility = () => {
 //   return (
 //     <div className="w-full h-full mt-28 mb-[12rem]">
 //       {/* Title Section */}
@@ -112,7 +112,7 @@
 //   );
 // };
 
-// export default ConneticutPage;
+// export default Facility;
 
 // import React, { useEffect, useState } from 'react';
 // import conneticutImg1 from '../assets/images/conneticutImg1.webp';
@@ -122,7 +122,7 @@
 // import overlayTextIconOrange from '../assets/images/overlayTextIconOrange.png';
 // import '../styles/fade.css';
 
-// const ConneticutPage = () => {
+// const Facility = () => {
 //   const [isTitleVisible, setIsTitleVisible] = useState(false);
 //   const [isMainVisible, setIsMainVisible] = useState(false);
 //   const [isImageRowVisible, setIsImageRowVisible] = useState(false);
@@ -263,7 +263,7 @@
 //   );
 // };
 
-// export default ConneticutPage;
+// export default Facility;
 
 // import React, { useEffect, useRef } from 'react';
 // import gsap from 'gsap';
@@ -274,7 +274,7 @@
 // import overlayTextIconOrange from '../assets/images/overlayTextIconOrange.png';
 // import '../styles/fade.css';
 
-// const ConneticutPage = () => {
+// const Facility = () => {
 //   const titleRef = useRef(null);
 //   const mainRef = useRef(null);
 //   const imageRowRef = useRef(null);
@@ -408,22 +408,22 @@
 //   );
 // };
 
-// export default ConneticutPage;
+// export default Facility;
 
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import conneticutImg1 from '../assets/images/conneticutImg1.webp';
-// import threeDBud from '../assets/images/3dBud.webp';
 import conneticutImg2 from '../assets/images/conneticutImg2.webp';
 import conneticutImg3 from '../assets/images/conneticutImg3.webp';
 import overlayTextIconOrange from '../assets/images/overlayTextIconOrange.webp';
+import bud from '../assets/images/bud.svg';
 
 import cannabisFlower1 from '../assets/images/cannabisFlower1.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const GrowthPage = () => {
+const Facility = () => {
   useEffect(() => {
     // Title Section Animation
     gsap.fromTo(
@@ -495,17 +495,18 @@ const GrowthPage = () => {
   }, []);
 
   return (
-    <div className="w-full h-full mt-28 mb-[12rem]">
+    <div className="w-full h-full mt-28 mb-[12rem] ">
       {/* Title Section */}
-      <div id="title-section" className="text-center mb-8">
+      <div id="title-section" className="text-center mb-8 ">
         <div className="flex justify-center items-center">
           <div
             className="border-t-4 border-secondary mt-1 
+            mx-4 sm:mx-6 md:mx-8 lg:mx-10 mediumLaptop:mx-10 xl:ml-20 2xl:mx-10 largestLaptop:mx-8
                        w-[8rem] sm:w-[8rem] md:w-[8rem] lg:w-[20rem] mediumLaptop:w-[20rem] xl:w-[10rem] 2xl:w-[20rem] largestLaptop:w-[22rem]"
           ></div>
           <h2
             className="text-xl sm:text-2xl md:text-2xl lg:text-3xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-6xl
-                       mx-4 sm:mx-6 md:mx-8 lg:mx-10 mediumLaptop:mx-10 xl:mx-10 2xl:mx-10 largestLaptop:mx-8
+                       mx-4 sm:mx-6 md:mx-8 lg:mx-10 mediumLaptop:mx-10 xl:mx-0 2xl:mx-10 largestLaptop:mx-8
                       text-black font-nudista font-light"
           >
             Advanced,{' '}
@@ -516,6 +517,7 @@ const GrowthPage = () => {
           </h2>
           <div
             className="border-t-4  border-secondary mt-1 
+            mx-4 sm:mx-6 md:mx-8 lg:mx-10 mediumLaptop:mx-10 xl:mr-20 2xl:mx-10 largestLaptop:mx-8
                        w-[8rem] sm:w-[8rem] md:w-[8rem] lg:w-[20rem] mediumLaptop:w-[20rem] xl:w-[10rem] 2xl:w-[20rem] largestLaptop:w-[22rem]"
           ></div>
         </div>
@@ -525,7 +527,7 @@ const GrowthPage = () => {
       <div
         id="main-content-section"
         className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mediumLaptop:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 largestLaptop:grid-cols-2  
-         justify-items-center gap-0 mx-8 sm:ml-7 md:ml-16 lg:-ml-[1rem] md:gap-10 lg:gap-10"
+         justify-items-center gap-0 mx-8 sm:ml-7 md:ml-16 lg:-ml-[1rem] md:gap-10 lg:gap-10 "
       >
         <div
           className="relative w-[95%] sm:w-[95%] md:w-[110%] lg:w-[103%] mediumLaptop:w-[103%] xl:w-[103%] 2xl:w-[103%] largestLaptop:w-[100%]
@@ -579,26 +581,38 @@ const GrowthPage = () => {
         </div>
       </div>
 
-      {/* 3D Bud Image */}
-      {/* <span className="flex justify-center items-center">
-        <img
-          id="bud-image"
-          src={threeDBud}
-          alt="conneticutImg2"
-          className="w-[60%] md:w-[28%] lg:w-[28%] xl:w-[28%]
-             ml-[0.8rem] md:ml-[28rem] lg:ml-[58rem] xl:ml-[58rem]
-             mt-8 md:-mt-[2rem] lg:mt-[9rem] xl:-mt-[10rem] 
-             -mb-[2.5rem] md:mb-[1rem] lg:mb-[3rem]"
-        />
-      </span> */}
+      {/* Orange Box */}
+      <div
+        id="orange-section"
+        className=" bg-secondary
+                    my-5 sm:my-5 md:my-5 lg:my-5 mediumLaptop:my-5 xl:-mb-44 2xl:my-5 largestLaptop:my-5
+                    mt-5 sm:mt-5 md:mt-5 lg:mt-5 mediumLaptop:mt-5 xl:mt-44 2xl:mt-5 largestLaptop:mt-5"
+      >
+        <div
+          className="flex justify-center items-center  space-x-8 p-2 sm:p-2 md:p-4 lg:p-24 mediumLaptop:p-16 xl:p-10 2xl:p-16 largestLaptop:p-10
+          text-white mx-20"
+        >
+          <img src={bud} width={50} />
+          <p
+            className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-base mediumLaptop:text-lg xl:text-base 2xl:text-xl largestLaptop:text-xl
+                       
+                       mt-3 sm:mt-3 md:mt-0 lg:mt-2 mediumLaptop:mt-2 xl:mt-2 2xl:mt-2 largestLaptop:mt-2
+                       font-sora text-left drop-shadow-mdl"
+          >
+            East Coast Growers offers a 100% passive opportunity to be involved
+            in the cannabis industry. We manage the entire process from build,
+            to grow, to harvest, to sale.
+          </p>
+        </div>
+      </div>
 
       {/* Image and Content Row */}
       <div
         id="image-content-row"
         className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mediumLaptop:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 largestLaptop:grid-cols-2
-                   mt-[9rem] sm:mt-10 md:mt-[13rem] lg:mt-[13rem] mediumLaptop:mt-[13rem] xl:mt-[13rem] 2xl:mt-[20rem] largestLaptop:mt-[20rem]
+                   mt-[9rem] sm:mt-10 md:mt-[13rem] lg:mt-[13rem] mediumLaptop:mt-[13rem] xl:mt-[15rem] 2xl:mt-[20rem] largestLaptop:mt-[20rem]
                    ml-[0rem] sm:ml-[0rem] md:ml-[6rem] lg:ml-[5.5rem] mediumLaptop:ml-[5.5rem] xl:ml-[5.5rem] 2xl:ml-[5.5rem] largestLaptop:ml-[8rem]
-                    justify-items-center"
+                    justify-items-center "
       >
         <div
           className="relative z-30 
@@ -625,7 +639,7 @@ const GrowthPage = () => {
             <p
               className="text-right text-base sm:text-base md:text-sm lg:text-2xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-5xl 
                           w-full
-                          mt-[1rem] sm:mt-[1rem] md:mt-[4rem] lg:-mt-[8rem] mediumLaptop:-mt-[6rem] xl:-mt-[6rem] 2xl:-mt-[6rem] largestLaptop:-mt-[13rem]
+                          mt-[1rem] sm:mt-[1rem] md:mt-[4rem] lg:-mt-[8rem] mediumLaptop:-mt-[6rem] xl:-mt-[8rem] 2xl:-mt-[6rem] largestLaptop:-mt-[13rem]
                           mr-[0rem] sm:mr-[0rem] md:mr-[0rem] lg:mr-0 mediumLaptop:mr-0 xl:mr-0 2xl:mr-[0rem] largestLaptop:mr-[0rem]
                           font-nudista font-bold"
             >
@@ -634,31 +648,38 @@ const GrowthPage = () => {
             <p
               className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-sm mediumLaptop:text-lg xl:text-sm 2xl:text-lg largestLaptop:text-2xl
              font-sora text-right
-              -mt-[2rem] sm:-mt-[2rem] md:-mt-[1rem] lg:-mt-[4rem] mediumLaptop:-mt-[5rem] xl:-mt-[4rem] 2xl:-mt-[5rem] largestLaptop:-mt-[9rem]
+              -mt-[2rem] sm:-mt-[2rem] md:-mt-[1rem] lg:-mt-[4rem] mediumLaptop:-mt-[5rem] xl:-mt-[8rem] 2xl:-mt-[5rem] largestLaptop:-mt-[9rem]
               mr-[0rem] sm:mr-[0rem] md:mr-[0rem] lg:-mr-0 mediumLaptop:-mr-0 xl:-mr-0 2xl:-mr-0 largestLaptop:-mr-0
                w-[50%] sm:w-1/2 md:w-[48%] lg:w-[45%] mediumLaptop:w-1/2 xl:w-[45%] 2xl:w-1/2 largestLaptop:w-1/2"
             >
-              Our team of trained experts deliver exceptional value to both our
-              customers and the market by keeping yields and proﬁts high.
+              Utilizing a hybrid model, we combine the benefits of a large-scale
+              cultivation facility with the quality and control of
+              micro-cultivation methods which allows better control over
+              variables, leading to a higher quality of product.
             </p>
-            <button
-              className=" text-xs sm:text-xs md:text-xs lg:text-sm mediumLaptop:text-base xl:text-lg 2xl:text-lg largestLaptop:text-3xl 
+            <a
+              href="https://crm.investexpress.ai/v2/preview/7qUAox9kkUgKnoK8UFrO"
+              className="text-decoration-none"
+            >
+              <button
+                className=" text-xs sm:text-xs md:text-xs lg:text-sm mediumLaptop:text-base xl:text-lg 2xl:text-lg largestLaptop:text-3xl 
              bg-black border-none text-white hover:bg-secondary font-sora 
                    px-3 sm:px-3 md:px-4 lg:px-6 xl:px-6 2xl:px-6 largestLaptop:px-20
                    py-3 sm:py-3 md:py-2 lg:py-4 xl:py-4 2xl:py-4 largestLaptop:py-4
                    rounded-lg
                    ml-0 sm:ml-0 md:ml-3 lg:ml-3 medimLaptop:ml-3 xl:ml-8 2xl:ml-8 largestLaptop:ml-5
                    -mt-10 sm:-mt-14 md:-mt-10 lg:mt-0 mediumLaptop:mt-4 xl:mt-2 2xl:mt-2 largestLaptop:mt-2 "
-            >
-              Learn more{' '}
-            </button>
+              >
+                Learn more{' '}
+              </button>
+            </a>
           </div>
         </div>
 
         <div
           className="relative
                     w-[80%] sm:w-[80%] md:w-[95%] lg:w-[90%] mediumLaptop:w-[90%] xl:w-[85%] 2xl:w-[85%] largestLaptop:w-[85%]
-                    mr-0 sm:mr-0 md:mr-28 lg:mr-40 mediumLaptop:mr-40 xl:mr-40 2xl:mr-40 largestLaptop:mr-64
+                    mr-0 sm:mr-0 md:mr-28 lg:mr-40 mediumLaptop:mr-40 xl:mr-24 2xl:mr-40 largestLaptop:mr-64
                     order-1 sm:order-1 md:order-2 lg:order-2 mediumLaptop:order-2 xl:order-2 2xl:order-2 largestLaptop:order-2"
         >
           <img
@@ -673,4 +694,4 @@ const GrowthPage = () => {
   );
 };
 
-export default GrowthPage;
+export default Facility;

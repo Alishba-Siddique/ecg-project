@@ -5,7 +5,7 @@
 
 // gsap.registerPlugin(ScrollTrigger);
 
-// const AdvPage = () => {
+// const Adv = () => {
 //   const cellRefs = useRef([]);
 
 //   useEffect(() => {
@@ -137,7 +137,7 @@
 //   );
 // };
 
-// export default AdvPage;
+// export default Adv;
 
 // import { React, useEffect, useRef } from 'react';
 // import { gsap } from 'gsap';
@@ -145,7 +145,7 @@
 
 // gsap.registerPlugin(ScrollTrigger);
 
-// const AdvPage = () => {
+// const Adv = () => {
 //   const cellRefs = useRef([]);
 
 //   useEffect(() => {
@@ -282,19 +282,19 @@
 //   );
 // };
 
-// export default AdvPage;
+// export default Adv;
 
 import { React, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import icon1 from '../assets/images/adv-icon-1.webp';
 import icon2 from '../assets/images/adv-icon-2.webp';
-import icon3 from '../assets/images/adv-icon-3.webp';
+import icon3 from '../assets/images/competitive.svg';
 import icon4 from '../assets/images/adv-icon-4.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const AdvPage = () => {
+const Adv= () => {
   const gridRef = useRef(null);
   const cellRefs = useRef([]);
 
@@ -364,39 +364,39 @@ const AdvPage = () => {
       img: <img src={icon1} alt="icon1" />,
       title: 'HYBRID MODEL',
       description:
-        'Benefits of micro-grow cultivation with the resources of a large scale facility in one place.',
+        'Benefits of micro-grow cultivation with the resources of a large scale facility.',
       id: 'adv-row-1-1',
     },
     {
-      img: <img src={icon2} alt="icon2" />,
+      img: <img src={icon4} alt="icon4" />,
       title: 'PREMIUM QUALITY',
       description:
         'Top genetics, tight environmental controls resulting in high yields, high THC, and exceptional quality.',
       id: 'adv-row-1-2',
     },
     {
-      img: <img src={icon3} alt="icon3" />,
+      img: <img src={icon2} alt="icon2" />,
       title: 'PRICE POINT',
       description:
         'Higher quality product, high demand, and low supply equals higher prices per pound.',
       id: 'adv-row-1-3',
     },
     {
-      img: <img src={icon4} alt="icon4" />,
+      img: <img src={icon3} alt="icon3" />,
       title: 'COMPETITIVE EDGE',
       description:
-        'Operating in a tightly regulated Connecticut market which avoids saturation from other players.',
+        'Operating in a tightly regulated Connecticut market which avoids saturation.',
       id: 'adv-row-1-4',
     },
   ];
 
   return (
-    <div className="overflow-x-hidden max-w-8xl mx-2 sm:mx-2 md:mx-6 lg:mx-20 mediumLaptop:mx-20 xl:mx-10 2xl:mx-32 largestLaptop:mx-32 mb-16 py-8 px-4 sm:px-6 md:px-6 lg:px-12 xl:px-12 2xl:px-12 largestLaptop:px-12 flex flex-col justify-center h-full fade-in">
+    <div className=" max-w-8xl mx-2 sm:mx-2 md:mx-6 lg:mx-20 mediumLaptop:mx-20 xl:mx-0 2xl:mx-32 largestLaptop:mx-32 mb-16 py-0 px-4 sm:px-6 md:px-6 lg:px-12 xl:px-12 2xl:px-12 largestLaptop:px-12 flex flex-col justify-center h-full fade-in">
       {/* Title Section */}
       <div id="title-adv-section" className="text-center mb-24">
         <div className="flex justify-center items-center">
           <div className="border-t-4 border-secondary w-[5rem] md:w-[10rem] lg:w-[15rem] mt-1"></div>
-          <h2 className="text-md sm:text-md md:text-2xl lg:text-3xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-6xl mx-10 sm:mx-10 md:mx-10 lg:mx-5 mediumLaptop:mx-5 xl:mx-5 2xl:mx-10 largestLaptop:mx-10 text-black font-nudista font-light">
+          <h2 className="text-md sm:text-md md:text-2xl lg:text-3xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-6xl mx-10 sm:mx-10 md:mx-10 lg:mx-5 mediumLaptop:mx-5 xl:mx-10 2xl:mx-10 largestLaptop:mx-10 text-black font-nudista font-light">
             The{' '}
             <span className="font-nudista font-bold mb-44">
               East Coast Growers
@@ -445,4 +445,6 @@ const AdvPage = () => {
   );
 };
 
-export default AdvPage;
+export default Adv;
+
+

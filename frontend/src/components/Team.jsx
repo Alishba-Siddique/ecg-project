@@ -8,7 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const TeamWebPage = () => {
+const Team = () => {
   // Title Section Animation
   gsap.fromTo(
     '#title-team-section',
@@ -26,14 +26,14 @@ const TeamWebPage = () => {
     }
   );
   gsap.fromTo(
-    '#about',
+    '#team-section',
     { y: -100, opacity: 0 },
     {
       y: 0,
       opacity: 1,
       duration: 1,
       scrollTrigger: {
-        trigger: '#about',
+        trigger: '#team-section',
         start: 'top 90%',
         end: 'bottom 60%',
         toggleActions: 'play none none reverse',
@@ -41,16 +41,16 @@ const TeamWebPage = () => {
     }
   );
   return (
-    <>
+    <div id="about">
       {/* Title Section */}
       <div
         id="title-team-section"
-        className="text-center mb-10 sm:mb-10 md:mb-32 lg:mb-32 mediumLaptop:mb-36 xl:mb-10 2xl:ml-36  largestLaptop:mb-36"
+        className="text-center mb-10 sm:mb-10 md:mb-32 lg:mb-32 mediumLaptop:mb-36 xl:my-16 2xl:mb-36  largestLaptop:mb-36"
       >
         <div className="flex justify-center items-center">
           <div className="border-t-4 border-secondary w-[5rem] md:w-[10rem] lg:w-[15rem] mt-1"></div>
           <h2 className="text-md sm:text-md md:text-2xl lg:text-3xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-6xl mx-10 sm:mx-10 md:mx-10 lg:mx-5 mediumLaptop:mx-5 xl:mx-5 2xl:mx-10 largestLaptop:mx-10 text-black font-nudista font-light">
-            Meet the <span className="font-bold font-nudista mb-44">Team</span>{' '}
+            Meet the <span className="font-bold font-nudista mb-10 sm:mb-10 md:mb-32 lg:mb-32 mediumLaptop:mb-36 xl:mb-10 2xl:ml-36  largestLaptop:mb-36">Team</span>{' '}
           </h2>
           <div className="border-t-4 border-secondary w-[5rem] md:w-[10rem] lg:w-[15rem] mt-1"></div>
         </div>
@@ -58,10 +58,10 @@ const TeamWebPage = () => {
 
       {/* Team Members Grid */}
       <div
-        id="about"
+        id="team-section"
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 
          mx-16  sm:mx-16 md:mx-16 lg:mx-20 xl:mx-24  mediumLaptop:mx-24  2xl:mx-24  largestLaptop:mx-44
-          gap-6 sm:gap-10 md:gap-10 lg:gap-10 xl:gap-10  mediumLaptop:gap-10  2xl:gap-10  largestLaptop:gap-10"
+          gap-6 sm:gap-10 md:gap-10 lg:gap-10 xl:gap-10  mediumLaptop:gap-10  2xl:gap-10  largestLaptop:gap-10  "
       >
         {/* <!-- Column 1 --> */}
         <div className="flex flex-col items-center text-center sm:items-start sm:text-left lg:items-start lg:text-left">
@@ -79,10 +79,11 @@ const TeamWebPage = () => {
           <p className="text-xs sm:text-sm md:text-sm lg:text-sm  xl:text-sm  mediumLaptop:text-sm  2xl:text-sm  largestLaptop:text-lg mt-2 font-sora ">
             Dan brings extensive experience in construction, real estate
             development, and project management, successfully transforming
-            properties and securing a provisional license to cultivate and sell
-            cannabis in Connecticut. His strategic approach and hands-on
-            experience positions him perfectly to navigate the complexities of
-            the cannabis market.
+            properties. Dan has also secured approval from state regulators as a
+            social equity applicant to cultivate and sell cannabis in
+            Connecticut. His strategic approach and hands-on experience
+            positions him perfectly to navigate the complexities of the cannabis
+            market.
           </p>
         </div>
 
@@ -100,12 +101,12 @@ const TeamWebPage = () => {
             CO-FOUNDER
           </h3>
           <p className="text-xs sm:text-sm md:text-sm lg:text-sm  xl:text-sm  mediumLaptop:text-sm  2xl:text-sm  largestLaptop:text-lg mt-2 font-sora ">
-            Oz combines over a decade of experience as a licensed physical
-            therapist with a successful real estate investment career, where he
-            has significantly increased property values. His early investments
-            in the burgeoning cannabis industry and vision to establish a
-            state-of-the-art facility in Connecticut highlight his keen
-            understanding of the sector's potential.
+            Oz combines over a decade of experience as a licensed Physical
+            Therapist with a successful real estate investment career, where he
+            owns and manages properties in multiple states. His early
+            investments in the burgeoning cannabis industry and vision to
+            establish a state-of-the-art facility in Connecticut highlight his
+            keen understanding of the sector’s potential.
           </p>
         </div>
 
@@ -151,23 +152,23 @@ const TeamWebPage = () => {
             Trent & <br /> Chad Lynch
           </h1>
           <h3 className="text-base sm:text-lg md:text-lg lg:text-lg  xl:text-lg  mediumLaptop:text-lg  2xl:text-lg  largestLaptop:text-2xl font-sora text-secondary">
-            CONSULTANTS
+            CONSULTANT PARTNERS
           </h3>
           <p
             className="
           text-xs sm:text-sm md:text-sm lg:text-sm  xl:text-sm  mediumLaptop:text-sm  2xl:text-sm  largestLaptop:text-lg mt-2 font-sora"
           >
-            Co-founders of Shoreline Hydroponics, leverage their expertise in
-            cannabis cultivation and operational efficiency to drive sustainable
-            success in the industry. Trent's management of large-scale
-            cultivation facilities and Chad's experience in logistics and
-            process optimization position them as leaders in the cannabis
-            sector.
+            As co-founders of Shoreline Hydroponics, Chad and Trent leverage
+            their expertise in cannabis cultivation and operational efficiency
+            to drive sustainable success in the industry. Trent's management of
+            large-scale cultivation facilities and Chad's experience in
+            logistics and process optimization position them as leaders in the
+            cannabis sector.
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default TeamWebPage;
+export default Team;

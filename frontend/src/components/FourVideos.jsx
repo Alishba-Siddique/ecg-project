@@ -2,7 +2,7 @@
 // import cannabisFlower1 from '../assets/images/cannabisFlower.webp';
 // import cannabisFlower2 from '../assets/images/cannabisFlower2.webp';
 
-// const FourVideoPage = () => {
+// const FourVideos = () => {
 //   return (
 //     <div className="w-[89%] mx-auto mb-20 py-10 px-4 sm:px-4 lg:px-6 flex flex-col lg:flex-row justify-center h-auto lg:h-[500px] gap-6">
 //         {/* 70% Container: Displaying Photo */}
@@ -42,7 +42,7 @@
 //   );
 // };
 
-// export default FourVideoPage;
+// export default FourVideos;
 
 // import { FiPlay } from 'react-icons/fi';
 // import Slider from "react-slick"; // Importing react-slick
@@ -51,7 +51,7 @@
 // import "slick-carousel/slick/slick.css"; // Importing slick-carousel styles
 // import "slick-carousel/slick/slick-theme.css";
 
-// const FourVideoPage = () => {
+// const FourVideos = () => {
 //   // Settings for the carousel
 //   const settings = {
 //     dots: true,
@@ -126,7 +126,7 @@
 //   );
 // };
 
-// export default FourVideoPage;
+// export default FourVideos;
 
 // import { FiPlay } from 'react-icons/fi';
 // import Slider from 'react-slick'; // Importing react-slick
@@ -135,7 +135,7 @@
 // import 'slick-carousel/slick/slick.css'; // Importing slick-carousel styles
 // import 'slick-carousel/slick/slick-theme.css';
 
-// const FourVideoPage = () => {
+// const FourVideos = () => {
 //   // Responsive settings for the carousel
 //   const settings = {
 //     dots: true,
@@ -265,7 +265,7 @@
 //   );
 // };
 
-// export default PhotoVideoComponent;
+// export default FourVideos;
 
 import { useRef, useEffect } from 'react';
 import sampleVideo1 from '../assets/videos/sampleVideo1.mp4'; // Example video files
@@ -281,7 +281,7 @@ import vidPoster4 from '../assets/images/poster-5.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const FourVideoPage = () => {
+const FourVideos = () => {
   const videoRef1 = useRef(null);
   const videoRef2 = useRef(null);
   const videoRef3 = useRef(null);
@@ -296,7 +296,6 @@ const FourVideoPage = () => {
         x: 0,
         opacity: 1,
         duration: 1,
-        
         scrollTrigger: {
           trigger: '#four-video-section',
           start: 'top 80%',
@@ -322,13 +321,13 @@ const FourVideoPage = () => {
   return (
     <div
       id="four-video-section"
-      className="w-[89%] mx-auto mb-10
+      className="w-[89%] mx-auto mb-0
       py-20 sm:py-20 lg:py-10 px-4 sm:px-4 lg:px-6
       grid grid-cols-1 md:grid-cols-4 gap-8"
     >
       {/* Video Box 1 */}
       <div
-        className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-gray-200 rounded-md overflow-hidden hover:scale-105 transition duration-300 relative"
+        className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-gray-200 rounded-md hover:scale-105 transition duration-300 relative"
         onMouseEnter={() => handleMouseEnter(videoRef1)}
         onMouseLeave={() => handleMouseLeave(videoRef1)}
       >
@@ -397,4 +396,4 @@ const FourVideoPage = () => {
   );
 };
 
-export default FourVideoPage;
+export default FourVideos;

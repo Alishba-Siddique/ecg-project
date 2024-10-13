@@ -5,7 +5,7 @@
 
 // gsap.registerPlugin(ScrollTrigger);
 
-// const ScrollTextEffect = () => {
+// const AnimationText = () => {
 //   useEffect(() => {
 //     const firstLine = document.querySelector('.first-line');
 //     const secondLine = document.querySelector('.second-line');
@@ -132,7 +132,7 @@
 //   );
 // };
 
-// export default ScrollTextEffect;
+// export default AnimationText;
 
 // import React, { useEffect } from 'react';
 // import gsap from 'gsap';
@@ -142,7 +142,7 @@
 
 // gsap.registerPlugin(ScrollTrigger);
 
-// const AnimationPage = () => {
+// const AnimationText = () => {
 //   useEffect(() => {
 //     const lines = document.querySelectorAll('.line');
 
@@ -236,7 +236,7 @@
 //   );
 // };
 
-// export default AnimationPage;
+// export default AnimationText;
 
 
 import React, { useEffect } from 'react';
@@ -249,7 +249,7 @@ import poster1 from '../assets/images/poster-1.webp'
 
 gsap.registerPlugin(ScrollTrigger);
 
-const TextAnimationPage = () => {
+const AnimationText = () => {
   useEffect(() => {
     const lines = document.querySelectorAll('.line');
 
@@ -316,20 +316,19 @@ const TextAnimationPage = () => {
       <div className="mx-10 sm:mx-10 md:mx-24 lg:mx-24 mediumLaptop:mx-24 xl:mx-24 2xl:mx-24 largestLaptop:mx-44
         py-24 sm:py-24 md:py-24 lg:py-52 mediumLaptop:py-52 xl:py-44 2xl:py-72 largestLaptop:py-72 font-nudista font-light">
         {[
-          "Connecticut's first",
+          "State-of-the-art",
           <span key="1" className="font-nudista font-bold">
-            100% turn-key
+          cultivation facility 
           </span>,
           <span key="2" className="font-nudista font-bold">
-            passive cultivation
+          managed by proven
           </span>,
           <>
             <span key="3" className="font-nudista font-bold">
-              facility
+            and experienced
             </span>{' '}
-            built and
+            operators
           </>,
-          'managed for you',
         ].map((text, idx) => (
           <h1
             key={idx}
@@ -345,5 +344,6 @@ const TextAnimationPage = () => {
   );
 };
 
-export default TextAnimationPage;
+export default AnimationText;
+
 

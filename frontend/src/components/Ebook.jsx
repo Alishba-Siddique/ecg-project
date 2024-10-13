@@ -7,7 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const EbookPage = () => {
+const Ebook = () => {
   useEffect(() => {
     gsap.fromTo(
       '#text-section',
@@ -44,7 +44,7 @@ const EbookPage = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mb-44 sm:mb-44 md:-mb-24 lg:-mb-44 mediumLaptop:-mb-56 xl:-mb-44 2xl:-mb-44 largestLaptop:mb-52">
+    <div className="overflow-x-hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mb-44 sm:mb-44 md:mb-0 lg:-mb-44 mediumLaptop:-mb-56 xl:-mt-32 2xl:-mb-44 largestLaptop:mb-52">
       <div id="text-section" className="grid grid-rows-2">
         <div
           className="text-xl sm:text-xl md:text-2xl lg:text-4xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-7xl
@@ -71,7 +71,11 @@ const EbookPage = () => {
               Download Now
             </button>
           </a>
-          <a href={pdfFile} download={'Ebook'}>
+          {/* <a href={pdfFile} download={'Ebook'}> */}
+          <a
+              href="https://crm.investexpress.ai/v2/preview/7qUAox9kkUgKnoK8UFrO"
+              className="text-decoration-none"
+            >
             <button
               className=" text-xs sm:text-xs md:text-sm lg:text-base mediumLaptop:text-lg xl:text-lg 2xl:text-lg largestLaptop:text-3xl 
              bg-black border-none text-white hover:bg-secondary font-sora 
@@ -90,7 +94,7 @@ const EbookPage = () => {
         id="image-section"
         className="-mt-40 sm:-mt-40 md:mt-0 lg:mt-0 mediumLaptop:mt-0 xl:mt-0 2xl:mt-0 largestLaptop:mt-0
                       mr-4 sm:mr-4 md:-ml-20 lg:mr-0 mediumLaptop:mr-56 xl:-ml-24  2xl:mr-44 largestLaptop:mr-44 
-                      ml-4 sm:ml-4 md:mr-0 lg:-ml-20 mediumLaptop:ml-0 xl:mr-6 2xl:ml-10 largestLaptop:ml-10  "
+                      ml-4 sm:ml-4 md:mr-0 lg:-ml-20 mediumLaptop:ml-0 xl:mr-6 2xl:ml-10 largestLaptop:ml-10"
       >
         <img
           src={ebook}
@@ -103,4 +107,4 @@ const EbookPage = () => {
   );
 };
 
-export default EbookPage;
+export default Ebook;

@@ -8,7 +8,7 @@ import posterHero from '../assets/images/poster-2.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const HeroPage = () => {
+const Hero = () => {
   useEffect(() => {
     // Title Section Animation
     gsap.fromTo(
@@ -31,13 +31,13 @@ const HeroPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="hero h-[118vh] sm:h-[118vh] md:h-[118vh] lg:h-[118vh] mediumLaptop:h-[118vh] xl:h-[118vh]2xl:h-[118vh] largestLaptop:h-[118vh] relative overflow-x-hidden ">
+      <div className=" hero h-[118vh] sm:h-[118vh] md:h-[118vh] lg:h-[118vh] mediumLaptop:h-[118vh] xl:h-[118vh]2xl:h-[118vh] largestLaptop:h-[118vh] relative ">
         <video
           autoPlay
           loop
           muted
           playsInline
-          preload='auto'
+          preload="auto"
           poster={posterHero}
           className="absolute inset-0 w-full h-full object-cover"
         >
@@ -77,17 +77,22 @@ const HeroPage = () => {
             Unlocking unprecedented opportunities for success in a market poised
             for explosive growth
           </p>
-          <button
-            className=" text-xs sm:text-xs md:text-sm lg:text-sm mediumLaptop:text-base xl:text-base 2xl:text-lg largestLaptop:text-3xl 
+          <a
+            href="https://crm.investexpress.ai/v2/preview/7qUAox9kkUgKnoK8UFrO"
+            className="text-decoration-none"
+          >
+            <button
+              className=" text-xs sm:text-xs md:text-sm lg:text-sm mediumLaptop:text-base xl:text-base 2xl:text-lg largestLaptop:text-3xl 
              bg-secondary border-none text-white hover:bg-black font-sora 
                    px-3 md:px-3 lg:px-6 xl:px-4 2xl:px-6 largestLaptop:px-20
                    py-3 md:py-3 lg:py-3 xl:py-3 2xl:py-4 largestLaptop:py-4
                    rounded-lg
                    ml-0 sm:ml-0 md:ml-3 lg:ml-3 medimLaptop:ml-3 xl:ml-3 2xl:ml-3 largestLaptop:ml-5
                    mt-2 sm:mt-2 md:mt-4 lg:mt-4 mediumLaptop:mt-4 xl:mt-4 2xl:mt-8 largestLaptop:mt-8 "
-          >
-            Learn More{' '}
-          </button>
+            >
+              Learn More{' '}
+            </button>
+          </a>
         </div>
       </div>
 
@@ -116,13 +121,12 @@ const HeroPage = () => {
           <p
             className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-base mediumLaptop:text-lg xl:text-base 2xl:text-xl largestLaptop:text-xl
                        
-                       mt-3 sm:mt-3 md:mt-0 lg:-mt-0 mediumLaptop:mt-0 xl:mt-0 2xl:mt-0 largestLaptop:mt-0
+                       mt-3 sm:mt-3 md:mt-0 lg:mt-2 mediumLaptop:mt-2 xl:mt-2 2xl:mt-2 largestLaptop:mt-2
                        font-sora text-left drop-shadow-mdl"
           >
-            At our state-of-the-art craft cannabis cultivation facility, we
-            combine meticulous cultivation practices with expert curation to
-            produce the highest quality cannabis products available on the
-            market
+            East Coast Growers offers a 100% passive opportunity to be involved
+            in the cannabis industry. We manage the entire process from build,
+            to grow, to harvest, to sale.
           </p>
         </div>
       </div>
@@ -130,4 +134,4 @@ const HeroPage = () => {
   );
 };
 
-export default HeroPage;
+export default Hero;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ecgWhiteLogo from '../assets/images/ecg-white-logo.webp';
 
-const Loader = () => {
+const PreLoaderPage = () => {
   const [progress, setProgress] = useState(0);
 
   // Simulate loading progress
@@ -76,13 +76,13 @@ const Loader = () => {
   );
 };
 
-export default Loader;
+export default PreLoaderPage;
 
-// src/components/Loader.jsx
+// src/components/PreLoaderPage.jsx
 // import React from 'react';
 // import ecgWhiteLogo from '../assets/images/ecg-white-logo.webp';
 
-// const Loader = ({ progress }) => {
+// const PreLoaderPage = ({ progress }) => {
 
   
 //   return (
@@ -131,4 +131,4 @@ export default Loader;
 //   );
 // };
 
-// export default Loader;
+// export default PreLoaderPage;
