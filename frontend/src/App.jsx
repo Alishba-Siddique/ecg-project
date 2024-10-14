@@ -1,7 +1,13 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import './styles/fade.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
 import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
@@ -10,6 +16,33 @@ import PreLoader from './utilities/PreLoader.jsx';
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <HomePage />,
+      index: true,
+    },
+    {
+      path: '/home',
+      element: <HomePage />,
+      index: true,
+    },
+    {
+      path: '/about',
+      element: <AboutPage />,
+      index: true,
+    },
+    {
+      path: '/contact',
+      element: <ContactPage />,
+      index: true,
+    },
+    {
+      path: '/history',
+      element: <HistoryPage />,
+      index: true,
+    },
+  ]);
 
   useEffect(() => {
     // Simulate loading time before showing website content
@@ -25,15 +58,7 @@ function App() {
         <PreLoader />
       ) : (
         <div className="-mb-8 fade-in">
-          <BrowserRouter>
-            <Routes>
-              <Route index path="/" element={<HomePage />} />
-              <Route path="/home" element={<HomePage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/history" element={<HistoryPage />} />
-            </Routes>
-          </BrowserRouter>
+          <RouterProvider router={router} />
         </div>
       )}
       ;

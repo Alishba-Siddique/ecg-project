@@ -6,10 +6,12 @@ import heroBg from '../assets/videos/heroBg.mp4';
 import posterHero from '../assets/images/poster-2.webp';
 
 const AboutPage = () => {
+  
+
   return (
     <div className="relative flex flex-col justify-between gap-20 ">
-    {/* Video Background */}
-    <video
+      {/* Video Background */}
+      <video
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
         autoPlay
         loop
@@ -18,10 +20,8 @@ const AboutPage = () => {
       >
         <source src={heroBg} type="video/mp4" />
         Your browser does not support the video tag.
-
-        
       </video>
-      
+
       <div className="absolute inset-0 top-0 left-0 w-full h-full object-cover -z-10 bg-primary opacity-50"></div>
       <div>
         <Navbar />

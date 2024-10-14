@@ -147,12 +147,12 @@ const Investment = () => {
       <div id="investment-title" className="text-center mb-12 mt-20  ">
         <div className="flex justify-center items-center">
           <div className="border-t-4 border-white w-[4rem] md:w-[4rem] lg:w-[10rem] mediumLaptop:w-[10rem] xl:w-[10rem] 2xl:w-[10rem] largestLaptop:w-[10rem]"></div>
-          <h2 className="mx-auto text-base sm:text-base md:text-2xl lg:text-3xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-6xl text-white font-nudista font-light ">
+          <h2 className="mx-5 text-base sm:text-base md:text-2xl lg:text-3xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-6xl text-white font-nudista font-light ">
             A unique collaborative{' '}
             <span className=" font-nudista font-bold mb-44">investment </span>
             opportunity
           </h2>
-          <div className="border-t-4 border-white w-[4rem] md:w-[4rem] lg:w-[10rem] mediumLaptop:w-[10rem] xl:w-[10rem] 2xl:w-[10rem] largestLaptop:w-[10rem]"></div>
+          <div className="border-t-4 border-white w-[4rem] md:w-[4rem] lg:w-[10rem] mediumLaptop:w-[10rem] xl:w-[10 rem] 2xl:w-[10rem] largestLaptop:w-[10rem]"></div>
         </div>
       </div>
 

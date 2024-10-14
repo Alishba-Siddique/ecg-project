@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavbarPage from '../components/Navbar';
 import FooterWebPage from '../components/Footer';
 import heroBg from '../assets/videos/heroBg.mp4';
@@ -11,7 +11,29 @@ import {
   CiMail,
 } from 'react-icons/ci';
 
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
 const ContactPage = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      '#contact-page',
+      { y: -100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: '#contact-page',
+          start: 'top 80%',
+          end: 'bottom 60%',
+          toggleActions: 'play none none reverse',
+        },
+      }
+    );
+  }, []);
   return (
     <div className="relative  overflow-hidden">
       {/* Video Background */}
@@ -24,20 +46,21 @@ const ContactPage = () => {
       >
         <source src={heroBg} type="video/mp4" />
         Your browser does not support the video tag.
-
-        
       </video>
-      
+
       <div className="absolute inset-0 top-0 left-0 w-full h-full object-cover -z-10 bg-primary opacity-50"></div>
 
       {/* Overlay */}
 
       <NavbarPage />
 
-      <div className="text-gray-100
+      <div
+        id="contact-page"
+        className="text-gray-100
       font-sora 
       py-10 sm:py-10 md:py-20 lg:py-20 xl:py-20 mediumLaptop:py-20 2xl:py-20 largestLaptop:py-20
-      px-6 sm:px-6 md:px-20 lg:px-36 xl:px-36 mediumLaptop:px-36 2xl:px-36 largestLaptop:px-36">
+      px-6 sm:px-6 md:px-20 lg:px-36 xl:px-36 mediumLaptop:px-36 2xl:px-36 largestLaptop:px-36"
+      >
         <div
           className="
         items-start  p-8 mx-auto  bg-white shadow-[0_2px_10px_-3px_rgba(0,0,0,0.3)]
@@ -54,12 +77,17 @@ const ContactPage = () => {
               </p>
 
               <div className="mt-12">
-                <h2 className="text-gray-800 text-base font-bold font-nudista">Email</h2>
+                <h2 className="text-gray-800 text-base font-bold font-nudista">
+                  Email
+                </h2>
                 <ul className="mt-4">
                   <li className="flex items-center">
                     <div className="group bg-[#e6e6e6cf] hover:bg-black h-10 w-10 rounded-full flex items-center justify-center shrink-0 text-primary">
-                      <a href="mailto:info@eastcoastgrowersct.com" className="group-hover:text-white ">
-                        <CiMail  size={20} />
+                      <a
+                        href="mailto:info@eastcoastgrowersct.com"
+                        className="group-hover:text-white "
+                      >
+                        <CiMail size={20} />
                       </a>
                     </div>
                     <a
@@ -67,14 +95,19 @@ const ContactPage = () => {
                       className="text-secondary text-sm ml-4"
                     >
                       <small className="block font-nudista">Mail</small>
-                      <strong className='font-sora'> info@eastcoastgrowersct.com</strong>
+                      <strong className="font-sora">
+                        {' '}
+                        info@eastcoastgrowersct.com
+                      </strong>
                     </a>
                   </li>
                 </ul>
               </div>
 
               <div className="mt-12">
-                <h2 className="text-gray-800 text-base font-bold font-nudista">Socials</h2>
+                <h2 className="text-gray-800 text-base font-bold font-nudista">
+                  Socials
+                </h2>
 
                 <ul className="flex mt-4 space-x-4">
                   <li className="group bg-[#e6e6e6cf] hover:bg-black h-10 w-10 rounded-full flex items-center justify-center shrink-0 text-primary">
@@ -82,7 +115,7 @@ const ContactPage = () => {
                       href="https://linkedin.com"
                       className="group-hover:text-white "
                     >
-                      <CiLinkedin  size={20}/>
+                      <CiLinkedin size={20} />
                     </a>
                   </li>
                   <li className="group bg-[#e6e6e6cf] hover:bg-black h-10 w-10 rounded-full flex items-center justify-center shrink-0 text-primary">
@@ -90,7 +123,7 @@ const ContactPage = () => {
                       href="https://facebook.com"
                       className="group-hover:text-white "
                     >
-                      <CiFacebook  size={20} />
+                      <CiFacebook size={20} />
                     </a>
                   </li>
                   <li className="group bg-[#e6e6e6cf] hover:bg-black h-10 w-10 rounded-full flex items-center justify-center shrink-0 text-primary">
@@ -98,7 +131,7 @@ const ContactPage = () => {
                       href="https://twitter.com"
                       className="group-hover:text-white "
                     >
-                      <CiTwitter  size={20} />
+                      <CiTwitter size={20} />
                     </a>
                   </li>
                   <li className="group bg-[#e6e6e6cf] hover:bg-black h-10 w-10 rounded-full flex items-center justify-center shrink-0 text-primary">
@@ -106,7 +139,7 @@ const ContactPage = () => {
                       href="https://instagram.com"
                       className="group-hover:text-white "
                     >
-                      <CiInstagram  size={20} />
+                      <CiInstagram size={20} />
                     </a>
                   </li>
                 </ul>

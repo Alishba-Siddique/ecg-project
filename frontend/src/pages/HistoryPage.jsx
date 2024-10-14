@@ -2,12 +2,33 @@ import React, { useEffect, useRef } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const HistoryPage = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      '#history-page',
+      { y: -100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: '#history-page',
+          start: 'top 80%',
+          end: 'bottom 60%',
+          toggleActions: 'play none none reverse',
+        },
+      }
+    );
+  }, []);
+  
   return (
     <>
       <Navbar />
-      <div className="relative min-h-screen flex flex-col justify-between bg-gradient-to-r from-primary to-secondary ">
+      <div id="history-page" className="relative min-h-screen flex flex-col justify-between bg-gradient-to-r from-primary to-secondary ">
         {/* History Content */}
         <div
           className="
