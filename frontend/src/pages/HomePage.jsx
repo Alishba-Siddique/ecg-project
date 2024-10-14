@@ -9,6 +9,7 @@ import InvesterFunnel from '../components/InvesterFunnel';
 import Adv from '../components/Adv';
 import AnimationText from '../components/AnimationText';
 import Ebook from '../components/Ebook';
+import NewsLetter from '../utilities/NewsLetter';
 // import RotatingCard from '../components/RotatingCard';
 
 function HomePage() {
@@ -26,6 +27,7 @@ function HomePage() {
       {/* <ScrollTrigger /> */}
       <Ebook />
       {/* <RotatingCard /> */}
+      <NewsLetter />
       <Footer />
     </>
   );

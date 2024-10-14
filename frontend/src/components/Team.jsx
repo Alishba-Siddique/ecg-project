@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import team1 from '../assets/images/Daniel Czyzewski.webp';
 import team2 from '../assets/images/Oz-Pariser.webp';
 import team3 from '../assets/images/Andrew Borner.webp';
@@ -9,48 +10,74 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const Team = () => {
+  const location = useLocation();
+  const isAboutPage = location.pathname === '/about';
   // Title Section Animation
-  gsap.fromTo(
-    '#title-team-section',
-    { y: -100, opacity: 0 },
-    {
-      y: 0,
-      opacity: 1,
-      duration: 1,
-      scrollTrigger: {
-        trigger: '#title-team-section',
-        start: 'top 90%',
-        end: 'bottom 60%',
-        toggleActions: 'play none none reverse',
-      },
-    }
-  );
-  gsap.fromTo(
-    '#team-section',
-    { y: -100, opacity: 0 },
-    {
-      y: 0,
-      opacity: 1,
-      duration: 1,
-      scrollTrigger: {
-        trigger: '#team-section',
-        start: 'top 90%',
-        end: 'bottom 60%',
-        toggleActions: 'play none none reverse',
-      },
-    }
-  );
+  useEffect(() => {
+    gsap.fromTo(
+      '#title-team-section',
+      { y: -100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: '#title-team-section',
+          start: 'top 80%',
+          end: 'bottom 60%',
+          toggleActions: 'play none none reverse',
+        },
+      }
+    );
+    gsap.fromTo(
+      '#team-section',
+      { y: -100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: '#team-section',
+          start: 'top 80%',
+          end: 'bottom 60%',
+          toggleActions: 'play none none reverse',
+        },
+      }
+    );
+  }, []);
+
   return (
-    <div id="about">
+    <div
+      id="about"
+      className={`
+                  ${
+                    isAboutPage
+                      ? 'rounded-lg py-10 sm:py-10 md:py-16 lg:py-20 mediumLaptop:py-20 xl:py-16 2xl:py-32  largestLaptop:py-32 bg-white m-5  sm:m-5 md:m-5 lg:m-10 mediumLaptop:m-20 xl:m-20 2xl:m-20  largestLaptop:m-20'
+                      : ''
+                  }
+                  `}
+    >
       {/* Title Section */}
       <div
         id="title-team-section"
-        className="text-center mb-10 sm:mb-10 md:mb-32 lg:mb-32 mediumLaptop:mb-36 xl:my-16 2xl:mb-36  largestLaptop:mb-36"
+        className={`text-center my-10 sm:my-10 md:my-10 lg:my-10 mediumLaptop:my-16 xl:my-16 2xl:my-16  largestLaptop:my-24
+                      ${
+                        isAboutPage
+                          ? 'mt-0 sm:mt-0 md:mt-0 lg:mt-0 mediumLaptop:mt-0 xl:mt-0 2xl:mt-0  largestLaptop:mt-0 '
+                          : ''
+                      }
+                      `}
       >
         <div className="flex justify-center items-center">
           <div className="border-t-4 border-secondary w-[5rem] md:w-[10rem] lg:w-[15rem] mt-1"></div>
-          <h2 className="text-md sm:text-md md:text-2xl lg:text-3xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-6xl mx-10 sm:mx-10 md:mx-10 lg:mx-5 mediumLaptop:mx-5 xl:mx-5 2xl:mx-10 largestLaptop:mx-10 text-black font-nudista font-light">
-            Meet the <span className="font-bold font-nudista mb-10 sm:mb-10 md:mb-32 lg:mb-32 mediumLaptop:mb-36 xl:mb-10 2xl:ml-36  largestLaptop:mb-36">Team</span>{' '}
+          <h2 className="text-md sm:text-md md:text-2xl lg:text-3xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-6xl
+           mx-10 sm:mx-10 md:mx-10 lg:mx-5 mediumLaptop:mx-5 xl:mx-5 2xl:mx-10 largestLaptop:mx-10
+           text-black font-nudista font-light
+           ">
+            Meet the{' '}
+            <span className="font-bold font-nudista">
+              Team
+            </span>{' '}
           </h2>
           <div className="border-t-4 border-secondary w-[5rem] md:w-[10rem] lg:w-[15rem] mt-1"></div>
         </div>

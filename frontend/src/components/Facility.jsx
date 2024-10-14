@@ -459,22 +459,6 @@ const Facility = () => {
       }
     );
 
-    // 3D Bud Image Animation
-    gsap.fromTo(
-      '#bud-image',
-      { x: 100, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: '#bud-image',
-          start: 'top 80%',
-          end: 'bottom 60%',
-          toggleActions: 'play none none reverse',
-        },
-      }
-    );
 
     // Image Row Animation
     gsap.fromTo(
@@ -501,7 +485,7 @@ const Facility = () => {
         <div className="flex justify-center items-center">
           <div
             className="border-t-4 border-secondary mt-1 
-            mx-4 sm:mx-6 md:mx-8 lg:mx-10 mediumLaptop:mx-10 xl:ml-20 2xl:mx-10 largestLaptop:mx-8
+            mx-4 sm:mx-6 md:mx-8 lg:mx-10 mediumLaptop:mx-10 xl:ml-[6.2rem] 2xl:mx-10 largestLaptop:mx-8
                        w-[8rem] sm:w-[8rem] md:w-[8rem] lg:w-[20rem] mediumLaptop:w-[20rem] xl:w-[10rem] 2xl:w-[20rem] largestLaptop:w-[22rem]"
           ></div>
           <h2
@@ -517,7 +501,7 @@ const Facility = () => {
           </h2>
           <div
             className="border-t-4  border-secondary mt-1 
-            mx-4 sm:mx-6 md:mx-8 lg:mx-10 mediumLaptop:mx-10 xl:mr-20 2xl:mx-10 largestLaptop:mx-8
+            mx-4 sm:mx-6 md:mx-8 lg:mx-10 mediumLaptop:mx-10 xl:mr-[6.2rem] 2xl:mx-10 largestLaptop:mx-8
                        w-[8rem] sm:w-[8rem] md:w-[8rem] lg:w-[20rem] mediumLaptop:w-[20rem] xl:w-[10rem] 2xl:w-[20rem] largestLaptop:w-[22rem]"
           ></div>
         </div>
@@ -539,12 +523,12 @@ const Facility = () => {
           <img
             src={conneticutImg1}
             alt="conneticutImg1"
-            className="w-full h-full"
+            className="w-full h-full rounded-lg"
           />
-          <div className="absolute top-0 left-0 w-full h-full bg-[#759157] opacity-50"></div>
+          {/* <div className="absolute top-0 left-0 w-full h-full  rounded-lg bg-[#759157] opacity-50"></div> */}
         </div>
         <div
-          className="grid grid-rows-2 mx-3 sm:mx-3 md:mx-16 lg:ml-36 mediumLaptop:ml-36 xl:ml-36 2xl:ml-36 largestLaptop:ml-72
+          className="grid grid-rows-2 mx-3 sm:mx-3 md:mx-16 lg:ml-36 mediumLaptop:ml-36 xl:ml-36 2xl:ml-52 largestLaptop:ml-72
                      mt-16 sm:mt-16 md:mt-20 lg:mt-28 mediumLaptop:mt-28 xl:mt-28 2xl:mt-28 largestLaptop:mt-64"
         >
           <div className="h-1/2">
@@ -568,15 +552,15 @@ const Facility = () => {
             <img
               src={cannabisFlower1}
               alt="cannabisFlower1 "
-              className=" w-full sm:w-full md:w-full lg:w-full mediumLaptop:w-full xl:w-full 2xl:w-[60%] largestLaptop:w-[60%]
-              h-full sm:h-full md:h-[85%] lg:h-[50%] mediumLaptop:h-[50%] xl:h-[50%] 2xl:h-[50%] largestLaptop:h-[60%]
+              className=" rounded-lg w-full sm:w-full md:w-full lg:w-full mediumLaptop:w-full xl:w-full 2xl:w-[80%] largestLaptop:w-[60%]
+              h-full sm:h-full md:h-[85%] lg:h-[45%] mediumLaptop:h-[50%] xl:h-[50%] 2xl:h-[50%] largestLaptop:h-[60%]
               "
             />
-            <div
-              className="absolute top-0 left-0  bg-[#759157] opacity-50
-            w-full sm:w-full md:w-full lg:w-full mediumLaptop:w-full xl:w-full 2xl:w-[60%] largestLaptop:w-[60%]
-              h-full sm:h-full md:h-[85%] lg:h-[50%] mediumLaptop:h-[50%] xl:h-[50%] 2xl:h-[50%] largestLaptop:h-[60%]"
-            ></div>
+            {/* <div
+              className="absolute top-0 left-0 rounded-lg  bg-[#759157] opacity-50
+            w-full sm:w-full md:w-full lg:w-full mediumLaptop:w-full xl:w-full 2xl:w-[80%] largestLaptop:w-[60%]
+              h-full sm:h-full md:h-[85%] lg:h-[45%] mediumLaptop:h-[50%] xl:h-[50%] 2xl:h-[50%] largestLaptop:h-[60%]"
+            ></div> */}
           </div>
         </div>
       </div>
@@ -585,16 +569,16 @@ const Facility = () => {
       <div
         id="orange-section"
         className=" bg-secondary
-                    my-5 sm:my-5 md:my-5 lg:my-5 mediumLaptop:my-5 xl:-mb-44 2xl:my-5 largestLaptop:my-5
-                    mt-5 sm:mt-5 md:mt-5 lg:mt-5 mediumLaptop:mt-5 xl:mt-44 2xl:mt-5 largestLaptop:mt-5"
+                    -mb-32 sm:-mb-32 md:-mb-44 lg:-mb-44 mediumLaptop:-mb-44 xl:-mb-44 2xl:-mb-64 largestLaptop:-mb-52
+                    mt-44 sm:mt-44 md:mt-28 lg:mt-44 mediumLaptop:mt-44 xl:mt-44 2xl:mt-44 largestLaptop:mt-72"
       >
         <div
-          className="flex justify-center items-center  space-x-8 p-2 sm:p-2 md:p-4 lg:p-24 mediumLaptop:p-16 xl:p-10 2xl:p-16 largestLaptop:p-10
+          className="flex justify-center items-center  space-x-8 p-2 sm:p-2 md:p-4 lg:p-10 mediumLaptop:p-16 xl:p-10 2xl:p-16 largestLaptop:p-24
           text-white mx-20"
         >
-          <img src={bud} width={50} />
+          <img src={bud} className='w-12 sm:w-12 md:w-12 lg:w-12 mediumLaptop:w-12 xl:w-12 2xl:w-12 largestLaptop:w-24' />
           <p
-            className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-base mediumLaptop:text-lg xl:text-base 2xl:text-xl largestLaptop:text-xl
+            className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-base mediumLaptop:text-lg xl:text-base 2xl:text-xl largestLaptop:text-4xl
                        
                        mt-3 sm:mt-3 md:mt-0 lg:mt-2 mediumLaptop:mt-2 xl:mt-2 2xl:mt-2 largestLaptop:mt-2
                        font-sora text-left drop-shadow-mdl"
@@ -626,29 +610,29 @@ const Facility = () => {
           />
           <div
             className="grid grid-rows-3 justify-items-end 
-          -mt-[17rem] sm:-mt-[17rem] md:-mt-[22rem] lg:-mt-[14rem] mediumLaptop:-mt-[22rem] xl:-mt-[16rem] 2xl:-mt-[22rem] largestLaptop:-mt-[22rem] 
+          -mt-[20rem] sm:-mt-[17rem] md:-mt-[23rem] lg:-mt-[14rem] mediumLaptop:-mt-[26rem] xl:-mt-[16rem] 2xl:-mt-[22rem] largestLaptop:-mt-[22rem] 
            gap-4 sm:gap-4 md:gap-4 lg:gap-3 mediumLaptop:gap-4 xl:gap-4 2xl:gap-4 largestLaptop:gap-8 
            mr-3 md:mr-3 lg:mr-7 mediumLaptop:mr-7 xl:mr-7 2xl:mr-7 largestLaptop:mr-7"
           >
             <img
               src={overlayTextIconOrange}
               alt="overlayTextIconOrange"
-              className="mt-[2rem] md:mt-[4rem] lg:-mt-[10rem] mediumLaptop:-mt-[10rem] xl:-mt-[10rem] 2xl:-mt-[10rem] largestLaptop:-mt-[30rem]
+              className="mt-[2rem] md:mt-[4rem] lg:-mt-[13rem] mediumLaptop:-mt-[10rem] xl:-mt-[10rem] 2xl:-mt-[10vw] largestLaptop:-mt-[30rem]
                          w-[2rem] md:w-[2rem] lg:w-[3rem] mediumLaptop:w-[4rem] xl:w-[2rem] 2xl:w-[4rem] largestLaptop:w-[6rem]"
             />
             <p
-              className="text-right text-base sm:text-base md:text-sm lg:text-2xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-5xl 
+              className="text-right text-base sm:text-base md:text-sm lg:text-xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-5xl 
                           w-full
-                          mt-[1rem] sm:mt-[1rem] md:mt-[4rem] lg:-mt-[8rem] mediumLaptop:-mt-[6rem] xl:-mt-[8rem] 2xl:-mt-[6rem] largestLaptop:-mt-[13rem]
+                          mt-[1rem] sm:mt-[1rem] md:mt-[4rem] lg:-mt-[6rem] mediumLaptop:-mt-[6rem] xl:-mt-[8rem] 2xl:-mt-[9vw] largestLaptop:-mt-[16rem]
                           mr-[0rem] sm:mr-[0rem] md:mr-[0rem] lg:mr-0 mediumLaptop:mr-0 xl:mr-0 2xl:mr-[0rem] largestLaptop:mr-[0rem]
                           font-nudista font-bold"
             >
               Precision in Cultivation
             </p>
             <p
-              className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-sm mediumLaptop:text-lg xl:text-sm 2xl:text-lg largestLaptop:text-2xl
+              className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-xs mediumLaptop:text-lg xl:text-sm 2xl:text-lg largestLaptop:text-2xl
              font-sora text-right
-              -mt-[2rem] sm:-mt-[2rem] md:-mt-[1rem] lg:-mt-[4rem] mediumLaptop:-mt-[5rem] xl:-mt-[8rem] 2xl:-mt-[5rem] largestLaptop:-mt-[9rem]
+              -mt-[2rem] sm:-mt-[2rem] md:-mt-[1rem] lg:-mt-[5rem] mediumLaptop:-mt-[8rem] xl:-mt-[8rem] 2xl:-mt-[9vw] largestLaptop:-mt-[12rem]
               mr-[0rem] sm:mr-[0rem] md:mr-[0rem] lg:-mr-0 mediumLaptop:-mr-0 xl:-mr-0 2xl:-mr-0 largestLaptop:-mr-0
                w-[50%] sm:w-1/2 md:w-[48%] lg:w-[45%] mediumLaptop:w-1/2 xl:w-[45%] 2xl:w-1/2 largestLaptop:w-1/2"
             >
@@ -685,9 +669,9 @@ const Facility = () => {
           <img
             src={conneticutImg3}
             alt="conneticutImg3"
-            className="w-full h-full md:h-[90%] lg:h-[90%] xl:h-[90%] 2xl:h-[90%] largestLaptop:h-[90%]"
+            className="w-full h-full rounded-lg md:h-[90%] lg:h-[90%] xl:h-[90%] 2xl:h-[90%] largestLaptop:h-[90%]"
           />
-          {/* <div className="absolute top-0 left-0 w-full h-full md:h-[90%] lg:h-[90%] xl:h-[90%] bg-[#759157] opacity-50"></div> */}
+          {/* <div className="rounded-lg absolute top-0 left-0 w-full h-full md:h-[90%] lg:h-[90%] xl:h-[90%] bg-[#759157] opacity-50"></div> */}
         </div>
       </div>
     </div>

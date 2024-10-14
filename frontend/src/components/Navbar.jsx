@@ -53,12 +53,13 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex mx-20 sm:mx-20 md:mx-14 lg:mx-16 xl:mx-10 2xl:mx-36 largestLaptop:mx-44">
+        <ul className="hidden md:flex mx-20 sm:mx-20 md:mx-14 lg:mx-16 xl:mr-20 2xl:mx-36 largestLaptop:mx-44 font-sora">
           {navItems.map((item) => (
             <li
               key={item.id}
               className="px-2  sm:px-2 md:px-2 lg:px-4 xl:px-4 2xl:px-4 
-                ml-2 sm:ml-2 md:ml-0 lg:ml-0 xl:ml-0 2xl:ml-0 largestLaptop:ml-0 text-base md:text-xs lg:text-sm mediumLaptop:text-lg xl:text-lg  2xl:text-lg largestLaptop:text-3xl cursor-pointer relative group"
+                ml-2 sm:ml-2 md:ml-0 lg:ml-0 xl:ml-0 2xl:ml-0 largestLaptop:ml-0
+                 text-base md:text-xs lg:text-sm mediumLaptop:text-sm xl:text-sm  2xl:text-sm largestLaptop:text-lg cursor-pointer relative group"
             >
               <a href={item.href} className="inline-block">
                 {item.text}

@@ -44,7 +44,7 @@ const Hero = () => {
           <source src={heroBg} type="video/mp4" />
         </video>
 
-        {/* Black Overlay */}
+        {/* Overlay */}
         <div className="absolute inset-0 bg-primary opacity-50"></div>
 
         {/* Centered Text Content */}
@@ -101,7 +101,8 @@ const Hero = () => {
         id="white-section"
         className="card card-side
                      -mb-[3rem] sm:-mb-[3rem] md:-mb-[3rem] lg:-mb-[5rem] mediumLaptop:-mb-[5.3rem] xl:-mb-[5.5rem] 2xl:-mb-[5rem] largestLaptop:-mb-[5rem]
-                      ml-[3rem] sm:ml-[20rem] md:ml-[25rem] lg:ml-[32rem] mediumLaptop:ml-[50rem] xl:ml-[45rem] 2xl:ml-[55rem] largestLaptop:ml-[115rem]
+                      ml-[3rem] sm:ml-[3rem] md:ml-[15rem] lg:ml-[44rem] mediumLaptop:ml-[40rem] xl:ml-[35rem] 2xl:ml-[45rem] largestLaptop:ml-[100rem]
+                      mr-[0rem] sm:mr-[0rem] md:mr-[5rem] lg:mr-[3rem] mediumLaptop:mr-[5rem] xl:mr-[5rem] 2xl:mr-[5rem] largestLaptop:mr-[5rem]
                       -mt-[4rem] sm:-mt-[4rem] md:-mt-[4rem]  lg:-mt-[7.5rem] mediumLaptop:-mt-[7.5rem] xl:-mt-[9rem] 2xl:-mt-[7.5rem] largestLaptop:-mt-[9rem]
                       z-50 rounded-lg"
       >

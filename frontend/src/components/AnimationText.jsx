@@ -298,7 +298,7 @@ const AnimationText = () => {
 
   return (
     <section
-      className="relative z-0 h-full sm:h-full md:h-full lg:h-[73rem] mediumLaptop:h-[83rem] xl:h-[65rem] 2xl:h-[97rem] largestLaptop:h-[115rem]"
+      className="relative z-0 h-full sm:h-full md:h-full lg:h-[65rem] mediumLaptop:h-[83rem] xl:h-[65rem] 2xl:h-[97rem] largestLaptop:h-[105rem]"
     >
       <video
         autoPlay
@@ -326,7 +326,7 @@ const AnimationText = () => {
           <>
             <span key="3" className="font-nudista font-bold">
             and experienced
-            </span>{' '}
+            </span><br />
             operators
           </>,
         ].map((text, idx) => (

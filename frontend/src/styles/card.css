@@ -1,4 +1,4 @@
-.card-container {
+/* .card-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,4 +37,20 @@
   font-size: 16px;
   color: #666;
   text-align: center;
+} */
+
+
+.image-container {
+  position: relative;
+  height: 100vh; /* Ensuring the container takes up the viewport height */
+  overflow: hidden;
+}
+
+.stacked-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the images initially */
+  width: 200px; /* Adjust based on image size */
+  opacity: 0;
 }

@@ -20,14 +20,14 @@ const Investment = () => {
   useEffect(() => {
     // Title Section Animation
     gsap.fromTo(
-      '#investment',
+      '#investment-title',
       { y: -100, opacity: 0 },
       {
         y: 0,
         opacity: 1,
         duration: 1,
         scrollTrigger: {
-          trigger: '#investment',
+          trigger: '#investment-title',
           start: 'top 80%',
           end: 'bottom 60%',
           toggleActions: 'play none none reverse',
@@ -135,7 +135,8 @@ const Investment = () => {
     <div
       className="relative flex flex-col w-full h-full justify-center items-center 
         mt-32 sm:mt-32 md:mt-32 lg:mt-32 mediumLaptop:mt-32 xl:mt-20 2xl:mt-32 largestLaptop:mt-32
-        mb-32 sm:mb-32 md:mb-32 lg:mb-32 mediumLaptop:mb-32 xl:mb-28 2xl:mb-52 largestLaptop:mb-52 gap-5 bg-blend-overlay bg-opacity-90 overflow-x-hidden"
+        mb-32 sm:mb-32 md:mb-32 lg:mb-32 mediumLaptop:mb-32 xl:mb-28 2xl:mb-52 largestLaptop:mb-52
+         gap-5 bg-blend-overlay bg-opacity-90 overflow-x-hidden"
       style={{
         backgroundImage: `url(${conneticutImg1})`,
         backgroundSize: 'cover',
@@ -143,8 +144,8 @@ const Investment = () => {
       }}
     >
       {/* Title Section */}
-      <div id="title" className="text-center mb-12 mt-20 px-4 ">
-        <div className="flex justify-center items-center gap-2">
+      <div id="investment-title" className="text-center mb-12 mt-20  ">
+        <div className="flex justify-center items-center">
           <div className="border-t-4 border-white w-[4rem] md:w-[4rem] lg:w-[10rem] mediumLaptop:w-[10rem] xl:w-[10rem] 2xl:w-[10rem] largestLaptop:w-[10rem]"></div>
           <h2 className="mx-auto text-base sm:text-base md:text-2xl lg:text-3xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-6xl text-white font-nudista font-light ">
             A unique collaborative{' '}
@@ -158,7 +159,9 @@ const Investment = () => {
       {/* Images Grid (Visible on Medium and Larger Screens) */}
       <div
         id="image-section-content"
-        className="hidden grid-cols-2 md:flex   md:flex-row lg:flex lg:flex-wrap lg:flex-row w-64 md:w-[40rem]  lg:w-[63rem] mediumLaptop:w-[63rem] xl:w-[63rem] 2xl:w-[83rem] largestLaptop:w-[120rem] gap-4 md:gap-4 lg:gap-8 mx-auto justify-center"
+        className="hidden grid-cols-2 md:flex   md:flex-row lg:flex lg:flex-wrap lg:flex-row
+         w-64 md:w-[40rem]  lg:w-[63rem] mediumLaptop:w-[63rem] xl:w-[66rem] 2xl:w-[83rem] largestLaptop:w-[120rem]
+          gap-4 md:gap-4 lg:gap-8 mx-auto justify-center"
       >
         {images.map((image, index) => (
           <div
@@ -175,7 +178,8 @@ const Investment = () => {
               alt={image.heading}
               className="w-full h-full object-cover rounded-lg"
             />
-            <div className="absolute inset-0 bg-primary bg-opacity-30 flex flex-col justify-center items-center text-center text-white p-4 duration-300">
+            {/* <div className="absolute inset-0 bg-primary bg-opacity-30 flex flex-col justify-center items-center text-center text-white p-4 duration-300"> */}
+            <div className="absolute inset-0  flex flex-col justify-center items-center text-center text-white p-4 duration-300">
               <h3 className="text-2xl sm:text-2xl md:text-xl lg:text-2xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-5xl font-nudista font-bold">
                 {image.text}
               </h3>
@@ -200,7 +204,8 @@ const Investment = () => {
                h-full object-cover rounded-lg"
           />
           {/* Text overlay on image */}
-          <div className="absolute inset-0 bg-primary bg-opacity-30 flex justify-center items-center text-center text-white p-4 duration-300">
+          {/* <div className="absolute inset-0 bg-primary bg-opacity-30 flex justify-center items-center text-center text-white p-4 duration-300"> */}
+          <div className="absolute inset-0 flex justify-center items-center text-center text-white p-4 duration-300">
             <h3 className="text-2xl sm:text-2xl md:text-2xl lg:text-2xl mediumLaptop:text-2xl xl:text-2xl 2xl:text-3xl largestLaptop:text-4xl  font-nudista font-bold">
               {images[selectedImage].text}
             </h3>
@@ -217,12 +222,15 @@ const Investment = () => {
       {/* Icon and Description Row (Same for all screens) */}
       <div
         id="description-section"
-        className=" flex flex-row md:flex-row w-full max-w-[83rem] sm:max-w-[83rem] md:max-w-[83rem] lg:max-w-[63rem] mediumLaptop:max-w-[63rem] xl:max-w-[63rem] 2xl:max-w-[83rem] largestLaptop:max-w-[120rem] gap-2 md:gap-5 lg:gap-5 my-8 mb-16 justify-center items-center  px-4 mx-0  md:ml-0 lg:mx-0"
+        className=" flex flex-row md:flex-row lg:flex lg:flex-row mediumLaptop:flex-row xl:flex-row 2xl:flex-row largestLaptop:flex-row 
+        w-full max-w-[83rem] sm:max-w-[83rem] md:max-w-[83rem] lg:max-w-[63rem] mediumLaptop:max-w-[63rem] xl:max-w-[66rem] 2xl:max-w-[83rem] largestLaptop:max-w-[120rem] 
+        mx-auto md:ml-0 lg:mx-0  px-0
+        gap-2 md:gap-5 lg:gap-10 my-8 mb-16 justify-center items-center "
       >
-        <div className="w-[60%] md:w-[30%] lg:w-[30%] flex justify-center items-center bg-secondary rounded-l-full py-10 md:p-10 lg:p-10 md:rounded-r-none md:rounded-s-full">
+        <div className="w-[60%] md:w-[30%] lg:w-[30%] flex justify-center items-center bg-secondary rounded-l-full py-10 md:p-10 lg:py-10 md:rounded-r-none md:rounded-s-full">
           {images[selectedImage].icon}
         </div>
-        <div className="w-[70%] md:w-[60%] lg:w-[70%] p-3 md:p-10 lg:p-10 bg-gray-600 text-white rounded-lg">
+        <div className="w-[70%] md:w-[60%] lg:w-[70%] p-3 md:p-10 lg:py-10 bg-gray-600 text-white rounded-lg">
           <h3 className="text-base sm:text-base md:text-xl lg:text-2xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-4xl  mb-2 font-nudista font-bold">
             {images[selectedImage].heading}
           </h3>

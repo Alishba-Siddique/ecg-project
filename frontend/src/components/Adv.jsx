@@ -294,7 +294,7 @@ import icon4 from '../assets/images/adv-icon-4.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Adv= () => {
+const Adv = () => {
   const gridRef = useRef(null);
   const cellRefs = useRef([]);
 
@@ -362,28 +362,45 @@ const Adv= () => {
   const advantages = [
     {
       img: <img src={icon1} alt="icon1" />,
-      title: 'HYBRID MODEL',
+      title: (
+        <>
+          HYBRID <br /> MODEL
+        </>
+      ),
       description:
         'Benefits of micro-grow cultivation with the resources of a large scale facility.',
       id: 'adv-row-1-1',
     },
     {
       img: <img src={icon4} alt="icon4" />,
-      title: 'PREMIUM QUALITY',
+      title: (
+        <>
+          PREMIUM <br /> QUALITY
+        </>
+      ),
       description:
         'Top genetics, tight environmental controls resulting in high yields, high THC, and exceptional quality.',
       id: 'adv-row-1-2',
     },
     {
       img: <img src={icon2} alt="icon2" />,
-      title: 'PRICE POINT',
+      title: (
+        <>
+          PRICE <br /> POINT
+        </>
+      ),
       description:
         'Higher quality product, high demand, and low supply equals higher prices per pound.',
       id: 'adv-row-1-3',
     },
     {
       img: <img src={icon3} alt="icon3" />,
-      title: 'COMPETITIVE EDGE',
+      title: (
+        <>
+          COMPETITIVE
+          <br /> EDGE
+        </>
+      ),
       description:
         'Operating in a tightly regulated Connecticut market which avoids saturation.',
       id: 'adv-row-1-4',
@@ -391,7 +408,13 @@ const Adv= () => {
   ];
 
   return (
-    <div className=" max-w-8xl mx-2 sm:mx-2 md:mx-6 lg:mx-20 mediumLaptop:mx-20 xl:mx-0 2xl:mx-32 largestLaptop:mx-32 mb-16 py-0 px-4 sm:px-6 md:px-6 lg:px-12 xl:px-12 2xl:px-12 largestLaptop:px-12 flex flex-col justify-center h-full fade-in">
+    <div
+      className=" max-w-6xl sm:max-w-6xl md:max-w-6xl lg:max-w-full mediumLaptop:max-w-7xl xl:max-w-full 2xl:max-w-full largestLaptop:max-w-full
+      mx-2 sm:mx-2 md:mx-6 lg:mx-10 mediumLaptop:mx-20 xl:mx-20 2xl:mx-32 largestLaptop:mx-32
+       mb-16 
+    py-0 px-4 sm:px-6 md:px-6 lg:px-12 xl:px-12 2xl:px-0 largestLaptop:px-12
+     flex flex-col justify-center h-full fade-in"
+    >
       {/* Title Section */}
       <div id="title-adv-section" className="text-center mb-24">
         <div className="flex justify-center items-center">
@@ -410,29 +433,34 @@ const Adv= () => {
       {/* Advantages Grid */}
       <div
         ref={gridRef}
-        className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mediumLaptop:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 largestLaptop:grid-cols-4 gap-8 text-left w-full mx-0"
+        className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mediumLaptop:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 largestLaptop:grid-cols-4
+         gap-8 text-left w-full mx-0"
       >
         {advantages.map((advantage, index) => (
           <div
             key={advantage.id}
             ref={(el) => (cellRefs.current[index] = el)} // Reference to each cell
             className="group 
-            px-2 py-8 sm:px-2 sm:py-8 md:px-8 md:py-10 lg:px-2 lg:py-8 xl:px-4 xl:py-8 mediumLaptop:px-4 mediumLaptop:py-8 2xl:px-4 2xl:py-8 largestLaptop:px-8 largestLaptop:py-8
-            bg-white shadow-md  rounded-lg hover:scale-105 hover:shadow-lg hover:text-white hover:bg-primary transition-transform duration-500 ease-in-out"
+            px-2 sm:px-2 md:px-8 lg:px-2 xl:px-4 mediumLaptop:px-4 2xl:px-4 largestLaptop:px-8
+            py-8 sm:py-8 md:py-10 lg:py-8 xl:py-4 mediumLaptop:py-8 2xl:py-8 largestLaptop:py-8
+            bg-white shadow-md rounded-lg 
+            hover:scale-105 hover:shadow-lg hover:text-white hover:bg-primary 
+            transition-transform duration-500 ease-in-out"
           >
             <div
               className="flex rounded-full shadow-md hover:shadow-md items-end
             p-4 sm:p-4 md:p-4 lg:p-4 xl:p-4 mediumLaptop:p-4 2xl:p-4 largestLaptop:p-4
-            ml-64 sm:ml-64 md:ml-44 lg:ml-16 xl:ml-32 mediumLaptop:ml-32 2xl:ml-32 largestLaptop:ml-96
+            ml-64 sm:ml-64 md:ml-44 lg:ml-16 xl:ml-32 mediumLaptop:ml-32 2xl:ml-44 largestLaptop:ml-96
             w-20 sm:w-20 md:w-20 lg:w-20 xl:w-20 mediumLaptop:w-20 2xl:w-20 largestLaptop:w-20
             h-20  sm:h-20 md:h-20 lg:h-20 xl:h-20 mediumLaptop:h-20 2xl:h-20 largestLaptop:h-20
-            mt-6 sm:mt-6 md:mt-6 lg:mt-4 xl:mt-4 mediumLaptop:mt-4 2xl:mt-4 largestLaptop:mt-4
+            mt-6 sm:mt-6 md:mt-6 lg:mt-4 xl:mt-0 mediumLaptop:mt-4 2xl:mt-4 largestLaptop:mt-4
             -translate-y-20 sm:-translate-y-20 md:-translate-y-20 lg:-translate-y-16 xl:-translate-y-16 mediumLaptop:-translate-y-16 2xl:-translate-y-16 largestLaptop:-translate-y-16
             justify-end  border  group-hover:bg-white"
             >
               {advantage.img}
             </div>
-            <h3 className=" w-full text-xl sm:text-xl md:text-xl lg:text-xl mediumLaptop:text-xl xl:text-2xl 2xl:text-xl largestLaptop:text-3xl text-primary group-hover:text-white mb-2 font-nudista font-bold">
+            <h3 className=" w-full text-xl sm:text-xl md:text-xl lg:text-xl mediumLaptop:text-xl xl:text-2xl 2xl:text-xl largestLaptop:text-3xl text-primary group-hover:text-white
+             mb-2 -mt-10 font-nudista font-bold">
               {advantage.title}
             </h3>
             <p className="font-sora text-gray-700 group-hover:text-white text-sm sm:text-sm md:text-sm lg:text-sm mediumLaptop:text-lg xl:text-sm 2xl:text-lg largestLaptop:text-2xl">
@@ -446,5 +474,3 @@ const Adv= () => {
 };
 
 export default Adv;
-
-

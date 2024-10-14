@@ -22,7 +22,7 @@
 //             <img
 //                 src={cannabisFlower1}
 //                 alt="Overlay Image"
-//                 className="w-full h-full object-cover"
+//                 className="w-full h-full object-cover rounded-lg"
 //             />
 //             {/* Overlay */}
 //             <div className="absolute inset-0 bg-green-800 bg-opacity-50"></div>
@@ -107,7 +107,7 @@
 //           <img
 //             src={cannabisFlower1}
 //             alt="Overlay Image"
-//             className="w-full h-full object-cover"
+//             className="w-full h-full object-cover rounded-lg"
 //           />
 //           {/* Overlay */}
 //           <div className="absolute inset-0 bg-green-800 bg-opacity-50"></div>
@@ -334,7 +334,7 @@ const FourVideos = () => {
         <video
           ref={videoRef1}
           src={sampleVideo1}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-lg"
           muted
           loop
           preload='auto'
@@ -351,7 +351,7 @@ const FourVideos = () => {
         <video
           ref={videoRef2}
           src={indoorVid1}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-lg"
           muted
           loop
           preload='auto'
@@ -368,7 +368,7 @@ const FourVideos = () => {
         <video
           ref={videoRef3}
           src={sampleVideo2}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-lg"
           muted
           loop
           preload='auto'
@@ -385,7 +385,7 @@ const FourVideos = () => {
         <video
           ref={videoRef4}
           src={indoorVid2}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-lg"
           muted
           loop
           preload='auto'

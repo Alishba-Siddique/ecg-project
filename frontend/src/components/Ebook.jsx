@@ -44,7 +44,12 @@ const Ebook = () => {
   }, []);
 
   return (
-    <div className="overflow-x-hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mb-44 sm:mb-44 md:mb-0 lg:-mb-44 mediumLaptop:-mb-56 xl:-mt-32 2xl:-mb-44 largestLaptop:mb-52">
+    <div
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 
+    xl:grid-cols-2 2xl:grid-cols-2 largestLaptop:grid-cols-2 gap-0 
+    mb-44 sm:mb-44 md:mb-52 lg:mb-20 mediumLaptop:-mb-56 xl:-mb-32 2xl:-mb-44 largestLaptop:mb-80
+    mt-10 sm:mt-10 md:-mt-20 lg:-mt-20 mediumLaptop:-mt-5 xl:-mt-5 2xl:-mt-10 largestLaptop:-mt-44"
+    >
       <div id="text-section" className="grid grid-rows-2">
         <div
           className="text-xl sm:text-xl md:text-2xl lg:text-4xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-7xl
@@ -73,9 +78,9 @@ const Ebook = () => {
           </a>
           {/* <a href={pdfFile} download={'Ebook'}> */}
           <a
-              href="https://crm.investexpress.ai/v2/preview/7qUAox9kkUgKnoK8UFrO"
-              className="text-decoration-none"
-            >
+            href="https://crm.investexpress.ai/v2/preview/7qUAox9kkUgKnoK8UFrO"
+            className="text-decoration-none"
+          >
             <button
               className=" text-xs sm:text-xs md:text-sm lg:text-base mediumLaptop:text-lg xl:text-lg 2xl:text-lg largestLaptop:text-3xl 
              bg-black border-none text-white hover:bg-secondary font-sora 

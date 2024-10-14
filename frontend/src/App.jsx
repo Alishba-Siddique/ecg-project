@@ -1,12 +1,12 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import './styles/fade.css';
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import HistoryPage from './pages/HistoryPage';
-import PreLoaderPage from './utilities/PreLoader.jsx';
+import PreLoader from './utilities/PreLoader.jsx';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -22,12 +22,12 @@ function App() {
   return (
     <>
       {loading ? (
-        <PreLoaderPage />
+        <PreLoader />
       ) : (
         <div className="-mb-8 fade-in">
           <BrowserRouter>
             <Routes>
-              <Route index element={<HomePage />} />
+              <Route index path="/" element={<HomePage />} />
               <Route path="/home" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
@@ -42,7 +42,6 @@ function App() {
 }
 
 export default App;
-
 
 // App.jsx
 // import './App.css';
@@ -126,4 +125,3 @@ export default App;
 // }
 
 // export default App;
-
