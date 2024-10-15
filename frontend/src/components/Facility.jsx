@@ -412,14 +412,15 @@
 
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
+import Skeleton from 'react-loading-skeleton';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import conneticutImg1 from '../assets/images/conneticutImg1.webp';
-import conneticutImg2 from '../assets/images/conneticutImg2.webp';
-import conneticutImg3 from '../assets/images/conneticutImg3.webp';
+import FacilityImg1 from '../assets/images/FacilityImg1.jpg';
+import FacilityImg2 from '../assets/images/FacilityImg2.jpg';
+import FacilityImg3 from '../assets/images/FacilityImg3.webp';
+import FacilityImg4 from '../assets/images/FacilityImg4.jpg';
 import overlayTextIconOrange from '../assets/images/overlayTextIconOrange.webp';
 import bud from '../assets/images/bud.svg';
 
-import cannabisFlower1 from '../assets/images/cannabisFlower1.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -458,7 +459,6 @@ const Facility = () => {
         },
       }
     );
-
 
     // Image Row Animation
     gsap.fromTo(
@@ -514,15 +514,15 @@ const Facility = () => {
          justify-items-center gap-0 mx-8 sm:ml-7 md:ml-16 lg:-ml-[1rem] md:gap-10 lg:gap-10 "
       >
         <div
-          className="relative w-[95%] sm:w-[95%] md:w-[110%] lg:w-[103%] mediumLaptop:w-[103%] xl:w-[103%] 2xl:w-[103%] largestLaptop:w-[100%]
+          className="relative w-[95%] sm:w-[95%] md:w-[110%] lg:w-[103%] mediumLaptop:w-[103%] xl:w-[103%] 2xl:w-[103%] largestLaptop:w-[104%]
                     h-full sm:h-full md:h-full lg:h-[19rem] mediumLaptop:h-[23rem] xl:h-[23rem] 2xl:h-[23rem] largestLaptop:h-[35rem]
                     scale-y-100 md:scale-y-110 lg:scale-y-150
                     mt-6 sm:mt-6 md:mt-10 lg:mt-36 mediumLaptop:mt-36 xl:mt-36 2xl:mt-36 largestLaptop:mt-48
                     ml-[0rem] sm:ml-[0rem] md:ml-[7rem] lg:ml-[16rem] mediumLaptop:ml-[16rem] xl:ml-[16rem] 2xl:ml-[16rem] largestLaptop:ml-[25.5rem]"
         >
           <img
-            src={conneticutImg1}
-            alt="conneticutImg1"
+            src={FacilityImg1}
+            alt="FacilityImg1"
             className="w-full h-full rounded-lg"
           />
           {/* <div className="absolute top-0 left-0 w-full h-full  rounded-lg bg-[#759157] opacity-50"></div> */}
@@ -550,8 +550,8 @@ const Facility = () => {
           </div>
           <div className="-mb-[7rem]  sm:-mb-[7rem] md:-mb-[5rem] lg:-mb-[23.5rem] mediumLaptop:-mb-[23.5rem] xl:-mb-[23.5rem] 2xl:-mb-[23.5rem] largestLaptop:-mb-[23.5rem] relative">
             <img
-              src={cannabisFlower1}
-              alt="cannabisFlower1 "
+              src={FacilityImg2}
+              alt="FacilityImg2 "
               className=" rounded-lg w-full sm:w-full md:w-full lg:w-full mediumLaptop:w-full xl:w-full 2xl:w-[80%] largestLaptop:w-[60%]
               h-full sm:h-full md:h-[85%] lg:h-[45%] mediumLaptop:h-[50%] xl:h-[50%] 2xl:h-[50%] largestLaptop:h-[60%]
               "
@@ -576,16 +576,19 @@ const Facility = () => {
           className="flex justify-center items-center  space-x-8 p-2 sm:p-2 md:p-4 lg:p-10 mediumLaptop:p-16 xl:p-10 2xl:p-16 largestLaptop:p-24
           text-white mx-20"
         >
-          <img src={bud} className='w-12 sm:w-12 md:w-12 lg:w-12 mediumLaptop:w-12 xl:w-12 2xl:w-12 largestLaptop:w-24' />
+          <img
+            src={bud}
+            className="w-12 sm:w-12 md:w-12 lg:w-12 mediumLaptop:w-12 xl:w-12 2xl:w-12 largestLaptop:w-24"
+          />
           <p
             className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-base mediumLaptop:text-lg xl:text-base 2xl:text-xl largestLaptop:text-4xl
                        
                        mt-3 sm:mt-3 md:mt-0 lg:mt-2 mediumLaptop:mt-2 xl:mt-2 2xl:mt-2 largestLaptop:mt-2
                        font-sora text-left drop-shadow-mdl"
           >
-            East Coast Growers offers a 100% passive opportunity to be involved
-            in the cannabis industry. We manage the entire process from build,
-            to grow, to harvest, to sale.
+            East Coast Growers combines meticulous cultivation practices with
+            expert curation to produce the highest quality cannabis products
+            available on the market
           </p>
         </div>
       </div>
@@ -599,64 +602,41 @@ const Facility = () => {
                     justify-items-center "
       >
         <div
-          className="relative z-30 
+          className="relative z-30 max-w-[100%]
                         w-[80%] sm:w-[80%] md:w-[95%] lg:w-[95%] mediumLaptop:w-[95%] xl:w-[95%] 2xl:w-[95%] largestLaptop:w-[90%]
                         order-2 sm:order-2 md:order-1 lg:order-1 mediumLaptop:order-1 xl:order-1 2xl:order-1 largestLaptop:order-1"
         >
           <img
-            src={conneticutImg2}
-            alt="conneticutImg2"
-            className="w-full h-full sm:h-full md:h-[90%] lg:h-[90%] mediumLaptop:h-[90%] xl:h-[90%] 2xl:h-[90%] largestLaptop:h-[90%]"
+            src={FacilityImg3}
+            alt="FacilityImg3"
+            className="
+            w-full sm:h-full object-cover h-auto"
+            // md:h-[90%] lg:h-[90%] mediumLaptop:h-[90%] xl:h-[90%] 2xl:h-[90%] largestLaptop:h-[90%]
           />
-          <div
-            className="grid grid-rows-3 justify-items-end 
-          -mt-[20rem] sm:-mt-[17rem] md:-mt-[23rem] lg:-mt-[14rem] mediumLaptop:-mt-[26rem] xl:-mt-[16rem] 2xl:-mt-[22rem] largestLaptop:-mt-[22rem] 
-           gap-4 sm:gap-4 md:gap-4 lg:gap-3 mediumLaptop:gap-4 xl:gap-4 2xl:gap-4 largestLaptop:gap-8 
-           mr-3 md:mr-3 lg:mr-7 mediumLaptop:mr-7 xl:mr-7 2xl:mr-7 largestLaptop:mr-7"
-          >
+          <div className="absolute inset-0  flex flex-col justify-center items-end text-right p-4 space-y-4 sm:space-y-6 md:space-y-8 ml-auto
+           max-w-[10rem] sm:max-w-[10rem] md:max-w-[11rem] lg:max-w-[14rem] mediumLaptop:max-w-xs xl:max-w-[15rem] 2xl:max-w-xs largestLaptop:max-w-lg">
             <img
               src={overlayTextIconOrange}
               alt="overlayTextIconOrange"
-              className="mt-[2rem] md:mt-[4rem] lg:-mt-[13rem] mediumLaptop:-mt-[10rem] xl:-mt-[10rem] 2xl:-mt-[10vw] largestLaptop:-mt-[30rem]
-                         w-[2rem] md:w-[2rem] lg:w-[3rem] mediumLaptop:w-[4rem] xl:w-[2rem] 2xl:w-[4rem] largestLaptop:w-[6rem]"
+              className="w-10 h-10 sm:w-16 sm:h-16 md:w-10 md:h-10 lg:w-10 lg:h-10 mediumLaptop:w-10 mediumLaptop:h-10 xl:w-10 xl:h-10 2xl:w-10 2xl:h-10 largestLaptop:w-10 largestLaptop:h-10"
+              // mt-[2rem] md:mt-[4rem] lg:-mt-[13rem] mediumLaptop:-mt-[10rem] xl:-mt-[10rem] 2xl:-mt-[10vw] largestLaptop:-mt-[30rem]
             />
-            <p
-              className="text-right text-base sm:text-base md:text-sm lg:text-xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-5xl 
-                          w-full
-                          mt-[1rem] sm:mt-[1rem] md:mt-[4rem] lg:-mt-[6rem] mediumLaptop:-mt-[6rem] xl:-mt-[8rem] 2xl:-mt-[9vw] largestLaptop:-mt-[16rem]
-                          mr-[0rem] sm:mr-[0rem] md:mr-[0rem] lg:mr-0 mediumLaptop:mr-0 xl:mr-0 2xl:mr-[0rem] largestLaptop:mr-[0rem]
-                          font-nudista font-bold"
+            <h1
+              className=" text-base sm:text-base md:text-sm lg:text-xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-5xl  
+            font-bold text-right font-nudista"
             >
-              Precision in Cultivation
-            </p>
+              Precision in
+              <br /> Cultivation
+            </h1>
             <p
-              className="text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-xs mediumLaptop:text-lg xl:text-sm 2xl:text-lg largestLaptop:text-2xl
-             font-sora text-right
-              -mt-[2rem] sm:-mt-[2rem] md:-mt-[1rem] lg:-mt-[5rem] mediumLaptop:-mt-[8rem] xl:-mt-[8rem] 2xl:-mt-[9vw] largestLaptop:-mt-[12rem]
-              mr-[0rem] sm:mr-[0rem] md:mr-[0rem] lg:-mr-0 mediumLaptop:-mr-0 xl:-mr-0 2xl:-mr-0 largestLaptop:-mr-0
-               w-[50%] sm:w-1/2 md:w-[48%] lg:w-[45%] mediumLaptop:w-1/2 xl:w-[45%] 2xl:w-1/2 largestLaptop:w-1/2"
+              className=" mt-2 text-right font-sora
+            text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-xs mediumLaptop:text-lg xl:text-sm 2xl:text-lg largestLaptop:text-2xl"
             >
               Utilizing a hybrid model, we combine the benefits of a large-scale
               cultivation facility with the quality and control of
               micro-cultivation methods which allows better control over
               variables, leading to a higher quality of product.
             </p>
-            <a
-              href="https://crm.investexpress.ai/v2/preview/7qUAox9kkUgKnoK8UFrO"
-              className="text-decoration-none"
-            >
-              <button
-                className=" text-xs sm:text-xs md:text-xs lg:text-sm mediumLaptop:text-base xl:text-lg 2xl:text-lg largestLaptop:text-3xl 
-             bg-black border-none text-white hover:bg-secondary font-sora 
-                   px-3 sm:px-3 md:px-4 lg:px-6 xl:px-6 2xl:px-6 largestLaptop:px-20
-                   py-3 sm:py-3 md:py-2 lg:py-4 xl:py-4 2xl:py-4 largestLaptop:py-4
-                   rounded-lg
-                   ml-0 sm:ml-0 md:ml-3 lg:ml-3 medimLaptop:ml-3 xl:ml-8 2xl:ml-8 largestLaptop:ml-5
-                   -mt-10 sm:-mt-14 md:-mt-10 lg:mt-0 mediumLaptop:mt-4 xl:mt-2 2xl:mt-2 largestLaptop:mt-2 "
-              >
-                Learn more{' '}
-              </button>
-            </a>
           </div>
         </div>
 
@@ -667,8 +647,8 @@ const Facility = () => {
                     order-1 sm:order-1 md:order-2 lg:order-2 mediumLaptop:order-2 xl:order-2 2xl:order-2 largestLaptop:order-2"
         >
           <img
-            src={conneticutImg3}
-            alt="conneticutImg3"
+            src={FacilityImg4}
+            alt="FacilityImg4"
             className="w-full h-full rounded-lg md:h-[90%] lg:h-[90%] xl:h-[90%] 2xl:h-[90%] largestLaptop:h-[90%]"
           />
           {/* <div className="rounded-lg absolute top-0 left-0 w-full h-full md:h-[90%] lg:h-[90%] xl:h-[90%] bg-[#759157] opacity-50"></div> */}

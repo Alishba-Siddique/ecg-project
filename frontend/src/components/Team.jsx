@@ -48,7 +48,7 @@ const Team = () => {
 
   return (
     <div
-      id="about"
+      id="team-sec"
       className={`
                   ${
                     isAboutPage
@@ -70,14 +70,13 @@ const Team = () => {
       >
         <div className="flex justify-center items-center">
           <div className="border-t-4 border-secondary w-[5rem] md:w-[10rem] lg:w-[15rem] mt-1"></div>
-          <h2 className="text-md sm:text-md md:text-2xl lg:text-3xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-6xl
+          <h2
+            className="text-md sm:text-md md:text-2xl lg:text-3xl mediumLaptop:text-4xl xl:text-4xl 2xl:text-4xl largestLaptop:text-6xl
            mx-10 sm:mx-10 md:mx-10 lg:mx-5 mediumLaptop:mx-5 xl:mx-5 2xl:mx-10 largestLaptop:mx-10
            text-black font-nudista font-light
-           ">
-            Meet the{' '}
-            <span className="font-bold font-nudista">
-              Team
-            </span>{' '}
+           "
+          >
+            Meet the <span className="font-bold font-nudista">Team</span>{' '}
           </h2>
           <div className="border-t-4 border-secondary w-[5rem] md:w-[10rem] lg:w-[15rem] mt-1"></div>
         </div>

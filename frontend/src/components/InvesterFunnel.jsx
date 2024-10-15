@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import conneticutImg1 from '../assets/images/canopyFarming.webp';
-import conneticutImg4 from '../assets/images/conneticutImg4.webp';
+import investorFunnelImg1 from '../assets/images/investorFunnelImg1.webp';
+import investorFunnelImg2 from '../assets/images/investorFunnelImg2.jpg';
 // import sunnyDayIcon from '../assets/images/sunny-day.svg';
 import pdfFile from '../assets/ecg-pitch-deck.pdf';
 
@@ -57,8 +57,8 @@ const InvesterFunnel = () => {
        mb-12 rounded-lg"
       >
         <img
-          src={conneticutImg1}
-          alt="conneticutImg1"
+          src={investorFunnelImg1}
+          alt="investorFunnelImg1"
           className="w-full h-full object-cover rounded-lg"
         />
         {/* <div className="absolute top-0 left-0 w-full h-full rounded-lg bg-primary opacity-65"></div> */}
@@ -76,13 +76,13 @@ const InvesterFunnel = () => {
              hidden md:block lg:block mediumLaptop:block xl:block 2xl:block largestLaptop:block 
             ml-6 sm:ml-[1.5rem]  md:ml-14 lg:ml-[13rem] mediumLaptop:ml-[13rem] xl:ml-[14rem] 2xl:ml-[13rem] largestLaptop:ml-[26rem]
             w-[88%] sm:w-[88%] md:w-[50%] lg:w-[50%]  mediumLaptop:w-[60%]  xl:w-[50%]  2xl:w-[60%]  largestLaptop:w-[50%] 
-            h-52 sm:h-52 md:h-52 lg:h-72  mediumLaptop:h-96 xl:h-96  2xl:h-96 largestLaptop:h-[26rem]
-            mt-32 sm:mt-32 md:mt-32 lg:-mt-[9rem]  xl:-mt-[9rem] 2xl:-mt-[9rem] largestLaptop:-mt-[9rem]
+            h-52 sm:h-52 md:h-52 lg:h-72  mediumLaptop:h-[28rem]  xl:h-[28rem]  2xl:h-[28rem]  largestLaptop:h-[32rem]
+            mt-32 sm:mt-32 md:mt-32 lg:-mt-[9rem]  xl:-mt-[9rem] 2xl:-mt-[9rem] largestLaptop:-mt-[3rem]
          "
           >
             <img
-              src={conneticutImg4}
-              alt="conneticutImg4"
+              src={investorFunnelImg2}
+              alt="investorFunnelImg2"
               className="w-full h-full object-cover rounded-lg"
             />
             {/* <div className="absolute inset-0 rounded-lg bg-primary opacity-65"></div> */}
@@ -121,8 +121,8 @@ const InvesterFunnel = () => {
             h-52 sm:h-52 md:h-80 lg:h-52 mediumLaptop:h-96 xl:h-96 2xl:h-80 largestLaptop:h-96  rounded-lg"
           >
             <img
-              src={conneticutImg4}
-              alt="conneticutImg4"
+              src={investorFunnelImg2}
+              alt="investorFunnelImg2"
               className="w-full h-full object-cover rounded-lg"
             />
             {/* <div className="absolute inset-0 rounded-lg bg-primary opacity-65"></div> */}

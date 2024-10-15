@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import overlayTextIcon from '../assets/images/overlayTextIconBlack.webp';
-import heroBg from '../assets/videos/heroBg.mp4';
+import heroBg from '../assets/videos/heroBg.webm';
 import posterHero from '../assets/images/poster-2.webp';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -31,7 +31,7 @@ const Hero = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className=" hero h-[118vh] sm:h-[118vh] md:h-[118vh] lg:h-[118vh] mediumLaptop:h-[118vh] xl:h-[118vh]2xl:h-[118vh] largestLaptop:h-[118vh] relative ">
+      <div className=" hero h-[118vh] sm:h-[118vh] md:h-[118vh] lg:h-[120vh] mediumLaptop:h-[118vh] xl:h-[130vh] 2xl:h-[118vh] largestLaptop:h-[118vh] relative ">
         <video
           autoPlay
           loop
@@ -39,19 +39,20 @@ const Hero = () => {
           playsInline
           preload="auto"
           poster={posterHero}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover z-0"
         >
           <source src={heroBg} type="video/mp4" />
         </video>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-primary opacity-50"></div>
+        <div className="absolute inset-0 bg-primary opacity-20"></div>
 
         {/* Centered Text Content */}
         <div
-          className="absolute inset-0 flex flex-col items-start justify-center
+          className="absolute inset-0 flex flex-col items-start 
                    text-white 
-                     mx-10 sm:mx-10 md:mx-14 lg:mx-24 mediumLaptop:mx-24 xl:mx-24 2xl:mx-24 largestLaptop:mx-44"
+                     mx-10 sm:mx-10 md:mx-14 lg:mx-24 mediumLaptop:mx-24 xl:mx-24 2xl:mx-24 largestLaptop:mx-44
+                     mt-24 sm:mt-24 md:mt-44 lg:mt-44 mediumLaptop:mt-80 xl:mt-52 2xl:mt-96 largestLaptop:mt-96"
         >
           <p
             className="font-nudista font-light text-left drop-shadow-mdl
@@ -100,10 +101,10 @@ const Hero = () => {
       <div
         id="white-section"
         className="card card-side
-                     -mb-[3rem] sm:-mb-[3rem] md:-mb-[3rem] lg:-mb-[5rem] mediumLaptop:-mb-[5.3rem] xl:-mb-[5.5rem] 2xl:-mb-[5rem] largestLaptop:-mb-[5rem]
+                     -mb-[25rem] sm:-mb-[22rem] md:-mb-[30rem] lg:-mb-[35rem] mediumLaptop:-mb-[40rem] xl:-mb-[34rem] 2xl:-mb-[58rem] largestLaptop:-mb-[58rem]
                       ml-[3rem] sm:ml-[3rem] md:ml-[15rem] lg:ml-[44rem] mediumLaptop:ml-[40rem] xl:ml-[35rem] 2xl:ml-[45rem] largestLaptop:ml-[100rem]
                       mr-[0rem] sm:mr-[0rem] md:mr-[5rem] lg:mr-[3rem] mediumLaptop:mr-[5rem] xl:mr-[5rem] 2xl:mr-[5rem] largestLaptop:mr-[5rem]
-                      -mt-[4rem] sm:-mt-[4rem] md:-mt-[4rem]  lg:-mt-[7.5rem] mediumLaptop:-mt-[7.5rem] xl:-mt-[9rem] 2xl:-mt-[7.5rem] largestLaptop:-mt-[9rem]
+                      -mt-[4rem] sm:-mt-[4rem] md:-mt-[3rem]  lg:-mt-[8rem] mediumLaptop:-mt-[7.5rem] xl:-mt-[8rem] 2xl:-mt-[9rem] largestLaptop:-mt-[9rem]
                       z-50 rounded-lg"
       >
         <figure className="bg-white">

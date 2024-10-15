@@ -13,6 +13,7 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import HistoryPage from './pages/HistoryPage';
 import PreLoader from './utilities/PreLoader.jsx';
+import { SkeletonTheme } from 'react-loading-skeleton';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -58,7 +59,9 @@ function App() {
         <PreLoader />
       ) : (
         <div className="-mb-8 fade-in">
-          <RouterProvider router={router} />
+          <SkeletonTheme color="#202020" highlightColor="#444">
+            <RouterProvider router={router} />
+          </SkeletonTheme>
         </div>
       )}
       ;

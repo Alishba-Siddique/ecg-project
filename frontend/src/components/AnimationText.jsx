@@ -180,7 +180,7 @@
 //         applyScrollAnimation(line, nextLine, 0.4);
 //       } else if (line.textContent.includes('facility built and')) {
 //         applyScrollAnimation(line, nextLine, 0.3);
-      
+
 //       } else {
 //         applyScrollAnimation(line, nextLine, 0.5); // Default progress start
 //       }
@@ -224,7 +224,7 @@
 //         ].map((text, idx) => (
 //           <h1
 //             key={idx}
-//             className={`heading-title line  tracking-tight font-nudista font-light 
+//             className={`heading-title line  tracking-tight font-nudista font-light
 //             text-5xl sm:text-6xl md:text-7xl lg:text-[6.6rem] mediumLaptop:text-[9rem] xl:text-[6.6rem]  2xl:text-[10rem] largestLaptop:text-[12rem] drop-shadow-md`}
 //             style={{ lineHeight: '1.2' }} // Inline style for full coverage
 //           >
@@ -238,14 +238,11 @@
 
 // export default AnimationText;
 
-
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './../styles/animationText.css';
-import bgVideo from '../assets/videos/bgVideo.mp4'; // Add your video file
-import poster1 from '../assets/images/poster-1.webp'
-
+import bgImage from '../assets/images/animationBg.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -297,53 +294,49 @@ const AnimationText = () => {
   }, []);
 
   return (
-    <section
-      className="relative z-0 h-full sm:h-full md:h-full lg:h-[65rem] mediumLaptop:h-[83rem] xl:h-[65rem] 2xl:h-[97rem] largestLaptop:h-[105rem]"
-    >
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload='auto'
-        poster={poster1}
-        className="absolute inset-0 w-full h-full object-cover"
+    <div className="w-full h-full relative">
+      <div
+        className=" z-20 relative
+        px-10 sm:px-10 md:px-24 lg:px-24 mediumLaptop:px-24 xl:px-24 2xl:px-24 largestLaptop:px-44
+        py-64 sm:py-64 md:py-64 lg:py-64 mediumLaptop:py-52 xl:py-30 2xl:py-96 largestLaptop:py-96 font-nudista font-light
+        
+        "
+        style={{
+          backgroundImage: `url(${bgImage})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
-        <source src={bgVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div className="absolute inset-0 bg-primary opacity-60"></div>
-      <div className="mx-10 sm:mx-10 md:mx-24 lg:mx-24 mediumLaptop:mx-24 xl:mx-24 2xl:mx-24 largestLaptop:mx-44
-        py-24 sm:py-24 md:py-24 lg:py-52 mediumLaptop:py-52 xl:py-44 2xl:py-72 largestLaptop:py-72 font-nudista font-light">
         {[
-          "State-of-the-art",
+          
+          <span><br /><br /><br />State-of-the-art</span>,
           <span key="1" className="font-nudista font-bold">
-          cultivation facility 
+            cultivation facility
           </span>,
           <span key="2" className="font-nudista font-bold">
-          managed by proven
+            managed by proven
           </span>,
           <>
             <span key="3" className="font-nudista font-bold">
-            and experienced
-            </span><br />
+              and experienced
+            </span>
+            <br />
             operators
           </>,
         ].map((text, idx) => (
           <h1
             key={idx}
             className={`heading-title line tracking-tight font-nudista font-light 
-            text-5xl sm:text-6xl md:text-7xl lg:text-[6.6rem] mediumLaptop:text-[9rem] xl:text-[6.6rem]  2xl:text-[10rem] largestLaptop:text-[12rem] drop-shadow-md`}
-            style={{ lineHeight: '1.2' }} // Inline style for full coverage
+            text-5xl sm:text-6xl md:text-7xl lg:text-[6.6rem] mediumLaptop:text-[9rem] xl:text-[6.6rem] 2xl:text-[10rem] largestLaptop:text-[12rem] drop-shadow-md`}
+            style={{ lineHeight: '1.2' }}
           >
             {text}
           </h1>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
 export default AnimationText;
-
-

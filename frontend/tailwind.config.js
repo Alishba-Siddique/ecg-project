@@ -12,9 +12,12 @@ export default {
         bold: 700,
       },
       screens: {
-        
-        largestLaptop: "2560px",
-        mediumLaptop: "1440px",
+        largestLaptop: '2560px',
+        mediumLaptop: '1440px',
+      },
+      backgroundImage: {
+        'animation-bg': "url('../assets/images/animationBg.png')",
+        'animation-bg': "url('../assets/images/animationBg.png')",
       },
       colors: {
         primary: '#077761',

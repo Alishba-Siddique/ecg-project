@@ -165,7 +165,7 @@
 // export default Footer;
 
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, NavLink } from 'react-router-dom';
 import ecgWhiteLogo from '../assets/images/ecg-white-logo.webp';
 import footerBg from '../assets/images/footerBg.webp';
 import { CiInstagram } from 'react-icons/ci';
@@ -225,18 +225,18 @@ const Footer = () => {
           >
             {/* Navigation Links */}
             <div className="flex flex-col space-y-2 font-sora text-sm">
-              <a href="#" className="hover:underline">
+              <a href="/" className="hover:underline">
                 Home
               </a>
-              <a href="/history" className="hover:underline">
+              <NavLink to="/history" className="hover:underline">
                 Our History
-              </a>
-              <a href="/contact" className="hover:underline">
+              </NavLink>
+              <NavLink to="/contact" className="hover:underline">
                 Contact Us
-              </a>
-              <a href="/about" className="hover:underline">
+              </NavLink>
+              <NavLink to="/about" className="hover:underline">
                 About Us
-              </a>
+              </NavLink>
             </div>
 
             {/* Social Media Links */}

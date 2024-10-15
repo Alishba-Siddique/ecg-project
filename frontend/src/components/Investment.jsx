@@ -2,15 +2,15 @@ import { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import conneticutImg1 from '../assets/images/exGrowthBg.webp';
-import cannabisFlower1 from '../assets/images/cannabisFlower.webp';
-import cannabisFlower2 from '../assets/images/cannabisFlower4.webp';
-import cannabisFlower3 from '../assets/images/cannabisFlower3.webp';
-import cannabisFlower4 from '../assets/images/cannabisFlower2.webp';
-import exGrowthIcon1 from '../assets/images/exGrowthIcon1.webp';
-import exGrowthIcon2 from '../assets/images/exGrowthIcon2.webp';
-import exGrowthIcon3 from '../assets/images/exGrowthIcon3.webp';
-import exGrowthIcon4 from '../assets/images/exGrowthIcon4.webp';
+import investmentBg from '../assets/images/investmentBg.webp';
+import CT from '../assets/images/CT.jpg';
+import ECG from '../assets/images/ECG.jpg';
+import Investors from '../assets/images/Investors.jpg';
+import Returns from '../assets/images/Returns.jpg';
+import ctIcon from '../assets/images/ctIcon.webp';
+import ecgIcon from '../assets/images/ecgIcon.webp';
+import invesrorsIcon from '../assets/images/investorsIcon.webp';
+import returnsIcon from '../assets/images/returnsIcon.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -86,36 +86,36 @@ const Investment = () => {
 
   const images = [
     {
-      src: `${cannabisFlower3}`,
+      src: `${CT}`,
       heading: 'THE STATE OF CONNETICUT',
       text: 'Connecticut',
       description1:
         'Connecticut legalized recreational cannabis in 2021, offering significant growth potential but high barriers to entry due to stringent licensing and regulations. This ensures only well-prepared businesses like ECG can secure a cultivation license and operate within the state’s limited-competition market.',
-      icon: <img src={exGrowthIcon1} width="30%" className="text-white" />,
+      icon: <img src={ctIcon} width="30%" className="text-white" />,
     },
     {
-      src: `${cannabisFlower4}`,
+      src: `${ECG}`,
       heading: 'EAST COAST GROWERS',
       text: 'ECG',
       description1:
         'ECG will build a state-of-the-art cultivation facility, secure a cannabis cultivation license, and provide the essential technology, processes, expertise, and daily management required for successful operations.',
-      icon: <img src={exGrowthIcon2} width="30%" className="text-white" />,
+      icon: <img src={ecgIcon} width="30%" className="text-white" />,
     },
     {
-      src: `${cannabisFlower2}`,
+      src: `${Investors}`,
       heading: 'INVESTORS',
       text: 'Investors',
       description1:
         'Our fractional ownership model offers investors the chance to own a share of our facility, providing access to a highly lucrative and unique opportunity, while remaining 100% passive.',
-      icon: <img src={exGrowthIcon3} width="30%" className="text-white" />,
+      icon: <img src={invesrorsIcon} width="30%" className="text-white" />,
     },
     {
-      src: `${cannabisFlower1}`,
+      src: `${Returns}`,
       heading: 'RETURNS',
       description1:
         'Given Connecticut\'s regulatory landscape and favorable market conditions, this investment is projected to yield returns exceeding 40%. For comparison, since 1924, the S&P 500 has averaged an annual return of approximately 7%, adjusted for inflation.',
       text: 'Returns',
-      icon: <img src={exGrowthIcon4} width="30%" className="text-white" />,
+      icon: <img src={returnsIcon} width="30%" className="text-white" />,
     },
   ];
 
@@ -138,7 +138,7 @@ const Investment = () => {
         mb-32 sm:mb-32 md:mb-32 lg:mb-32 mediumLaptop:mb-32 xl:mb-28 2xl:mb-52 largestLaptop:mb-52
          gap-5 bg-blend-overlay bg-opacity-90 overflow-x-hidden"
       style={{
-        backgroundImage: `url(${conneticutImg1})`,
+        backgroundImage: `url(${investmentBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
@@ -203,9 +203,7 @@ const Investment = () => {
             className="w-64 sm:w-64 md:w-[40rem] lg:w-[63rem]  mediumLaptop:w-[83rem] xl:w-[63rem] 2xl:w-[83rem] largestLaptop:w-[120rem]
                h-full object-cover rounded-lg"
           />
-          {/* Text overlay on image */}
-          {/* <div className="absolute inset-0 bg-primary bg-opacity-30 flex justify-center items-center text-center text-white p-4 duration-300"> */}
-          <div className="absolute inset-0 flex justify-center items-center text-center text-white p-4 duration-300">
+           <div className="absolute inset-0 flex justify-center items-center text-center text-white p-4 duration-300">
             <h3 className="text-2xl sm:text-2xl md:text-2xl lg:text-2xl mediumLaptop:text-2xl xl:text-2xl 2xl:text-3xl largestLaptop:text-4xl  font-nudista font-bold">
               {images[selectedImage].text}
             </h3>
