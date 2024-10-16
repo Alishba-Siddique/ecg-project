@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Team from '../components/Team';
 import Footer from '../components/Footer';
-import heroBg from '../assets/videos/heroBg.mp4';
-import posterHero from '../assets/images/poster-2.webp';
+import heroBg from '../assets/videos/heroBg.webm';
+import posterHero from '../assets/images/poster-2.png';
 
 const AboutPage = () => {
   

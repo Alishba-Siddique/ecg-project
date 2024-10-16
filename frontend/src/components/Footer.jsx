@@ -241,7 +241,7 @@ const Footer = () => {
 
             {/* Social Media Links */}
             <div>
-              {/* <div className="mt-5 font-sora text-sm"></div> */}
+              <div className="mt-5 font-sora text-sm">Socials</div>
               <div className="flex space-x-4 mt-4 lg:mt-7 text-xl">
                 <a href="https://linkedin.com" className="hover:text-gray-300">
                   <CiLinkedin />

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import NavbarPage from '../components/Navbar';
 import FooterWebPage from '../components/Footer';
-import heroBg from '../assets/videos/heroBg.mp4';
-import posterHero from '../assets/images/poster-2.webp';
+import heroBg from '../assets/videos/heroBg.webm';
+import posterHero from '../assets/images/poster-2.png';
 import {
   CiLinkedin,
   CiFacebook,
@@ -48,7 +48,7 @@ const ContactPage = () => {
         Your browser does not support the video tag.
       </video>
 
-      <div className="absolute inset-0 top-0 left-0 w-full h-full object-cover -z-10 bg-primary opacity-50"></div>
+      <div className="absolute inset-0 top-0 left-0 w-full h-full object-cover -z-10 bg-primary opacity-20"></div>
 
       {/* Overlay */}
 

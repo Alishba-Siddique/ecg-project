@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import overlayTextIcon from '../assets/images/overlayTextIconBlack.webp';
 import heroBg from '../assets/videos/heroBg.webm';
-import posterHero from '../assets/images/poster-2.webp';
+import posterHero from '../assets/images/poster-2.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
