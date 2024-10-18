@@ -2,9 +2,9 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import overlayTextIcon from '../assets/images/overlayTextIconBlack.webp';
+import overlayTextIcon from '../assets/images/overlayTextIconBlack.svg';
 import heroBg from '../assets/videos/heroBg.webm';
-import posterHero from '../assets/images/poster-2.png';
+import heroPosterBg from '../assets/images/heroPosterBg.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,7 +38,7 @@ const Hero = () => {
           muted
           playsInline
           preload="auto"
-          poster={posterHero}
+          poster={heroPosterBg}
           className="absolute inset-0 w-full h-full object-cover z-0"
         >
           <source src={heroBg} type="video/mp4" />
@@ -52,7 +52,7 @@ const Hero = () => {
           className="absolute inset-0 flex flex-col items-start 
                    text-white 
                      mx-10 sm:mx-10 md:mx-14 lg:mx-24 mediumLaptop:mx-24 xl:mx-24 2xl:mx-24 largestLaptop:mx-44
-                     mt-24 sm:mt-24 md:mt-44 lg:mt-44 mediumLaptop:mt-80 xl:mt-52 2xl:mt-96 largestLaptop:mt-96"
+                     mt-80 sm:mt-80 md:mt-96 lg:mt-44 mediumLaptop:mt-80 xl:mt-52 2xl:mt-96 largestLaptop:mt-96"
         >
           <p
             className="font-nudista font-light text-left drop-shadow-mdl
@@ -81,17 +81,18 @@ const Hero = () => {
           <a
             href="https://crm.investexpress.ai/v2/preview/7qUAox9kkUgKnoK8UFrO"
             className="text-decoration-none"
+            target="_blank" // Correct attribute for opening in a new tab
           >
             <button
-              className=" text-xs sm:text-xs md:text-sm lg:text-sm mediumLaptop:text-base xl:text-base 2xl:text-lg largestLaptop:text-3xl 
-             bg-secondary border-none text-white hover:bg-black font-sora 
-                   px-3 md:px-3 lg:px-6 xl:px-4 2xl:px-6 largestLaptop:px-20
-                   py-3 md:py-3 lg:py-3 xl:py-3 2xl:py-4 largestLaptop:py-4
-                   rounded-lg
-                   ml-0 sm:ml-0 md:ml-3 lg:ml-3 medimLaptop:ml-3 xl:ml-3 2xl:ml-3 largestLaptop:ml-5
-                   mt-2 sm:mt-2 md:mt-4 lg:mt-4 mediumLaptop:mt-4 xl:mt-4 2xl:mt-8 largestLaptop:mt-8 "
+              className="text-xs sm:text-xs md:text-sm lg:text-base mediumLaptop:text-lg xl:text-lg 2xl:text-lg largestLaptop:text-3xl 
+                        bg-secondary border-none text-white hover:bg-black font-sora 
+                        px-3 md:px-2 lg:px-6 xl:px-6 2xl:px-6 largestLaptop:px-20
+                        py-3 md:py-2 lg:py-4 xl:py-4 2xl:py-4 largestLaptop:py-4
+                        rounded-lg 
+                        mt-5 sm:mt-5 md:mt-4 lg:mt-8 mediumLaptop:mt-8 xl:mt-8 2xl:mt-8 largestLaptop:mt-12
+                        cursor-pointer z-50"
             >
-              Learn More{' '}
+              Learn More
             </button>
           </a>
         </div>
@@ -101,10 +102,10 @@ const Hero = () => {
       <div
         id="white-section"
         className="card card-side
-                     -mb-[25rem] sm:-mb-[22rem] md:-mb-[30rem] lg:-mb-[35rem] mediumLaptop:-mb-[40rem] xl:-mb-[34rem] 2xl:-mb-[58rem] largestLaptop:-mb-[58rem]
+                     -mb-[20rem] sm:-mb-[22rem] md:-mb-[25rem] lg:-mb-[35rem] mediumLaptop:-mb-[40rem] xl:-mb-[34rem] 2xl:-mb-[58rem] largestLaptop:-mb-[58rem]
                       ml-[3rem] sm:ml-[3rem] md:ml-[15rem] lg:ml-[44rem] mediumLaptop:ml-[40rem] xl:ml-[35rem] 2xl:ml-[45rem] largestLaptop:ml-[100rem]
                       mr-[0rem] sm:mr-[0rem] md:mr-[5rem] lg:mr-[3rem] mediumLaptop:mr-[5rem] xl:mr-[5rem] 2xl:mr-[5rem] largestLaptop:mr-[5rem]
-                      -mt-[4rem] sm:-mt-[4rem] md:-mt-[3rem]  lg:-mt-[8rem] mediumLaptop:-mt-[7.5rem] xl:-mt-[8rem] 2xl:-mt-[9rem] largestLaptop:-mt-[9rem]
+                      -mt-[9rem] sm:-mt-[4rem] md:-mt-[10rem]  lg:-mt-[8rem] mediumLaptop:-mt-[25rem] xl:-mt-[8rem] 2xl:-mt-[20rem] largestLaptop:-mt-[9rem]
                       z-50 rounded-lg"
       >
         <figure className="bg-white">

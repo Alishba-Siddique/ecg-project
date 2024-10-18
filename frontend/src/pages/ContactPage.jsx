@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import NavbarPage from '../components/Navbar';
 import FooterWebPage from '../components/Footer';
 import heroBg from '../assets/videos/heroBg.webm';
-import posterHero from '../assets/images/poster-2.png';
+import posterHero from '../assets/images/heroPosterBg.webp';
 import {
   CiLinkedin,
   CiFacebook,

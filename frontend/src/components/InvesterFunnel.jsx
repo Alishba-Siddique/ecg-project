@@ -2,10 +2,7 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import investorFunnelImg1 from '../assets/images/investorFunnelImg1.webp';
-import investorFunnelImg2 from '../assets/images/investorFunnelImg2.jpg';
-// import sunnyDayIcon from '../assets/images/sunny-day.svg';
-import pdfFile from '../assets/ecg-pitch-deck.pdf';
-
+import investorFunnelImg2 from '../assets/images/investorFunnelImg2.webp';
 gsap.registerPlugin(ScrollTrigger);
 
 const InvesterFunnel = () => {
@@ -98,9 +95,9 @@ const InvesterFunnel = () => {
           <p
             className="text-base sm:text-base md:text-xl lg:text-2xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-5xl
              -mt-12 md:-mt-64 lg:-mt-0 xl:-mt-0 mediumLaptop:-mt-0 2xl:-mt-0 largestLaptop:-mt-0  
-          font-nudista font-bold leading-tight w-full sm:w-full md:w-[120%] lg:w-full xl:w-full  mediumLaptop:w-full  2xl:w-full  largestLaptop:w-full " 
+          font-nudista font-bold leading-tight w-full sm:w-full md:w-[120%] lg:w-full xl:w-full  mediumLaptop:w-full  2xl:w-full  largestLaptop:w-full "
           >
-             State-of-the-art Technology
+            State-of-the-art Technology
           </p>
           <div
             className="border-t-2 border-secondary mt-2 sm:mt-6 lg:mt-6 h-[10%] md:h-[30%] lg:h-full xl:h-full
@@ -134,9 +131,11 @@ const InvesterFunnel = () => {
           className="space-y-4 -ml-16 sm:-ml-16  md:-ml-3  lg:ml-3 xl:ml-6 mediumLaptop:ml-5 2xl:ml-10 largestLaptop:ml-0
          -mb-0 md:-mb-[80rem] lg:-mb-0 xl:-mb-0 mediumLaptop:-mb-0 2xl:-mb-0 largestLaptop:-mb-32"
         >
-          <div className="mt-16 sm:mt-16 md:mt-1 lg:mt-6 mediumLaptop:mt-6  xl:mt-2  2xl:mt-8 largestLaptop:mt-0
+          <div
+            className="mt-16 sm:mt-16 md:mt-1 lg:mt-6 mediumLaptop:mt-6  xl:mt-2  2xl:mt-8 largestLaptop:mt-0
            border-t-2 border-secondary w-20 sm:w-20 md:w-20 lg:w-28 mediumLaptop:w-28  xl:w-28  2xl:w-28 largestLaptop:w-28 
-             mb-6 hidden md:block lg:block xl:block"></div>
+             mb-6 hidden md:block lg:block xl:block"
+          ></div>
           <p className="  text-[0.6rem] sm:text-[0.6rem] md:text-[0.6rem] lg:text-base mediumLaptop:text-lg xl:text-lg 2xl:text-xl largestLaptop:text-2xl text-gray-500 ">
             • Cultivation Tech
             <br />
@@ -146,7 +145,11 @@ const InvesterFunnel = () => {
           </p>
           <div className="flex items-center gap-2 sm:gap-4">
             {/* <a href={pdfFile} download="Read More"> */}
-            <a href='https://crm.investexpress.ai/v2/preview/7qUAox9kkUgKnoK8UFrO' className='text-decoration-none'>
+            <a
+              href="https://crm.investexpress.ai/v2/preview/7qUAox9kkUgKnoK8UFrO"
+              target="_blank"
+              className="text-decoration-none"
+            >
               {/* <button className="btn text-xs md:text-sm lg:text-base bg-black text-white hover:bg-secondary font-sora px-16 ">
                 Learn more{' '}
               </button> */}

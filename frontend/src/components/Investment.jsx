@@ -3,14 +3,14 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import investmentBg from '../assets/images/investmentBg.webp';
-import CT from '../assets/images/CT.jpg';
-import ECG from '../assets/images/ECG.jpg';
-import Investors from '../assets/images/Investors.jpg';
-import Returns from '../assets/images/Returns.jpg';
-import ctIcon from '../assets/images/ctIcon.webp';
-import ecgIcon from '../assets/images/ecgIcon.webp';
-import invesrorsIcon from '../assets/images/investorsIcon.webp';
-import returnsIcon from '../assets/images/returnsIcon.webp';
+import investmentImg1 from '../assets/images/investmentImg1.webp';
+import investmentImg2 from '../assets/images/investmentImg2.webp';
+import investmentImg3 from '../assets/images/investmentImg3.webp';
+import investmentImg4 from '../assets/images/investmentImg4.webp';
+import investmentIcon1 from '../assets/images/investmentIcon1.svg';
+import investmentIcon2 from '../assets/images/investmentIcon2.svg';
+import investmentIcon3 from '../assets/images/investmentIcon3.svg';
+import investmentIcon4 from '../assets/images/investmentIcon4.svg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -86,36 +86,36 @@ const Investment = () => {
 
   const images = [
     {
-      src: `${CT}`,
+      src: `${investmentImg1}`,
       heading: 'THE STATE OF CONNETICUT',
       text: 'Connecticut',
       description1:
         'Connecticut legalized recreational cannabis in 2021, offering significant growth potential but high barriers to entry due to stringent licensing and regulations. This ensures only well-prepared businesses like ECG can secure a cultivation license and operate within the state’s limited-competition market.',
-      icon: <img src={ctIcon} width="30%" className="text-white" />,
+      icon: <img src={investmentIcon1} width="30%" className="text-white" />,
     },
     {
-      src: `${ECG}`,
+      src: `${investmentImg2}`,
       heading: 'EAST COAST GROWERS',
       text: 'ECG',
       description1:
         'ECG will build a state-of-the-art cultivation facility, secure a cannabis cultivation license, and provide the essential technology, processes, expertise, and daily management required for successful operations.',
-      icon: <img src={ecgIcon} width="30%" className="text-white" />,
+      icon: <img src={investmentIcon2} width="30%" className="text-white" />,
     },
     {
-      src: `${Investors}`,
+      src: `${investmentImg3}`,
       heading: 'INVESTORS',
       text: 'Investors',
       description1:
         'Our fractional ownership model offers investors the chance to own a share of our facility, providing access to a highly lucrative and unique opportunity, while remaining 100% passive.',
-      icon: <img src={invesrorsIcon} width="30%" className="text-white" />,
+      icon: <img src={investmentIcon3} width="30%" className="text-white" />,
     },
     {
-      src: `${Returns}`,
+      src: `${investmentImg4}`,
       heading: 'RETURNS',
       description1:
         'Given Connecticut\'s regulatory landscape and favorable market conditions, this investment is projected to yield returns exceeding 40%. For comparison, since 1924, the S&P 500 has averaged an annual return of approximately 7%, adjusted for inflation.',
       text: 'Returns',
-      icon: <img src={returnsIcon} width="30%" className="text-white" />,
+      icon: <img src={investmentIcon4} width="30%" className="text-white" />,
     },
   ];
 
@@ -191,7 +191,7 @@ const Investment = () => {
       {/* Carousel (Visible on Small Screens) */}
       <div id="image-section-small" className="block md:hidden w-full relative ">
         <button
-          className="absolute left-4 top-40 z-10 text-white p-2 bg-secondary rounded-full"
+          className="absolute left-4 top-20 z-10 text-white p-2 bg-secondary rounded-full"
           onClick={handlePrev}
         >
           <FaArrowLeft size={10} />
@@ -210,7 +210,7 @@ const Investment = () => {
           </div>
         </div>
         <button
-          className="absolute right-4 top-40 z-10 text-white p-2 bg-secondary rounded-full"
+          className="absolute right-4 top-20 z-10 text-white p-2 bg-secondary rounded-full"
           onClick={handleNext}
         >
           <FaArrowRight size={10} />

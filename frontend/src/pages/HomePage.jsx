@@ -10,7 +10,6 @@ import Adv from '../components/Adv';
 import AnimationText from '../components/AnimationText';
 import Ebook from '../components/Ebook';
 import NewsLetter from '../utilities/NewsLetter';
-// import RotatingCard from '../components/RotatingCard';
 
 function HomePage() {
   return (
@@ -24,9 +23,7 @@ function HomePage() {
       <Adv />
       <FourVideos />
       <Team />
-      {/* <ScrollTrigger /> */}
       <Ebook />
-      {/* <RotatingCard /> */}
       <NewsLetter />
       <Footer />
     </>

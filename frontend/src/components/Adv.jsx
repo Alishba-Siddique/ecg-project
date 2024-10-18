@@ -287,10 +287,10 @@
 import { React, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import icon1 from '../assets/images/adv-icon-1.webp';
-import icon2 from '../assets/images/adv-icon-2.webp';
-import icon3 from '../assets/images/competitive.svg';
-import icon4 from '../assets/images/adv-icon-4.webp';
+import icon1 from '../assets/images/adv-icon-1.svg';
+import icon2 from '../assets/images/adv-icon-2.svg';
+import icon3 from '../assets/images/adv-icon-3.svg';
+import icon4 from '../assets/images/adv-icon-4.svg';
 
 gsap.registerPlugin(ScrollTrigger);
 

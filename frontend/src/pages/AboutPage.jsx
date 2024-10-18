@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Team from '../components/Team';
 import Footer from '../components/Footer';
 import heroBg from '../assets/videos/heroBg.webm';
-import posterHero from '../assets/images/poster-2.png';
+import posterHero from '../assets/images/heroPosterBg.webp';
 
 const AboutPage = () => {
   

@@ -1,13 +1,80 @@
+// import './App.css';
+// import { useState, useEffect } from 'react';
+// import './styles/fade.css';
+// import {
+//   BrowserRouter,
+//   Routes,
+//   Route,
+//   createBrowserRouter,
+//   RouterProvider,
+// } from 'react-router-dom';
+// import HomePage from './pages/HomePage.jsx';
+// import AboutPage from './pages/AboutPage';
+// import ContactPage from './pages/ContactPage';
+// import HistoryPage from './pages/HistoryPage';
+// import PreLoader from './utilities/PreLoader.jsx';
+// import { SkeletonTheme } from 'react-loading-skeleton';
+
+// function App() {
+//   const [loading, setLoading] = useState(true);
+//   const router = createBrowserRouter([
+//     {
+//       path: '/',
+//       element: <HomePage />,
+//       index: true,
+//     },
+//     {
+//       path: '/home',
+//       element: <HomePage />,
+//       index: true,
+//     },
+//     {
+//       path: '/about',
+//       element: <AboutPage />,
+//       index: true,
+//     },
+//     {
+//       path: '/contact',
+//       element: <ContactPage />,
+//       index: true,
+//     },
+//     {
+//       path: '/history',
+//       element: <HistoryPage />,
+//       index: true,
+//     },
+//   ]);
+
+//   useEffect(() => {
+//     // Simulate loading time before showing website content
+//     const timer = setTimeout(() => {
+//       setLoading(false);
+//     }, 1000); // Adjust timing as needed
+//     return () => clearTimeout(timer);
+//   }, []);
+
+//   return (
+//     <>
+//       {loading ? (
+//         <PreLoader />
+//       ) : (
+//         <div className="-mb-8 fade-in">
+//           <SkeletonTheme color="#202020" highlightColor="#444">
+//             <RouterProvider router={router} />
+//           </SkeletonTheme>
+//         </div>
+//       )}
+//       ;
+//     </>
+//   );
+// }
+
+// export default App;
+
 import './App.css';
 import { useState, useEffect } from 'react';
 import './styles/fade.css';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  createBrowserRouter,
-  RouterProvider,
-} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
@@ -17,6 +84,7 @@ import { SkeletonTheme } from 'react-loading-skeleton';
 
 function App() {
   const [loading, setLoading] = useState(true);
+
   const router = createBrowserRouter([
     {
       path: '/',
@@ -45,12 +113,74 @@ function App() {
     },
   ]);
 
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setLoading(false); // Hide preloader after 5 seconds, even if media isn't fully loaded
+  //   }, 5000); // Adjust the time as needed
+
+  //   const checkAllMediaLoaded = () => {
+  //     const mediaElements = document.querySelectorAll('img, video');
+  //     const allLoaded = Array.from(mediaElements).every((media) => {
+  //       return (
+  //         media.complete &&
+  //         (media.tagName !== 'VIDEO' || media.readyState === 4)
+  //       );
+  //     });
+
+  //     if (allLoaded) {
+  //       clearTimeout(timeout); // Clear the timeout if everything loads before 5 seconds
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   window.addEventListener('load', checkAllMediaLoaded);
+
+  //   const mediaElements = document.querySelectorAll('img, video');
+  //   mediaElements.forEach((media) => {
+  //     media.addEventListener('load', checkAllMediaLoaded);
+  //     media.addEventListener('loadeddata', checkAllMediaLoaded);
+  //   });
+
+  //   return () => {
+  //     clearTimeout(timeout); // Clear timeout on unmount
+  //     window.removeEventListener('load', checkAllMediaLoaded);
+  //     mediaElements.forEach((media) => {
+  //       media.removeEventListener('load', checkAllMediaLoaded);
+  //       media.removeEventListener('loadeddata', checkAllMediaLoaded);
+  //     });
+  //   };
+  // }, []);
+
   useEffect(() => {
-    // Simulate loading time before showing website content
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000); // Adjust timing as needed
-    return () => clearTimeout(timer);
+    let loadedItems = 0;
+    const totalMedia = document.querySelectorAll('img, video').length;
+
+    // Function to check if all images and videos have loaded
+    const handleMediaLoad = () => {
+      loadedItems++;
+      if (loadedItems === totalMedia) {
+        setLoading(false);
+      }
+    };
+
+    // Add event listeners to media elements to track their loading state
+    const mediaElements = document.querySelectorAll('img, video');
+    mediaElements.forEach((media) => {
+      if (media.complete || media.readyState === 4) {
+        handleMediaLoad(); // If media is already loaded
+      } else {
+        media.addEventListener('load', handleMediaLoad);
+        media.addEventListener('loadeddata', handleMediaLoad); // For videos
+      }
+    });
+
+    // Clean up the event listeners on unmount
+    return () => {
+      mediaElements.forEach((media) => {
+        media.removeEventListener('load', handleMediaLoad);
+        media.removeEventListener('loadeddata', handleMediaLoad);
+      });
+    };
   }, []);
 
   return (
@@ -58,98 +188,14 @@ function App() {
       {loading ? (
         <PreLoader />
       ) : (
-        <div className="-mb-8 fade-in">
+        <div className={`-mb-8 fade-in ${loading ? 'hidden' : ''}`}>
           <SkeletonTheme color="#202020" highlightColor="#444">
             <RouterProvider router={router} />
           </SkeletonTheme>
         </div>
       )}
-      ;
     </>
   );
 }
 
 export default App;
-
-// App.jsx
-// import './App.css';
-// // import HeaderPage from './Components/HeaderPage';
-// import HeroPage from './components/HeroPage';
-// // import TeamPage from './components/TeamPage';
-// import DownloadPdfPage from './components/DownloadPdfPage';
-// import ScrollTrigger from './utilities/ScrollToTopButton';
-// import AdvPage from './components/AdvPage';
-// import NavbarPage from './components/NavbarPage';
-// import { useState, useEffect } from 'react';
-// import Loader from './components/Loader';
-// import './styles/fade.css';
-// import FooterWebPage from './components/FooterWebPage';
-// import EbookPage from './components/EbookPage';
-// import InvestmentPage from './components/InvestmentPage';
-// import GrowthPage from './components/GrowthPage';
-// import FourVideoPage from './Components/FourVideoPage';
-// import TextAnimationPage from './components/TextAnimationPage';
-// import TeamWebPage from './components/TeamWebPage';
-
-// function App() {
-//   const [loading, setLoading] = useState(true);
-//   const [progress, setProgress] = useState(0); // To track real loading progress
-
-//   useEffect(() => {
-//     const mediaElements = document.querySelectorAll('img, video');
-//     let loadedCount = 0;
-
-//     const handleMediaLoad = () => {
-//       loadedCount++;
-//       const progressPercentage = (loadedCount / mediaElements.length) * 100;
-//       setProgress(Math.floor(progressPercentage));
-
-//       if (loadedCount === mediaElements.length) {
-//         setLoading(false);
-//       }
-//     };
-
-//     mediaElements.forEach((element) => {
-//       if (element.complete || element.readyState === 4) {
-//         handleMediaLoad();
-//       } else {
-//         element.addEventListener('load', handleMediaLoad);
-//         element.addEventListener('error', handleMediaLoad);
-//       }
-//     });
-
-//     return () => {
-//       mediaElements.forEach((element) => {
-//         element.removeEventListener('load', handleMediaLoad);
-//         element.removeEventListener('error', handleMediaLoad);
-//       });
-//     };
-//   }, []);
-
-//   return (
-//     <>
-//       {loading ? (
-//         <Loader progress={progress} />
-//       ) : (
-//         <div className="-mb-8 fade-in">
-//           <NavbarPage />
-//           {/* <HeaderPage /> */}
-//           <HeroPage />
-//           <TextAnimationPage />
-//           <GrowthPage />
-//           <DownloadPdfPage />
-//           <InvestmentPage />
-//           <AdvPage />
-//           <FourVideoPage />
-//           {/* <TeamPage /> */}
-//           <TeamWebPage />
-//           {/* <ScrollTrigger /> */}
-//           <EbookPage />
-//           <FooterWebPage />
-//         </div>
-//       )}
-//     </>
-//   );
-// }
-
-// export default App;

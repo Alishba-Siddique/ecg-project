@@ -242,7 +242,7 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './../styles/animationText.css';
-import bgImage from '../assets/images/animationBg.png';
+import bgImage from '../assets/images/animationBg.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -293,12 +293,15 @@ const AnimationText = () => {
     };
   }, []);
 
+
   return (
     <div className="w-full h-full relative">
       <div
         className=" z-20 relative
         px-10 sm:px-10 md:px-24 lg:px-24 mediumLaptop:px-24 xl:px-24 2xl:px-24 largestLaptop:px-44
-        py-64 sm:py-64 md:py-64 lg:py-64 mediumLaptop:py-52 xl:py-30 2xl:py-96 largestLaptop:py-96 font-nudista font-light
+        py-auto
+        mt-36 sm:mt-64 md:mt-44 lg:mt-64 mediumLaptop:mt-52 xl:mt-56 2xl:mt-96 largestLaptop:mt-96 
+        mb-64 sm:mb-64 md:mb-64 lg:mb-64 mediumLaptop:mb-52 xl:mb-0 2xl:mb-96 largestLaptop:mb-96 font-nudista font-light
         
         "
         style={{
@@ -322,7 +325,7 @@ const AnimationText = () => {
               and experienced
             </span>
             <br />
-            operators
+            <span>operators<br /></span><br/>
           </>,
         ].map((text, idx) => (
           <h1

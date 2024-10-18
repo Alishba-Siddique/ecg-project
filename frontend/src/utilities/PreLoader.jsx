@@ -15,7 +15,7 @@ const PreLoaderPage = () => {
           return 100;
         }
       });
-    }, 38); // Increment progress every 50ms (adjust as needed)
+    }, 200); // Increment progress every 50ms (adjust as needed)
 
     return () => clearInterval(interval);
   }, []);
