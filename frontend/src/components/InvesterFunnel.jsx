@@ -71,8 +71,8 @@ const InvesterFunnel = () => {
           <div
             className="relative rounded-lg
              hidden md:block lg:block mediumLaptop:block xl:block 2xl:block largestLaptop:block 
-            ml-6 sm:ml-[1.5rem]  md:ml-14 lg:ml-[13rem] mediumLaptop:ml-[13rem] xl:ml-[14rem] 2xl:ml-[13rem] largestLaptop:ml-[26rem]
-            w-[88%] sm:w-[88%] md:w-[50%] lg:w-[50%]  mediumLaptop:w-[60%]  xl:w-[50%]  2xl:w-[60%]  largestLaptop:w-[50%] 
+            ml-6 sm:ml-[1.5rem]  md:ml-[5rem] lg:ml-[5rem] mediumLaptop:ml-[6rem] xl:ml-[5rem] 2xl:ml-[7rem] largestLaptop:ml-[8rem]
+            w-full sm:w-full md:w-full lg:w-[76%]  mediumLaptop:w-[87%]  xl:w-[97%]  2xl:w-[85%]  largestLaptop:w-[100%] 
             h-52 sm:h-52 md:h-52 lg:h-72  mediumLaptop:h-[28rem]  xl:h-[28rem]  2xl:h-[28rem]  largestLaptop:h-[32rem]
             mt-32 sm:mt-32 md:mt-32 lg:-mt-[9rem]  xl:-mt-[9rem] 2xl:-mt-[9rem] largestLaptop:-mt-[3rem]
          "
@@ -113,9 +113,9 @@ const InvesterFunnel = () => {
           /> */}
           <div
             className="relative hidden md:block lg:hidden mediumLaptop:hidden xl:hidden 2xl:hidden  largestLaptop:hidden
-            ml-6 sm:ml-6 md:ml-44 lg:ml-6 mediumLaptop:ml-6 xl:ml-6 2xl:ml-36 largestLaptop:ml-80
-            w-[88%] sm:w-[88%] md:w-[90%] lg:w-[70%]  mediumLaptop:w-[86%]  xl:w-[100%]  2xl:w-[70%]  largestLaptop:w-[100%] 
-            h-52 sm:h-52 md:h-80 lg:h-52 mediumLaptop:h-96 xl:h-96 2xl:h-80 largestLaptop:h-96  rounded-lg"
+            ml-6 sm:ml-6 md:ml-44 
+            w-full sm:w-full md:w-full
+            h-52 sm:h-52 md:h-80  rounded-lg"
           >
             <img
               src={investorFunnelImg2}
@@ -146,7 +146,7 @@ const InvesterFunnel = () => {
           <div className="flex items-center gap-2 sm:gap-4">
             {/* <a href={pdfFile} download="Read More"> */}
             <a
-              href="https://crm.investexpress.ai/v2/preview/7qUAox9kkUgKnoK8UFrO"
+              href="https://crm.investexpress.ai/v2/preview/lLSGN70UQ7feCnLjvdwY"
               target="_blank"
               className="text-decoration-none"
             >

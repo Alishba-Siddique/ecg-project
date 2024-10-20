@@ -267,131 +267,286 @@
 
 // export default FourVideos;
 
-import { useRef, useEffect } from 'react';
-import sampleVideo1 from '../assets/videos/sampleVideo1.mp4'; // Example video files
-import sampleVideo2 from '../assets/videos/sampleVideo2.mp4';
-import indoorVid1 from '../assets/videos/indoorVid1.mp4';
-import indoorVid2 from '../assets/videos/indoorVid2.mp4';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import { useRef, useEffect } from 'react';
+// import sampleVideo1 from '../assets/videos/sampleVideo1.mp4'; // Example video files
+// import sampleVideo2 from '../assets/videos/sampleVideo2.mp4';
+// import indoorVid1 from '../assets/videos/indoorVid1.mp4';
+// import indoorVid2 from '../assets/videos/indoorVid2.mp4';
+// import { gsap } from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import vidPoster1 from '../assets/images/vidPoster1.webp';
+// import vidPoster2 from '../assets/images/vidPoster2.webp';
+// import vidPoster3 from '../assets/images/vidPoster3.webp';
+// import vidPoster4 from '../assets/images/vidPoster4.webp';
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// const FourVideos = () => {
+//   const videoRef1 = useRef(null);
+//   const videoRef2 = useRef(null);
+//   const videoRef3 = useRef(null);
+//   const videoRef4 = useRef(null);
+
+//   useEffect(() => {
+//     // Four Video Section Animation
+//     gsap.fromTo(
+//       '#four-video-section',
+//       { x: -100, opacity: 0 },
+//       {
+//         x: 0,
+//         opacity: 1,
+//         duration: 1,
+//         scrollTrigger: {
+//           trigger: '#four-video-section',
+//           start: 'top 80%',
+//           end: 'bottom 60%',
+//           toggleActions: 'play none none reverse',
+//         },
+//       }
+//     );
+//   }, []);
+
+//   const handleMouseEnter = (videoRef) => {
+//     if (videoRef.current) {
+//       videoRef.current.play();
+//     }
+//   };
+
+//   const handleMouseLeave = (videoRef) => {
+//     if (videoRef.current) {
+//       videoRef.current.pause();
+//     }
+//   };
+
+//   return (
+//     <div
+//       id="four-video-section"
+//       className="w-[89%] mx-auto mb-0
+//       py-20 sm:py-20 lg:py-10 px-4 sm:px-4 lg:px-6
+//       grid grid-cols-1 md:grid-cols-4 gap-8"
+//     >
+//       {/* Video Box 1 */}
+//       <div
+//         className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-gray-200 rounded-md hover:scale-105 transition duration-300 relative"
+//         onMouseEnter={() => handleMouseEnter(videoRef1)}
+//         onMouseLeave={() => handleMouseLeave(videoRef1)}
+//       >
+//         <video
+//           ref={videoRef1}
+//           src={sampleVideo1}
+//           className="w-full h-full object-cover rounded-lg"
+//           muted
+//           loop
+//           preload='auto'
+//           poster={vidPoster1}
+//         ></video>
+//       </div>
+
+//       {/* Video Box 2 */}
+//       <div
+//         className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-gray-200 rounded-md overflow-hidden hover:scale-105 transition duration-300 relative"
+//         onMouseEnter={() => handleMouseEnter(videoRef2)}
+//         onMouseLeave={() => handleMouseLeave(videoRef2)}
+//       >
+//         <video
+//           ref={videoRef2}
+//           src={indoorVid1}
+//           className="w-full h-full object-cover rounded-lg"
+//           muted
+//           loop
+//           preload='auto'
+//           poster={vidPoster2}
+//         ></video>
+//       </div>
+
+//       {/* Video Box 3 */}
+//       <div
+//         className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-gray-200 rounded-md overflow-hidden hover:scale-105 transition duration-300 relative"
+//         onMouseEnter={() => handleMouseEnter(videoRef3)}
+//         onMouseLeave={() => handleMouseLeave(videoRef3)}
+//       >
+//         <video
+//           ref={videoRef3}
+//           src={sampleVideo2}
+//           className="w-full h-full object-cover rounded-lg"
+//           muted
+//           loop
+//           preload='auto'
+//           poster={vidPoster3}
+//         ></video>
+//       </div>
+
+//       {/* Video Box 4 */}
+//       <div
+//         className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-gray-200 rounded-md overflow-hidden hover:scale-105 transition duration-300 relative"
+//         onMouseEnter={() => handleMouseEnter(videoRef4)}
+//         onMouseLeave={() => handleMouseLeave(videoRef4)}
+//       >
+//         <video
+//           ref={videoRef4}
+//           src={indoorVid2}
+//           className="w-full h-full object-cover rounded-lg"
+//           muted
+//           loop
+//           preload='auto'
+//           poster={vidPoster4}
+//         ></video>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default FourVideos;
+
+import React, { useRef, useEffect } from 'react';
+// import sampleVideo1 from '../assets/videos/sampleVideo1.mp4'; // Example video files
+// import sampleVideo2 from '../assets/videos/sampleVideo2.mp4';
+// import indoorVid1 from '../assets/videos/indoorVid1.mp4';
+// import indoorVid2 from '../assets/videos/indoorVid2.mp4';
 import vidPoster1 from '../assets/images/vidPoster1.webp';
 import vidPoster2 from '../assets/images/vidPoster2.webp';
 import vidPoster3 from '../assets/images/vidPoster3.webp';
 import vidPoster4 from '../assets/images/vidPoster4.webp';
-
-gsap.registerPlugin(ScrollTrigger);
+import Slick from 'react-slick'; // Import Slick Carousel
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const FourVideos = () => {
-  const videoRef1 = useRef(null);
-  const videoRef2 = useRef(null);
-  const videoRef3 = useRef(null);
-  const videoRef4 = useRef(null);
+  const videoRefs = useRef([null, null, null, null]);
+
+  // Slider settings for autoplay, infinite loop, and responsive layout
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1, // Showing one video at a time
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    appendDots: (dots) => (
+      <div
+        style={{
+          position: 'absolute',
+          left: '50%', // Centering the dots horizontally
+          bottom: '10px', // Adjusting the bottom position for better visibility
+          transform: 'translateX(-50%)',
+        }}
+      >
+        <div style={{ margin: '0px' }}> {dots} </div>
+      </div>
+    ),
+    customPaging: (i) => <div className="custom-dot"></div>,
+    responsive: [
+      {
+        breakpoint: 1024, // For large screens
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // For tablets
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480, // For mobile
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   useEffect(() => {
-    // Four Video Section Animation
-    gsap.fromTo(
-      '#four-video-section',
-      { x: -100, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: '#four-video-section',
-          start: 'top 80%',
-          end: 'bottom 60%',
-          toggleActions: 'play none none reverse',
-        },
-      }
-    );
+    // Autoplay all videos on mount
+    videoRefs.current.forEach((video) => {
+      if (video) video.play();
+    });
   }, []);
-
-  const handleMouseEnter = (videoRef) => {
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
-  };
-
-  const handleMouseLeave = (videoRef) => {
-    if (videoRef.current) {
-      videoRef.current.pause();
-    }
-  };
 
   return (
     <div
       id="four-video-section"
-      className="w-[89%] mx-auto mb-0
-      py-20 sm:py-20 lg:py-10 px-4 sm:px-4 lg:px-6
-      grid grid-cols-1 md:grid-cols-4 gap-8"
+      className="w-full mx-auto px-4 sm:px-8 lg:px-32"
     >
-      {/* Video Box 1 */}
-      <div
-        className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-gray-200 rounded-md hover:scale-105 transition duration-300 relative"
-        onMouseEnter={() => handleMouseEnter(videoRef1)}
-        onMouseLeave={() => handleMouseLeave(videoRef1)}
-      >
-        <video
-          ref={videoRef1}
-          src={sampleVideo1}
-          className="w-full h-full object-cover rounded-lg"
-          muted
-          loop
-          preload='auto'
-          poster={vidPoster1}
-        ></video>
-      </div>
+      <style>
+        {`
+        .custom-dot {
+          width: 10px;
+          height: 10px;
+          background-color: rgba(255, 141, 42, 0.5);
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.3s;
+        }
+        .slick-dots li.slick-active .custom-dot {
+          background-color: rgba(255, 141, 42, 1);
 
-      {/* Video Box 2 */}
-      <div
-        className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-gray-200 rounded-md overflow-hidden hover:scale-105 transition duration-300 relative"
-        onMouseEnter={() => handleMouseEnter(videoRef2)}
-        onMouseLeave={() => handleMouseLeave(videoRef2)}
-      >
-        <video
-          ref={videoRef2}
-          src={indoorVid1}
-          className="w-full h-full object-cover rounded-lg"
-          muted
-          loop
-          preload='auto'
-          poster={vidPoster2}
-        ></video>
-      </div>
+        }
+        `}
+      </style>
+      <Slick {...settings}>
+        {/* Video Slide 1 */}
+        <div>
+          <video
+            ref={(el) => (videoRefs.current[0] = el)}
+            // src={sampleVideo1}
+            src="https://media.gettyimages.com/id/1436489282/video/upward-tilting-shot-of-industrial-cannabis-grow.mp4?s=mp4-640x640-gi&k=20&c=zv9uKKywNELHA97h0pF0-oq_xtW8XH3AIQ6Bd8lCrKA="
+            className="w-full h-[200px] sm:h-[200px] lg:h-[300px] object-cover rounded-lg"
+            muted
+            autoPlay
+            loop
+            poster={vidPoster1}
+          />
+        </div>
 
-      {/* Video Box 3 */}
-      <div
-        className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-gray-200 rounded-md overflow-hidden hover:scale-105 transition duration-300 relative"
-        onMouseEnter={() => handleMouseEnter(videoRef3)}
-        onMouseLeave={() => handleMouseLeave(videoRef3)}
-      >
-        <video
-          ref={videoRef3}
-          src={sampleVideo2}
-          className="w-full h-full object-cover rounded-lg"
-          muted
-          loop
-          preload='auto'
-          poster={vidPoster3}
-        ></video>
-      </div>
+        {/* Video Slide 2 */}
+        <div>
+          <video
+            ref={(el) => (videoRefs.current[1] = el)}
+            // src={indoorVid1}
+            src='https://media.gettyimages.com/id/1415638899/video/cannabis-plants-at-flowering-stage-in-a-greenhouse-with-led-electrical-light-indoor-plants.mp4?s=mp4-640x640-gi&k=20&c=PV0JeIgRyk9JucocATUVZoj18xKzuyPan3oj-MCChx4='
+            className="w-full h-[200px] sm:h-[200px] lg:h-[300px] object-cover rounded-lg"
+            muted
+            autoPlay
+            loop
+            poster={vidPoster2}
+          />
+        </div>
 
-      {/* Video Box 4 */}
-      <div
-        className="w-full h-[300px] sm:h-[300px] lg:h-[400px] bg-gray-200 rounded-md overflow-hidden hover:scale-105 transition duration-300 relative"
-        onMouseEnter={() => handleMouseEnter(videoRef4)}
-        onMouseLeave={() => handleMouseLeave(videoRef4)}
-      >
-        <video
-          ref={videoRef4}
-          src={indoorVid2}
-          className="w-full h-full object-cover rounded-lg"
-          muted
-          loop
-          preload='auto'
-          poster={vidPoster4}
-        ></video>
-      </div>
+        {/* Video Slide 3 */}
+        <div>
+          <video
+            ref={(el) => (videoRefs.current[2] = el)}
+            src='https://media.gettyimages.com/id/2167617866/video/cannabis-growing-indoors.mp4?s=mp4-640x640-gi&k=20&c=2N-0N1ffR5Kp5yNra1LRy9FWplJW6V9ZRt0ISB8CexE='
+            // src={sampleVideo2}
+            className="w-full h-[200px] sm:h-[200px] lg:h-[300px] object-cover rounded-lg"
+            muted
+            loop
+            autoPlay
+            poster={vidPoster3}
+          />
+        </div>
+
+        {/* Video Slide 4 */}
+        <div>
+          <video
+            ref={(el) => (videoRefs.current[3] = el)}
+            // src={indoorVid2}
+            src="https://media.gettyimages.com/id/1412875480/video/marijuana-cultivator-tending-to-plants-in-warehouse-marijuana-plants-growing-at-indoor.mp4?s=mp4-640x640-gi&k=20&c=h23LJq1XEwSdcTuoFd1j1O7AHTXVQfqHd3WsDoKQiJs="
+            className="w-full h-[200px] sm:h-[200px] lg:h-[300px] object-cover rounded-lg"
+            muted
+            loop
+            autoPlay
+            poster={vidPoster4}
+          />
+        </div>
+      </Slick>
     </div>
   );
 };

@@ -52,7 +52,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="Logo"
-            className="w-24 sm:w-24 md:w-24 lg:w-32 mediumLaptop:w-32 xl:w-32 2xl:w-40 largestLaptop:w-56
+            className="drop-shadow-lg w-24 sm:w-24 md:w-24 lg:w-32 mediumLaptop:w-32 xl:w-32 2xl:w-40 largestLaptop:w-56
                      ml-3 sm:ml-3 md:ml-8 lg:ml-16 mediumLaptop:ml-16 xl:ml-16 2xl:ml-16 largestLaptop:ml-44"
           />
         </NavLink>

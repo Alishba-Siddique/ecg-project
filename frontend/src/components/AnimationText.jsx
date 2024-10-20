@@ -241,7 +241,7 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import './../styles/animationText.css';
+// import './../styles/animationText.css';
 import bgImage from '../assets/images/animationBg.webp';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -293,15 +293,14 @@ const AnimationText = () => {
     };
   }, []);
 
-
   return (
     <div className="w-full h-full relative">
       <div
         className=" z-20 relative
         px-10 sm:px-10 md:px-24 lg:px-24 mediumLaptop:px-24 xl:px-24 2xl:px-24 largestLaptop:px-44
         py-auto
-        mt-36 sm:mt-64 md:mt-44 lg:mt-64 mediumLaptop:mt-52 xl:mt-56 2xl:mt-96 largestLaptop:mt-96 
-        mb-64 sm:mb-64 md:mb-64 lg:mb-64 mediumLaptop:mb-52 xl:mb-0 2xl:mb-96 largestLaptop:mb-96 font-nudista font-light
+        mt-36 sm:mt-64 md:mt-44 lg:mt-64 mediumLaptop:mt-52 xl:mt-56 2xl:mt-80 largestLaptop:mt-96 
+        mb-0 font-nudista font-light
         
         "
         style={{
@@ -311,9 +310,17 @@ const AnimationText = () => {
           backgroundPosition: 'center',
         }}
       >
+        <style>
+          {`
+          .heading-title{color:rgba(182,182,182,.4);background:linear-gradient(to right,#fff,#fff) no-repeat;-webkit-background-clip:text;background-clip:text;background-size:0;transition:background-size .5s cubic-bezier(.1, .5, .5, 1);position:relative}`}
+        </style>
         {[
-          
-          <span><br /><br /><br />State-of-the-art</span>,
+          <span>
+            <br />
+            <br />
+            <br />
+            State-of-the-art
+          </span>,
           <span key="1" className="font-nudista font-bold">
             cultivation facility
           </span>,
@@ -325,13 +332,17 @@ const AnimationText = () => {
               and experienced
             </span>
             <br />
-            <span>operators<br /></span><br/>
+            <span>
+              operators
+              <br />
+            </span>
+            <br />
           </>,
         ].map((text, idx) => (
           <h1
             key={idx}
             className={`heading-title line tracking-tight font-nudista font-light 
-            text-5xl sm:text-6xl md:text-7xl lg:text-[6.6rem] mediumLaptop:text-[9rem] xl:text-[6.6rem] 2xl:text-[10rem] largestLaptop:text-[12rem] drop-shadow-md`}
+            text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] mediumLaptop:text-[7.5rem] xl:text-[5rem] 2xl:text-[8.5rem] largestLaptop:text-[10.5rem] drop-shadow-md`}
             style={{ lineHeight: '1.2' }}
           >
             {text}

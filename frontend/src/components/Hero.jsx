@@ -79,7 +79,7 @@ const Hero = () => {
             for explosive growth
           </p>
           <a
-            href="https://crm.investexpress.ai/v2/preview/7qUAox9kkUgKnoK8UFrO"
+            href="https://crm.investexpress.ai/v2/preview/lLSGN70UQ7feCnLjvdwY"
             className="text-decoration-none"
             target="_blank" // Correct attribute for opening in a new tab
           >
@@ -102,10 +102,10 @@ const Hero = () => {
       <div
         id="white-section"
         className="card card-side
-                     -mb-[20rem] sm:-mb-[22rem] md:-mb-[25rem] lg:-mb-[35rem] mediumLaptop:-mb-[40rem] xl:-mb-[34rem] 2xl:-mb-[58rem] largestLaptop:-mb-[58rem]
+                     -mb-[14rem] sm:-mb-[14rem] md:-mb-[20rem] lg:-mb-[28rem] mediumLaptop:-mb-[35rem] xl:-mb-[27rem] 2xl:-mb-[49rem] largestLaptop:-mb-[58rem]
                       ml-[3rem] sm:ml-[3rem] md:ml-[15rem] lg:ml-[44rem] mediumLaptop:ml-[40rem] xl:ml-[35rem] 2xl:ml-[45rem] largestLaptop:ml-[100rem]
                       mr-[0rem] sm:mr-[0rem] md:mr-[5rem] lg:mr-[3rem] mediumLaptop:mr-[5rem] xl:mr-[5rem] 2xl:mr-[5rem] largestLaptop:mr-[5rem]
-                      -mt-[9rem] sm:-mt-[4rem] md:-mt-[10rem]  lg:-mt-[8rem] mediumLaptop:-mt-[25rem] xl:-mt-[8rem] 2xl:-mt-[20rem] largestLaptop:-mt-[9rem]
+                      -mt-[9rem] sm:-mt-[4rem] md:-mt-[10rem]  lg:-mt-[8rem] mediumLaptop:-mt-[25rem] xl:-mt-[8rem] 2xl:-mt-[5rem] largestLaptop:-mt-[9rem]
                       z-50 rounded-lg"
       >
         <figure className="bg-white">

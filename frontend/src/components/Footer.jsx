@@ -164,23 +164,65 @@
 
 // export default Footer;
 
-import React from 'react';
-import { useLocation, NavLink } from 'react-router-dom';
+import React, { useState, useEffect, useRef } from 'react';
 import ecgWhiteLogo from '../assets/images/ecg-white-logo.webp';
 import footerBg from '../assets/images/footerBg.webp';
 import { CiInstagram } from 'react-icons/ci';
 import { CiLinkedin } from 'react-icons/ci';
 import { CiFacebook } from 'react-icons/ci';
 import { CiTwitter } from 'react-icons/ci';
+import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 
 const Footer = () => {
-  const location = useLocation(); 
-  const isHomepage = location.pathname === '/';
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+  const [navFooter, setNavFooter] = useState(false);
+  const navFooterRef = useRef();
+  const navigate = useNavigate();
+
+  const handleNavFooter = () => {
+    setNavFooter(!navFooter);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        navFooter &&
+        navFooterRef.current &&
+        !navFooterRef.current.contains(event.target)
+      ) {
+        setNav(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [navFooter]);
+
+  const scrollToSection = (sectionId) => {
+    navigate('/'); // Navigate to homepage
+
+    // Scroll after the homepage is rendered
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
+  const navFooterItems = [
+    { id: 1, text: 'Home', to: '/' },
+    { id: 2, text: 'Our History', to: '/history' },
+    { id: 3, text: 'About Us', onClick: () => scrollToSection('team-sec') },
+    { id: 4, text: 'Contact Us', to: '/contact' },
+  ];
 
   return (
     <div
       className={`${
-        isHomepage
+        isHomePage
           ? 'mt-0 sm:mt-0 md:mt-0 lg:mt-0 mediumLaptop:mt-96 xl:mt-72 2xl:mt-96 largestLaptop:mt-0'
           : ''
       } `}
@@ -191,7 +233,7 @@ const Footer = () => {
         {/* Background Image Container */}
         <div
           className="w-full h-full absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${footerBg})` }}
+          style={{ backgroundImage: `url(${footerBg})`, loading: 'lazy' }}
         >
           {/* Gradient Overlay with mix-blend-mode */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-green-800 bg-blend-color-overlay"></div>
@@ -201,7 +243,7 @@ const Footer = () => {
           className={`relative flex flex-col md:flex-row lg:flex-row justify-between
                       max-w-8xl mx-auto 
                       ${
-                        isHomepage
+                        isHomePage
                           ? 'mt-64 sm:mt-44 md:mt-44 lg:mt-44 xl:mt-44'
                           : ''
                       }
@@ -214,6 +256,7 @@ const Footer = () => {
                 src={ecgWhiteLogo}
                 alt="ECG-Logo"
                 className="h-24 lg:h-32 w-auto"
+                loading="lazy"
               />
             </a>
           </div>
@@ -224,25 +267,28 @@ const Footer = () => {
       items-center lg:items-start gap-10 px-10 lg:px-32 w-full lg:w-auto"
           >
             {/* Navigation Links */}
-            <div className="flex flex-col space-y-2 font-sora text-sm">
-              <a href="/" className="hover:underline">
-                Home
-              </a>
-              <NavLink to="/history" className="hover:underline">
-                Our History
-              </NavLink>
-              <NavLink to="/contact" className="hover:underline">
-                Contact Us
-              </NavLink>
-              <NavLink to="/about" className="hover:underline">
-                About Us
-              </NavLink>
-            </div>
+            <ul className="flex flex-col space-y-2 font-sora text-sm">
+              {navFooterItems.map((item) => (
+                <li key={item.id}>
+                  {item.onClick ? (
+                    <button onClick={item.onClick} className="inline-block">
+                      {item.text}
+                    </button>
+                  ) : (
+                    <NavLink to={item.to} className="inline-block">
+                      {item.text}
+                    </NavLink>
+                  )}
+                </li>
+              ))}
+            </ul>
 
             {/* Social Media Links */}
             <div>
-              <div className="mt-5 font-sora text-sm">Socials</div>
-              <div className="flex space-x-4 mt-4 lg:mt-7 text-xl">
+              <div className="-mt-5 lg:mt-0 font-sora text-sm text-center lg:text-left w-3/4 ml-1 lg:ml-0">
+                Socials
+              </div>
+              <div className="flex space-x-4 mt-4 md:mt-7 lg:mt-2 text-xl text-center lg:text-left mx-auto md:ml-10 lg:ml-0">
                 <a href="https://linkedin.com" className="hover:text-gray-300">
                   <CiLinkedin />
                 </a>

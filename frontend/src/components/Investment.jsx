@@ -94,6 +94,7 @@ const Investment = () => {
       icon: <img src={investmentIcon1} width="30%" className="text-white" />,
     },
     {
+      // src: `${investmentImg2}`,
       src: `${investmentImg2}`,
       heading: 'EAST COAST GROWERS',
       text: 'ECG',
@@ -113,7 +114,7 @@ const Investment = () => {
       src: `${investmentImg4}`,
       heading: 'RETURNS',
       description1:
-        'Given Connecticut\'s regulatory landscape and favorable market conditions, this investment is projected to yield returns exceeding 40%. For comparison, since 1924, the S&P 500 has averaged an annual return of approximately 7%, adjusted for inflation.',
+        "Given Connecticut's regulatory landscape and favorable market conditions, this investment is projected to yield returns exceeding 40%. For comparison, since 1924, the S&P 500 has averaged an annual return of approximately 7%, adjusted for inflation.",
       text: 'Returns',
       icon: <img src={investmentIcon4} width="30%" className="text-white" />,
     },
@@ -136,12 +137,8 @@ const Investment = () => {
       className="relative flex flex-col w-full h-full justify-center items-center 
         mt-32 sm:mt-32 md:mt-32 lg:mt-32 mediumLaptop:mt-32 xl:mt-20 2xl:mt-32 largestLaptop:mt-32
         mb-32 sm:mb-32 md:mb-32 lg:mb-32 mediumLaptop:mb-32 xl:mb-28 2xl:mb-52 largestLaptop:mb-52
-         gap-5 bg-blend-overlay bg-opacity-90 overflow-x-hidden"
-      style={{
-        backgroundImage: `url(${investmentBg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
+         gap-5 bg-[url('../assets/images/investmentBg.webp')] bg-center bg-blend-overlay bg-opacity-90 overflow-x-hidden"
+      
     >
       {/* Title Section */}
       <div id="investment-title" className="text-center mb-12 mt-20  ">
@@ -180,7 +177,10 @@ const Investment = () => {
             />
             {/* <div className="absolute inset-0 bg-primary bg-opacity-30 flex flex-col justify-center items-center text-center text-white p-4 duration-300"> */}
             <div className="absolute inset-0  flex flex-col justify-center items-center text-center text-white p-4 duration-300">
-              <h3 className="text-2xl sm:text-2xl md:text-xl lg:text-2xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-5xl font-nudista font-bold">
+              <h3
+                style={{ textShadow: '4px 4px 8px rgba(0, 0, 0, 0.5)' }}
+                className=" text-2xl sm:text-2xl md:text-xl lg:text-2xl mediumLaptop:text-3xl xl:text-2xl 2xl:text-3xl largestLaptop:text-5xl font-nudista font-bold"
+              >
                 {image.text}
               </h3>
             </div>
@@ -189,7 +189,10 @@ const Investment = () => {
       </div>
 
       {/* Carousel (Visible on Small Screens) */}
-      <div id="image-section-small" className="block md:hidden w-full relative ">
+      <div
+        id="image-section-small"
+        className="block md:hidden w-full relative "
+      >
         <button
           className="absolute left-4 top-20 z-10 text-white p-2 bg-secondary rounded-full"
           onClick={handlePrev}
@@ -198,12 +201,13 @@ const Investment = () => {
         </button>
         <div className="w-64 sm:w-64 md:w-[40rem] lg:w-[63rem]  mediumLaptop:w-[83rem] xl:w-[63rem] 2xl:w-[83rem] largestLaptop:w-[120rem] mx-auto relative">
           <img
+            loading="lazy"
             src={images[selectedImage].src}
             alt={images[selectedImage].heading}
             className="w-64 sm:w-64 md:w-[40rem] lg:w-[63rem]  mediumLaptop:w-[83rem] xl:w-[63rem] 2xl:w-[83rem] largestLaptop:w-[120rem]
                h-full object-cover rounded-lg"
           />
-           <div className="absolute inset-0 flex justify-center items-center text-center text-white p-4 duration-300">
+          <div className="absolute inset-0 flex justify-center items-center text-center text-white p-4 duration-300">
             <h3 className="text-2xl sm:text-2xl md:text-2xl lg:text-2xl mediumLaptop:text-2xl xl:text-2xl 2xl:text-3xl largestLaptop:text-4xl  font-nudista font-bold">
               {images[selectedImage].text}
             </h3>

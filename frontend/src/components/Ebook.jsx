@@ -78,8 +78,9 @@ const Ebook = () => {
           </a>
           {/* <a href={pdfFile} download={'Ebook'}> */}
           <a
-            href="https://crm.investexpress.ai/v2/preview/7qUAox9kkUgKnoK8UFrO"
+            href="https://crm.investexpress.ai/v2/preview/lLSGN70UQ7feCnLjvdwY"
             className="text-decoration-none"
+            target="_blank"
           >
             <button
               className=" text-xs sm:text-xs md:text-sm lg:text-base mediumLaptop:text-lg xl:text-lg 2xl:text-lg largestLaptop:text-3xl 
